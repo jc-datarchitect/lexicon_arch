@@ -1,0 +1,1382 @@
+module,acronym_abrev,term_eng,term_esp,definition_esp
+PROJECT PHASES,PD,Preliminary Design,Diseño Preliminar,Fase de diseño preliminar (pre-diseño). Fase de análisis donde se evalúan las condiciones y necesidades iniciales del proyecto.
+PROJECT PHASES,SD,Schematic Design,Diseño Esquemático,"Fase de diseño esquemático. Se definen las intenciones espaciales, escala, volumetría y relaciones conceptuales generales."
+PROJECT PHASES,DD,Design Development,Desarrollo De Diseño,"Fase de desarrollo de diseño. Definición técnica detallada que fija sistemas constructivos, dimensiones y layouts de ingeniería."
+PROJECT PHASES,CD,Construction Documents,Documentación Constructiva,Fase de documentation constructiva. Preparación de planos ejecutivos finales y especificaciones técnicas necesarias para tramitar permisos y construir la obra.
+PROJECT PHASES,BID,Bidding,Licitación,Fase de licitación. Periodo de concurso donde se presentan los planos y especificaciones a contratistas para su cotización y adjudicación.
+PROJECT PHASES,CA,Construction Administration,Administración Constructiva,Fase de administración constructiva. Supervisión y acompañamiento del equipo de diseño durante la obra para garantizar la fidelidad de la ejecución respecto a los planos.
+COEFFICIENTS,COEF,Coefficient,Coeficiente,"Coeficiente. Valor numérico que actúa como factor multiplicador para determinar propiedades físicas, espaciales o regulatorias."
+COEFFICIENTS,STC,Sound Transmission Class,Clase De Transmisión De Sonido,"Capacidad de un material de bloquear el sonido aéreo a través de una pared o losa (ejemplo: pared liviana de 4"" sin insulación -> STC = 33)."
+COEFFICIENTS,NRC,Noise Reduction Coefficient,Coeficiente De Reducción De Ruido,Coeficiente que mide la efectividad de absorción de un sonido en un espacio. Toma un valor comprendido entre 0 y 1 (0 = sonido completamente reverberante / 1 = sonido totalmente absorbido).
+COEFFICIENTS,IIC,Impact Isolation Class,Clase De Aislamiento De Impacto,"Capacidad de un material de absorber sonido provocado por impactos directos sobre la estructura, tales como pisadas (ejemplo: concreto pelado -> IIC = 25)."
+COEFFICIENTS,COF,Coefficient Of Friction,Coeficiente De Fricción,"Coeficiente que mide el grado de fricción o qué tan resbaladiza es una superficie. Toma un valor entre 0 y 1 (a mayor valor, superficie más segura y menos resbaladiza)."
+COEFFICIENTS,SHGC,Solar Heat Gain Coefficient,Coeficiente De Ganancia De Calor Solar,"Coeficiente de ganancia de calor solar. Mide la fracción de radiación solar incidente que atraviesa un panel de vidrio. Toma valores entre 0 y 1 (a mayor valor, más calor solar ingresa al edificio)."
+COEFFICIENTS,U,U-Factor,Factor U,"Factor U. Determina el grado de transferencia térmica y eficiencia del aislamiento de un panel de vidrio. A menor valor, mayor capacidad aislante (ejemplo: ventana eficiente → U = 0.20). Es inversamente proporcional al R-factor (U = 1/R)."
+COEFFICIENTS,R,R-Factor,Factor R,"Factor R. Determina la resistencia de un material o elemento constructivo a la transferencia térmica. A mayor valor, mayor eficiencia del aislamiento (ejemplo: elemento eficiente → R = 5). Es inversamente proporcional al U-factor (R = 1/U)."
+COEFFICIENTS,FAR,Floor Area Ratio,Coeficiente De Edificabilidad,Coeficiente de edificabilidad urbana. Se calcula matemáticamente dividiendo las áreas brutas totales construidas del edificio (GSF) entre el área total del lote.
+COEFFICIENTS,BCR,Building Coverage Ratio / Lot Coverage,Coeficiente De Ocupación Del Lote,Coeficiente de ocupación del suelo o huella. Se calcula dividiendo el área de la proyección en planta (outline) del edificio entre el área total del lote.
+COEFFICIENTS,DENS,Density,Densidad Habitacional,"Densidad de unidades residenciales. Se mide habitualmente en DU/AC (Dwelling Units per Acre) y establece el límite legal de unidades del proyecto según su zonificación (ejemplo: requerimiento de 150 DU/AC en un lote de 100,000 SF [2.30 AC] → 150 x 2.30 = 345 unidades permitidas)."
+COEFFICIENTS,GSF,Gross Square Footage,Superficie Bruta En Pies Cuadrados,Superficie total construida que incluye el espesor y área unusable de las paredes exteriores e interiores.
+COEFFICIENTS,NSF,Net Square Footage,Superficie Neta En Pies Cuadrados,Superficie útil que sólo incluye las áreas interiores netas utilizables entre caras de paredes.
+COEFFICIENTS,NRSF,Net Rentable Square Footage,Área Neta Rentable En Pies Cuadrados,"Área neta destinada exclusivamente al alquiler, especificada en el unit mix del proyecto."
+COEFFICIENTS,AVG SF/DU,Average Square Footage Per Dwelling Unit,Área Promedio Por Unidad De Vivienda,Promedio de superficie por apartamento indicado en el unit mix. Se calcula dividiendo el NRSF total de las unidades entre el número total de unidades del edificio.
+COEFFICIENTS,LEAS,Leasable Area,Área Arrendable / Lucrativa,"Área arrendable total. Se calcula tomando el área bruta interior de todas las unidades habitables del edificio, excluyendo balcones y terrazas abiertas."
+COEFFICIENTS,NON-LSE,Non-Leasable Area,Área No Arrendable / Comunes,"Área no arrendable o zonas comunes. Comprende los espacios de circulación y servicios técnicos indispensables que no generan renta (corredores, escaleras, elevadores, cuartos eléctricos, shafts, etc.)."
+COEFFICIENTS,LSE AMEN,Leasable Amenity Area,Área De Amenidades Arrendable,Superficie destinada exclusivamente a áreas comunes de esparcimiento o amenidades sujetas a tarifa o renta.
+CALCULATIONS,RAMP,Ramp,Rampa,"Especificaciones para rampas peatonales con pendientes entre 1:20 y 1:12. Pendiente 1:20 → descanso (landing) de 5' cada 40' de tramo. Pendiente 1:16 → descanso de 5' cada 40'. Pendiente 1:12 → descanso de 5' cada 30'. Requieren pasamanos (handrail) siempre que salven un desnivel mayor a 6"". Ningún tramo individual puede superar las 30"" de elevación vertical."
+CALCULATIONS,GAR RAMP,Garage Ramp,Rampa De Garaje,"Especificaciones de rampas vehiculares. Rampa con parqueos adyacentes → pendiente máxima de 6.67% (con escaleras de salto integradas si aplica). Rampa exprés o sin parqueos (speed ramp) → pendiente máxima del 20%. Cuando la pendiente supera el 10%, se deben diseñar transiciones de 8' al inicio y final de la rampa con una pendiente equivalente a la mitad del porcentaje principal, evitando rozamientos inferiores del vehículo y garantizando visibilidad."
+CALCULATIONS,SL,Slope,Pendiente,"Pendiente. Aplica a planos con inclinaciones menores de 1:20 (usualmente expresada en fracción por pie, ej: 1/4""/FT), común en desniveles mínimos o lógicas de drenaje pluvial. Actúa también como término genérico de pendiente."
+CALCULATIONS,XSL,Cross Slope,Peralte / Pendiente Transversal,Peralte o pendiente transversal. Pendiente medida en sentido perpendicular a la directriz o pendiente principal del recorrido. El peralte máximo permitido por accesibilidad en rampas es de 1:48 (~2%).
+CALCULATIONS,VENT CALC,Vent Calculation,Cálculo De Ventilación,"Algoritmo de cálculo de ventilación en techos inclinados: 1. Aislar el área de techo (roof area) a analizar (máximo 3,000 SF por sector). 2. Ventilación requerida = área del techo (SF) / 150, multiplicado por 144 para convertir a pulgadas cuadradas (SQ IN). 3. Ventilación provista = longitud de rejillas en alero (FT) x ancho de la apertura de ventilación = valor en SQ IN. 4. Si el valor provisto es menor al requerido, añadir tejas/rejillas de ventilación adicionales (vent tiles). 5. Número de unidades complementarias = (ventilación requerida - ventilación provista) / área unitaria del vent tile."
+CALCULATIONS,GAR VENT,Garage Ventilation,Cálculo De Ventilación En Garajes,Parámetros de validación para la ventilación natural en garajes (sin sistemas mecánicos por nivel/tier): A) longitud total de aperturas en fachada debe ser >40% del perímetro total del nivel. B) el área total neta de aperturas de ventilación en fachada debe ser >20% del área bruta total de la fachada del nivel analizado por cada plano lateral. C) condición geométrica: el perímetro total multiplicado por 1.4 debe ser menor que el área en planta del nivel.
+CALCULATIONS,TRVL DIST,Travel Distance,Distancia De Evacuación,Distancia máxima de evacuación desde el punto más remoto hasta la salida segura. En tipologías residenciales con sistema de rociadores (sprinklers): máx. 250'. Sin sistema de rociadores: máx. 200'. La distancia máxima permitida para pasillos sin salida (dead-end corridors) es de 50'.
+CALCULATIONS,EGRSS CAPAC,Egress Capacity,Capacidad De Evacuación,Cálculo analítico y verificación de la capacidad de evacuación: 1. Determinar el número de ocupantes por sub-zona. 2. Aplicar los factores de carga estipulados por normativa según el uso específico del espacio (FBC tabla 1004.5). 3. Se calcula en función de un ocupante por cada X SF (área bruta o neta según el uso) o mediante asignación fija (ej: número de asientos). 4. Sumar las cargas parciales para obtener la población total de la zona. 5. Anchura requerida de puertas y vías de salida = población total x 0.2 pulgadas. 6. Comprobar que la anchura total provista (suma de vanos reales de evacuación) sea mayor a la requerida.
+CALCULATIONS,MIN DIST BTWN EXITS,Minimum Distance Between Exits,Distancia Mínima Entre Salidas,"Separación espacial mínima requerida entre vías de escape. Cuando el código exige un mínimo de 2 salidas, estas deben guardar una distancia geométrica equivalente a: A) mínimo 1/2 de la dimensión de la diagonal total del edificio o sector. B) mínimo 1/3 de dicha diagonal si el edificio cuenta con un sistema automático de rociadores."
+CALCULATIONS,FR RTG,Fire Rating,Clasificación Ante Incendios,"Resistencia y clasificación al fuego de elementos arquitectónicos. Cerramientos divisorios entre unidades (units), paredes de corredores comunes y zonas de almacenamiento → típicamente 1 hora (1h). Núcleos de escaleras de escape, huecos de elevador, cuartos de infraestructura eléctrica y shafts mecánicos o tolvas (chutes) → típicamente 2 horas (2h). Sujeto a variaciones de diseño o exigencias hasta 3h. En configuraciones de plantas en ""L"", el rating de protección cortafuegos debe extenderse un mínimo de 10' lineales a partir de la esquina interna."
+CALCULATIONS,RF PTCH XS,Roof Pitch Intersection,Intersección De Vertientes De Techo,"Cálculo geométrico de limatesas y limahoyas en cubiertas. Si dos vertientes intersectan con la misma pendiente, el ángulo en planta es de 45º. Con pendientes diferentes, el procedimiento es: 1. Ubicar el punto de inicio de la intersección en el alero del roof plan. 2. Trazar líneas de desfase (offsets) paralelos en cada vertiente a una distancia proporcional a su pendiente. 3. El desfase equivale a la distancia horizontal necesaria para que la vertiente se eleve 1' verticalmente (ej: para pendiente 3:12 es 4'; para 4:12 es 3'; para 6:12 es 2'). 4. El punto de cruce entre ambos offsets determina la directriz y el ángulo de la intersección."
+CALCULATIONS,P & P,Push & Pull,Empujar Y Jalar Puertas,"Holguras y distancias libres mínimas de maniobra para la apertura de puertas abatibles (clearances de accesibilidad ADA): A) acceso frontal: lado de jalar (pull) -> mín. 5' perpendicular / mín. 1'-6"" libre al lado del picaporte. Lado de empujar (push) -> mín. 4' perpendicular / 0"" lateral (aumenta a 1' lateral si cuenta con cerradura [latch] y cierrapuertas [closer]). B) acceso por el lado de las bisagras (hinge approach): lado de jalar -> mín. 5' perpendicular / mín. 3' lateral. Lado de empujar -> mín. 3'-6"" perpendicular / mín. 1'-10"" lateral (aumenta a 4' perpendicular si incluye latch y closer). C) acceso por el lado del picaporte (latch approach): lado de jalar -> mín. 4' perpendicular / mín. 2' lateral. Lado de empujar -> mín. 3'-6"" perpendicular / mín. 2' lateral (aumenta a 4' perpendicular si incluye closer)."
+CALCULATIONS,SP/DU,Offstreet & Onstreet Parking Count,Conteo De Plazas De Parqueo,"Cómputo de dotación de plazas de estacionamiento exigidas por proyecto. Aunque los ratios específicos dependen del código local de zonificación, las dotaciones de referencia estándar por unidad residencial son: 1 dormitorio (1BD) → 1.5 plazas/DU | 2 dormitorios (2BD) → 1.75 plazas/DU | 3 dormitorios (3BD) → 2 plazas/DU."
+CALCULATIONS,SP RATIO,Parking Ratio,Relación De Parqueos,Índice o ratio de estacionamiento. Métrica calculada dividiendo el número total de plazas de parqueo ejecutadas entre el volumen total de unidades habitacionales del proyecto.
+CALCULATIONS,BSP/SP,Bicycle Parking Count,Conteo De Parqueos Para Bicicletas,Cómputo de estacionamientos para bicicletas. La tasa de referencia estándar suele exigir 1 plaza para bicicleta por cada 10 plazas vehiculares provistas (sujeto a variaciones según el municipio).
+CALCULATIONS,"TO REJECT X"" SPH","To Reject X"" Sphere","Rechazar Esfera De X""","Criterio de seguridad geométrica para aberturas en barandillas y rejillas, impidiendo el paso de una esfera teórica de diámetro ""X"": A) entre balaustres (pickets) o tramas de malla en barandales ordinarios → restringir paso de esfera de 4"". B) hueco triangular formado entre el peldaño, la contrahuella y el carril inferior (bottom rail) en escaleras → restringir paso de esfera de 6"". C) holgura libre entre el carril inferior de la barandilla y la losa de piso terminado (slab) en balcones → restringir paso de esfera de 2""."
+CONSTRUCTION MATERIALS,MAT,Material,Material Constructivo,Material constructivo.
+CONSTRUCTION MATERIALS,CMU,Concrete Masonry Unit,Bloque De Concreto Pre-Fabricado,"Bloque de concreto pre-fabricado (típicamente de 8”, ocasionalmente de 12”)."
+CONSTRUCTION MATERIALS,CIP,Cast In Place,Ejecutado In Situ,Ejecutado in situ.
+CONSTRUCTION MATERIALS,PREFAB,Prefabricated,Pre-Fabricado,Pre-fabricado.
+CONSTRUCTION MATERIALS,LMC,Least Material Condition,Condición Constructiva Mínima,Condición constructiva con un mínimo uso de material en un área específica.
+CONSTRUCTION MATERIALS,BLK,Block,Bloque,Bloque.
+CONSTRUCTION MATERIALS,BRK,Brick,Ladrillo,Ladrillo.
+CONSTRUCTION MATERIALS,REF BRK,Refractory Brick,Ladrillo Refractario,"Ladrillo refractario (gran resistencia térmica, se utiliza usualmente para chimeneas)."
+CONSTRUCTION MATERIALS,CEM,Cement,Cemento,Cemento (conglomerante formado con caliza y arcillas calcinadas. Su principal propiedad es endurecerse tras entrar en contacto con agua).
+CONSTRUCTION MATERIALS,CTB,Cement Treated Base,Base De Cemento Tratado,Base de cemento tratado.
+CONSTRUCTION MATERIALS,MORT,Mortar,Mortero,"Mortero (mezcla de cemento, arena y agua, útil para aparejar bloques constructivos. Su proporción de agua vs cemento es alta, lo que le da cualidades adhesivas. Pero su resistencia es mucho menor que la del concreto, lo que limita su uso)."
+CONSTRUCTION MATERIALS,CONC,Concrete,Concreto,"Concreto (mezcla de cemento, arena y agua, junto con agregados como grava). Su proporción de agua vs cemento es baja, lo que le da cualidades resistivas. Gran versatilidad como material estructural (en conjunción con las varillas de armado)."
+CONSTRUCTION MATERIALS,PRE CONC,Precast Concrete,Concreto Pre-Fabricado,Concreto pre-fabricado.
+CONSTRUCTION MATERIALS,REBAR,Reinforcing Bar,Varilla De Armado,Varilla de armado.
+CONSTRUCTION MATERIALS,RC,Reinforced Concrete,Concreto Reforzado,Concreto reforzado.
+CONSTRUCTION MATERIALS,GFRC,Glass Fiber Reinforced Concrete,Concreto Reforzado Con Fibra De Vidrio,Concreto reforzado con fibra de vidrio.
+CONSTRUCTION MATERIALS,LWC,Light Weight Concrete,Concreto Ligero,Concreto ligero (por ejemplo para coberturas livianas o realizar nivelaciones).
+CONSTRUCTION MATERIALS,WD,Wood,Madera,Madera.
+CONSTRUCTION MATERIALS,LMBR,Lumber,Madera Procesada,Madera (ya cortada y/o procesada para construcción).
+CONSTRUCTION MATERIALS,SLAT,Slat,Listón De Madera,Listón de madera.
+CONSTRUCTION MATERIALS,PT WOOD,Pressure Treated Wood / Green Board,Madera Tratada A Presión,Pieza de madera tratada químicamente para evitar podredumbre o plagas.
+CONSTRUCTION MATERIALS,LVL,Laminated Veneer Lumber,Madera Laminada,Madera laminada.
+CONSTRUCTION MATERIALS,CLT,Cross Laminated Timber,Madera Laminada Cruzada,Madera laminada cruzada.
+CONSTRUCTION MATERIALS,OSB,Oriented Strand Board,Tablero De Madera Conglomerada,Tablero de madera conglomerada (usual en decks).
+CONSTRUCTION MATERIALS,MWK,Millwork,Carpintería,Carpintería.
+CONSTRUCTION MATERIALS,T&G,Tongue & Groove,Machihembrado,Machihembrado.
+CONSTRUCTION MATERIALS,PCS,Pieces,Piezas Constructivas,Piezas constructivas.
+CONSTRUCTION MATERIALS,PLWD,Plywood,Plywood,Plywood.
+CONSTRUCTION MATERIALS,CDX,Veneer Plywood,Madera Contrachapada,Madera contrachapada (usual en las láminas de revestimiento sobre las cerchas).
+CONSTRUCTION MATERIALS,PRODEMA,Prodema,Prodema,Compuesto a base madera con un núcleo de baquelita.
+CONSTRUCTION MATERIALS,BD,Board,Tablero,Tablero.
+CONSTRUCTION MATERIALS,HDBD,Hardboard,Tablero Melamina,Tablero melamina.
+CONSTRUCTION MATERIALS,MDF,Medium Density Fiberboard,Tablero Aglomerado,Tablero aglomerado.
+CONSTRUCTION MATERIALS,HDF,High Density Fiberboard / Masonite,Masonita,Masonita.
+CONSTRUCTION MATERIALS,MTL,Metal,Metal,Metal.
+CONSTRUCTION MATERIALS,HM,Hollow Metal,Metal Hueco,Metal hueco (típico para perfiles de puertas o ventanas).
+CONSTRUCTION MATERIALS,ALUM,Aluminum,Aluminio,Aluminio.
+CONSTRUCTION MATERIALS,ANOD,Anodized,Anodizado,Anodizado (tratamiento para crear una capa protectora de óxido sobre el aluminio).
+CONSTRUCTION MATERIALS,GALV,Galvanized,Galvanizado,Galvanizado (proceso para proteger un metal de la corrosión con una capa de zinc).
+CONSTRUCTION MATERIALS,GSM,Galvanized Sheet Metal,Lámina Metálica Galvanizada,Lámina metálica galvanizada.
+CONSTRUCTION MATERIALS,STL,Steel,Acero,Acero.
+CONSTRUCTION MATERIALS,SS,Stainless Steel,Acero Inoxidable,Acero inoxidable.
+CONSTRUCTION MATERIALS,WS,Weathering Steel,Acero Cortén,Acero cortén.
+CONSTRUCTION MATERIALS,CI,Cast Iron,Hierro Fundido,Hierro fundido.
+CONSTRUCTION MATERIALS,WI,Wrought Iron,Hierro Forjado,Hierro forjado.
+CONSTRUCTION MATERIALS,BRZ,Bronze,Bronce,Bronce.
+CONSTRUCTION MATERIALS,COP,Copper,Cobre,Cobre.
+CONSTRUCTION MATERIALS,BRS,Brass,Latón,Latón.
+CONSTRUCTION MATERIALS,ALLOY,Alloy,Aleación,Aleación (mezcla de varios metales).
+CONSTRUCTION MATERIALS,WELD,Welding,Soldadura,Soldadura.
+CONSTRUCTION MATERIALS,COMPOS,Composite,Compuesto,Compuesto de dos materiales distintos que trabajan mejor juntos que por separado.
+CONSTRUCTION MATERIALS,CLAD,Cladding,Revestimiento De Fachada / Cobertura,Material que cubre la superficie de un elemento para protegerlo.
+CONSTRUCTION MATERIALS,GYP,Gypsum,Yeso,Yeso.
+CONSTRUCTION MATERIALS,GWB,Gypsum Wall Board,Placa De Yeso Laminado,Placa de yeso laminado (para ejecución de paredes interiores y revestimientos).
+CONSTRUCTION MATERIALS,DW,Drywall,Placa De Yeso Laminado,Placa de yeso laminado (para ejecución de paredes interiores y revestimientos).
+CONSTRUCTION MATERIALS,MAS,Masonry,Mampostería,Mampostería.
+CONSTRUCTION MATERIALS,CER,Ceramic,Cerámica,Cerámica.
+CONSTRUCTION MATERIALS,CT,Ceramic Tile,Baldosa Cerámica,Baldosa cerámica.
+CONSTRUCTION MATERIALS,PAV,Paver,Adoquín,Adoquín.
+CONSTRUCTION MATERIALS,LINO,Linoleum,Linóleo,Linóleo (tipo de acabado para pisos).
+CONSTRUCTION MATERIALS,VIN,Vinyl,Vinilo,Vinilo (tipo de acabado para pisos).
+CONSTRUCTION MATERIALS,LVT,Luxury Vinyl Tile,Baldosa De Vinilo De Lujo,Tipo de acabado para pisos en vinilo (simulando textura de baldosa de piedra).
+CONSTRUCTION MATERIALS,LVP,Luxury Vinyl Plank,Tablón De Vinilo De Lujo,Tipo de acabado para pisos en vinilo (simulando textura de madera).
+CONSTRUCTION MATERIALS,PVMT,Pavement,Pavimento,Pavimento.
+CONSTRUCTION MATERIALS,VTC,Vehicular Traffic Coating,Pavimento Para Tráfico Vehicular,Pavimento para tráfico vehicular (en sitios con gran circulación vehicular: garajes).
+CONSTRUCTION MATERIALS,GR,Granite,Granito,Granito.
+CONSTRUCTION MATERIALS,MAR,Marble,Mármol,Mármol.
+CONSTRUCTION MATERIALS,ST VNR,Stone Veneer,Revestimiento De Piedra,Revestimiento de piedra.
+CONSTRUCTION MATERIALS,LMS,Limestone,Piedra Caliza,Piedra caliza.
+CONSTRUCTION MATERIALS,SND,Sand,Arena,Arena.
+CONSTRUCTION MATERIALS,GL,Glass,Vidrio,Vidrio.
+CONSTRUCTION MATERIALS,TGL,Tempered Glass,Vidrio Temperado,Vidrio temperado (tratamiento para aumentar la resistencia del vidrio al impacto).
+CONSTRUCTION MATERIALS,FRSTD GL,Frosted Glass,Vidrio Esmerilado / Opacado,Vidrio esmerilado / opacado (tratamiento para crear un efecto translúcido).
+CONSTRUCTION MATERIALS,STND GL,Stained Glass,Vitral / Vidriera,Vitral / vidriera.
+CONSTRUCTION MATERIALS,BVLD GL,Beveled Glass,Vidrio Biselado,Vidrio biselado.
+CONSTRUCTION MATERIALS,GL BLK,Glass Block,Bloque De Vidrio / Vitroblock,Bloque de vidrio / vitroblock.
+CONSTRUCTION MATERIALS,GL WL,Glass Wool,Lana De Vidrio,Lana de vidrio (material que sirve como aislante térmico).
+CONSTRUCTION MATERIALS,FGL,Fiberglass,Fibra De Vidrio,Fibra de vidrio (material que sirve como aislante térmico).
+CONSTRUCTION MATERIALS,PVC,Polyvinyl Chloride,PVC,PVC (cloruro de polivinilo).
+CONSTRUCTION MATERIALS,ASPH,Asphalt,Asfalto,Asfalto.
+CONSTRUCTION MATERIALS,ASPH SHNG,Asphalt Shingle,Teja Asfáltica,"Teja asfáltica (más económica que la teja regular, pero menos resistente al viento)."
+CONSTRUCTION MATERIALS,CONC RF TL,Concrete Tile,Teja De Concreto,"Teja de concreto (muy resistente y durable, generalmente se utiliza la plana)."
+CONSTRUCTION MATERIALS,SPAN/BRRL TL,Spanish Tile / Barrel Tile,Teja Cerámica / Teja Árabe,"Teja cerámica (cara pero muy resistente, sólo en pendientes mayores a 4:12)."
+CONSTRUCTION MATERIALS,RF TL,Roof Tile,Teja Regular,Teja regular.
+CONSTRUCTION MATERIALS,STND SEAM,Standing Seam,Junta Alzada,Sistema de paneles metálicos unidos con juntas verticales estancas (en techos).
+CONSTRUCTION MATERIALS,TPO,Thermoplastic Polyolefin,Poliolefina Termoplástica,Poliolefina termoplástica (se usa en techos planos para evitar absorción de calor).
+CONSTRUCTION MATERIALS,BENTO,Bentonite,Bentonita,"Bentonita (se usa para impermeabilización, típico en los fosos de elevadores)."
+CONSTRUCTION MATERIALS,EPX,Epoxy,Resina Epoxy,Resina epoxy.
+CONSTRUCTION MATERIALS,FOAM,Foam,Espuma / Estereofón,Espuma / styrofoam (estereofón).
+CONSTRUCTION MATERIALS,EPS,Expanded Polystyrene,Poliestireno Expandido,Poliestireno expandido / styrofoam (estereofón).
+CONSTRUCTION MATERIALS,INTUM,Intumescent,Material Intumescente,Material que se hincha por la exposición al calor (típico en pinturas para protección).
+CONSTRUCTION MATERIALS,PLAS,Plastic,Plástico,Plástico.
+CONSTRUCTION MATERIALS,ADH,Adhesive,Adhesivo,Adhesivo.
+CONSTRUCTION MATERIALS,GLUE,Glue,Goma Adhesiva,Goma adhesiva.
+CONSTRUCTION MATERIALS,RBR,Rubber,Hule / Caucho,Hule.
+CONSTRUCTION MATERIALS,FAB,Fabric,Tela / Tejido,Tela.
+CONSTRUCTION MATERIALS,CANV,Canvas,Lona,Lona (tejido robusto y frecuentemente impermeable).
+CONSTRUCTION MATERIALS,STCO,Stucco,Estuco,Estuco.
+CONSTRUCTION MATERIALS,SHTHG,Sheathing,Revestimiento / Entablado,Revestimiento.
+CONSTRUCTION MATERIALS,MEMB,Membrane,Membrana,Membrana.
+CONSTRUCTION MATERIALS,WRP,Wrap,Envoltura / Barrera,Envoltura.
+CONSTRUCTION MATERIALS,FIN,Finish,Repello / Acabado Superficial,Repello.
+CONSTRUCTION MATERIALS,K/D FIN,Knockdown Finish,Repellado Rugoso / Texturizado,Repellado rugoso / con texturizado.
+CONSTRUCTION MATERIALS,BROOM FIN,Broom Finish,Repellado Con Cepillo,Repellado (con cepillo).
+CONSTRUCTION MATERIALS,POLSHD,Polished,Pulido,Pulido.
+CONSTRUCTION MATERIALS,PNT,Paint,Pintura,Pintura.
+CONSTRUCTION MATERIALS,PNTD,Painted,Pintado,Pintado.
+CONSTRUCTION MATERIALS,PRIMER,Primer,Imprimación / Primera Capa,Primera capa de pintura (la base para sucesivas capas).
+CONSTRUCTION MATERIALS,COAT,Coat / Coating,Capa Superficial / Revestimiento,Capa superficial de un material aplicada sobre otro.
+CONSTRUCTION MATERIALS,EXPO,Exposed,Expuesto / Visto,"Expuesto / visto (material mostrado tal como es sin revestir, eg: concreto expuesto)."
+CONSTRUCTION MATERIALS,PALLET,Pallet,Pallet / Palé,Pallet (plataforma de madera para mover o almacenar materiales/elementos en obra).
+CONSTRUCTION MATERIALS,STKPILE,Stockpile,Acopio De Material,Acopio de material (generalmente en obra).
+CONSTRUCTION ELEMENTS,CONST,Construction,Construcción,Construcción.
+CONSTRUCTION ELEMENTS,EWS,External Wall System,Sistema De Muros Perimetrales,Sistema de muros perimetrales.
+CONSTRUCTION ELEMENTS,VBS,Vanilla Box Shell,Espacio En Bruto,Espacio construido vacío para que el cliente tenga libertad de customizar el interior.
+CONSTRUCTION ELEMENTS,LBW,Load Bearing Wall,Muro De Carga,Muro de carga (pared con función estructural).
+CONSTRUCTION ELEMENTS,NBW,Non Bearing Wall,Muro No Estructural,Muro no estructural (soporta únicamente su propio peso).
+CONSTRUCTION ELEMENTS,SHR WALL,Shear Wall,Muro Cortante,"Muro cortante (posee gran resistencia a esfuerzos laterales, como viento o sismos)."
+CONSTRUCTION ELEMENTS,TNL WALL,Tunnel Wall,Pared Tipo Túnel,"Pared ""tipo túnel"" (para estructuras modulares o repetitivas, agiliza la construcción)."
+CONSTRUCTION ELEMENTS,RTN WALL,Retaining Wall,Muro De Retención,Muro de retención (su función es retener masas de terreno).
+CONSTRUCTION ELEMENTS,BULKHD,Bulkhead,Muro De Retención Marítimo,"Muro de retención (retiene tierra a un lado del muro, mientras que al otro hay agua)."
+CONSTRUCTION ELEMENTS,DMS WALL,Demising Wall,Pared Divisoria / Medianera,Pared divisoria / medianera.
+CONSTRUCTION ELEMENTS,CRTN WALL,Curtain Wall,Muro Cortina,Muro cortina (sistema exterior auto-portante generalmente ligero y acristalado). Sistema recomendable para acristalamientos de más de 12' de alto.
+CONSTRUCTION ELEMENTS,BLND WALL,Blind Wall,Muro Ciego,Muro exterior sin ventanas ni puertas.
+CONSTRUCTION ELEMENTS,GRN WALL,Green Wall,Muro Verde,Muro cubierto de vegetación.
+CONSTRUCTION ELEMENTS,PRV WALL,Privacy Wall,Muro De Privacidad,Muro de separación entre balcones contiguos de unidades diferentes.
+CONSTRUCTION ELEMENTS,LW WALL,Low Wall,Pared Baja / Murete,Pared baja / murete.
+CONSTRUCTION ELEMENTS,PARAP,Parapet,Parapeto,Parapeto.
+CONSTRUCTION ELEMENTS,PTN,Partition,Tabique / Pared Liviana,"Tabique / pared liviana (sin función estructural, sólo de división espacial)."
+CONSTRUCTION ELEMENTS,BTTR,Batter,Talud,Talud.
+CONSTRUCTION ELEMENTS,COL,Column,Columna,Columna.
+CONSTRUCTION ELEMENTS,PIL,Pillar,Pillar,"Pilar (frecuentemente es sinónimo de columna, pero en ocasiones también puede ser un elemento decorativo aislado, sin función estructural)."
+CONSTRUCTION ELEMENTS,PILSTR,Pilaster,Pilastra,Pilastra (usualmente de sección rectangular y semi-embebida contra una pared).
+CONSTRUCTION ELEMENTS,PDSTL,Pedestal,Pedestal,Base de apoyo de una columna.
+CONSTRUCTION ELEMENTS,SLB,Slab,Losa,Losa.
+CONSTRUCTION ELEMENTS,1-W JST SLB,One Way Joist Slab,Losa Unidireccional,Losa unidireccional (cuyas viguetas van sólo en una dirección).
+CONSTRUCTION ELEMENTS,2-W JST SLB,Two Way Joist Slab,Losa Bidireccional,Losa bidireccional (cuyas viguetas se entrecruzan en forma de retícula).
+CONSTRUCTION ELEMENTS,WFL SLB,Waffle Slab,Losa Reticular / Waffle,Losa bidireccional (cuyas viguetas se entrecruzan en forma de retícula).
+CONSTRUCTION ELEMENTS,FND SLB,Foundation Slab,Losa De Cimentación,Losa de cimentación.
+CONSTRUCTION ELEMENTS,WRP SLB,Warp Slab,Losa Alabeada,Losa alabeada (inclinada siguiendo una curvatura alabeada).
+CONSTRUCTION ELEMENTS,TOPPING SLB,Topping Slab,Losa De Cobertura,Losa de cobertura (se cubre una losa ya existente con un concreto resistente).
+CONSTRUCTION ELEMENTS,RC SLAB,Reinforced Concrete Slab,Losa De Concreto Reforzado,Losa de concreto reforzado (la losa de uso más habitual).
+CONSTRUCTION ELEMENTS,PT SLAB,Post-Tension Slab,Losa Postensada,"Losa postensada (se le aplica tensión mediante cables de alta resistencia, a través de los anclajes. Ventaja: menor cantidad de concreto y más altura libre. Desventaja: tendencia a formarse grietas en la losa)."
+CONSTRUCTION ELEMENTS,RBBN SLB,Ribbon Slab,Losa Postensada De Cimentación,Losa postensada en la que los cables de alta resistencia discurren por la superficie de la losa. Útil en cimentación para usos con alta ocupación o grandes cargas.
+CONSTRUCTION ELEMENTS,FND,Foundation,Cimentación,Cimentación.
+CONSTRUCTION ELEMENTS,FTG,Footing,Zapata,Zapata.
+CONSTRUCTION ELEMENTS,PILE,Pile,Pilote,Pilote (cimentación profunda).
+CONSTRUCTION ELEMENTS,BM,Beam,Viga,Viga.
+CONSTRUCTION ELEMENTS,HST BM,Hoist Beam,Viga De Elevación / Izado,Viga de elevación / de izado (típica en la parte superior de elevadores).
+CONSTRUCTION ELEMENTS,DIV BM,Divider Beam,Viga Divisora,"Viga divisora (en elevadores dobles/triples, se usa cuando comparten un sólo shaft)."
+CONSTRUCTION ELEMENTS,BND BM,Bond Beam,Viga Perimetral,Viga perimetral (suele utilizarse en los muros perimetrales de CMU).
+CONSTRUCTION ELEMENTS,TIE BM,Tie Beam,Viga De Atado,"Viga de atado (en los techos, conecta cerchas opuestas rigidizando a la estructura)."
+CONSTRUCTION ELEMENTS,UPT BM,Upturn Beam,Viga De Repunte,Viga de repunte (sobresale hacia arriba respecto a la losa).
+CONSTRUCTION ELEMENTS,RK BM,Rake Beam,Viga Inclinada,"Viga inclinada (para estabilidad en elementos con inclinación, como gable ends)."
+CONSTRUCTION ELEMENTS,RDG BM,Ridge Beam,Viga Corona / Cumbrera,Viga corona (para soportar los extremos superiores de las cerchas en la cumbrera).
+CONSTRUCTION ELEMENTS,XFR BM,Transfer Beam,Viga De Transferencia,Viga de transferencia (cuando las columnas/muros no están verticalmente alineados).
+CONSTRUCTION ELEMENTS,CANT BM,Cantilever Beam,Viga En Voladizo,"Viga en voladizo (viga fijada/empotrada en un extremo, y libre en el otro, en voladizo)."
+CONSTRUCTION ELEMENTS,BRC BM,Brace Beam,Viga Riostra,"Viga riostra (viga con función estructural secundaria, para arriostramiento)."
+CONSTRUCTION ELEMENTS,FIXD BM,Fixed Beam,Viga Bi-Empotrada,Viga bi-empotrada (viga fijada/empotrada en sus dos extremos).
+CONSTRUCTION ELEMENTS,JST,Joist,Vigueta,Vigueta.
+CONSTRUCTION ELEMENTS,RFTR,Rafter,Cercha In Situ,Cercha de madera o metal (creada in situ).
+CONSTRUCTION ELEMENTS,TRSS,Truss,Cercha Prefabricada,Cercha de madera o metal (pre-fabricada).
+CONSTRUCTION ELEMENTS,GIRDER TRSS,Girder Truss,Cercha Principal,"Cercha principal (tiene la función especial de soportar otras cerchas, usualmente se ubican en hips, valleys o en intersecciones de gables con el roof principal)."
+CONSTRUCTION ELEMENTS,TOP CHRD,Top Chord,Cordón Superior,Cordón superior de una cercha.
+CONSTRUCTION ELEMENTS,BTM CHRD,Bottom Chord,Cordón Inferior,Cordón inferior de una cercha.
+CONSTRUCTION ELEMENTS,TCB,Top Chord Bearing,Apoyo En Cordón Superior,Tipo de techo en el que el alero continúa bajando por debajo del TOB.
+CONSTRUCTION ELEMENTS,BCE,Bottom Chord Extended,Cordón Inferior Extendido,Tipo de techo en el que el alero comienza a subir a partir del TOB.
+CONSTRUCTION ELEMENTS,KING POST,King Post,Pendolón,"Pendolón (poste central de una cercha, que une la cumbrera con el cordón inferior)."
+CONSTRUCTION ELEMENTS,FLG,Flange,Patín / Ala,Patín / ala (en una viga o perfil metálico).
+CONSTRUCTION ELEMENTS,WEB,Web,Alma,Alma (en una viga o perfil metálico).
+CONSTRUCTION ELEMENTS,PURL,Purlin,Perfil Metálico Laminado En Frío,"Perfil metálico (uso en techos. Su grosor fino es constante en toda su sección. Se produce a partir de rollos laminados en frío, el perfil más habitual es el C o el Z)."
+CONSTRUCTION ELEMENTS,CHNL,Channel,Perfil Metálico Laminado En Caliente,"Perfil metálico (uso versátil. Su grosor es mayor en el alma y menor en las alas. Dado su grosor, posee una mayor resistencia, y proporciona mayor estabilidad. Se produce laminado en caliente, el perfil más habitual es el C o el MC)."
+CONSTRUCTION ELEMENTS,X-BRC,X-Bracing,Arriostramiento En X,Arriostramiento en X (diagonales de amarre para estabilizar / rigidizar la estructura).
+CONSTRUCTION ELEMENTS,HIP RF,Hip Roof,Techo A Cuatro Aguas,Techo a cuatro aguas.
+CONSTRUCTION ELEMENTS,GAB RF,Gable Roof,Techo A Dos Aguas,Techo a dos aguas.
+CONSTRUCTION ELEMENTS,DTCH GAB RF,Dutch Gable Roof,Techo Holandés,"Techo holandés (a cuatro aguas, pero con el remate final en dos aguas)."
+CONSTRUCTION ELEMENTS,MNSRD RF,Mansard Roof,Techo Amansardado,Techo amansardado (con vertientes quebradas).
+CONSTRUCTION ELEMENTS,GMBRL RF,Gambrel Roof,Techo Abuhardillado A Dos Aguas,Techo abuhardillado a dos aguas (techo simétrico con dos pendientes a cada lado).
+CONSTRUCTION ELEMENTS,PTCHD RF,Pitched Roof,Techo Inclinado,Techo inclinado.
+CONSTRUCTION ELEMENTS,FLT RF,Flat Roof,Techo Plano,Techo plano.
+CONSTRUCTION ELEMENTS,ELEV RF,Elevated Roof,Techo Plano Elevado,Techo plano elevado respecto al principal.
+CONSTRUCTION ELEMENTS,RAH,Roof Access Hatch,Acceso Al Techo,Acceso al techo.
+CONSTRUCTION ELEMENTS,RF VENT,Roof Vent,Ventilación De Techo,Elementos de ventilación en el techo.
+CONSTRUCTION ELEMENTS,RFNG,Roofing,Techado,Techado (cobertura del techo).
+CONSTRUCTION ELEMENTS,CNT STRP,Cant Strip,Listón Achaflanado,Listón achaflanado que se coloca en las esquinas del roofing contra los parapetos.
+CONSTRUCTION ELEMENTS,PAD,Walking Pad,Planchas De Hule Transitables,Planchas de hule en el techo formando un camino para hacerlo transitable. Su recorrido debe dar acceso a todas las unidades de aire en el techo.
+CONSTRUCTION ELEMENTS,HIP,Hip,Limatesa / Limatón,"Limatesa / limatón (intersección entre dos vertientes del techo, en ángulo convexo)."
+CONSTRUCTION ELEMENTS,VALLEY,Valley,Limahoya,"Limahoya (intersección entre dos vertientes del techo, en ángulo cóncavo)."
+CONSTRUCTION ELEMENTS,RDG,Ridge,Cumbrera,Cumbrera.
+CONSTRUCTION ELEMENTS,RF CRKT,Cricket,Techo Falso Botaguas,Techo falso (sirve para evitar que el agua se acumule contra elementos verticales).
+CONSTRUCTION ELEMENTS,GAB,Gable End,Tapichel / Hastial,Tapichel / hastial (parte triangular sobre la que descansa el techo a dos aguas).
+CONSTRUCTION ELEMENTS,EAVE,Eave,Alero,Alero.
+CONSTRUCTION ELEMENTS,VLT,Vault,Bóveda,Bóveda.
+CONSTRUCTION ELEMENTS,XVLT,Cross Vault,Bóveda De Arista,Bóveda de arista.
+CONSTRUCTION ELEMENTS,BARR VLT,Barrel Vault,Bóveda De Cañón,Bóveda de cañón.
+CONSTRUCTION ELEMENTS,ARCHWY,Archway,Arcada,Arcada.
+CONSTRUCTION ELEMENTS,ARCH ST,Arch Stone,Dovela,Dovela.
+CONSTRUCTION ELEMENTS,KEY ST,Keystone,Clave,Clave (bloque que remata la parte superior de un arco).
+CONSTRUCTION ELEMENTS,HRNGBNE,Herringbone,Espina De Pez,Espina de pez (patrón de colocación de bloques en forma trabada).
+CONSTRUCTION ELEMENTS,DOME,Dome,Domo / Cúpula,Domo / cúpula.
+CONSTRUCTION ELEMENTS,BUTRSS,Buttress,Contrafuerte,Contrafuerte.
+CONSTRUCTION ELEMENTS,FLYN BUTRSS,Flying Buttress,Arbotante,Arbotante.
+CONSTRUCTION ELEMENTS,FASC,Fascia,Precinta,Precinta (generalmente suele ser una pieza de 2”x8”).
+CONSTRUCTION ELEMENTS,NLR,Nailer,Clavador,"Clavador (pieza que va unida a la fascia, generalmente de 1”x2”)."
+CONSTRUCTION ELEMENTS,FRZ,Frieze,Friso,"Friso (banda horizontal decorativa, generalmente con arte esculpido)."
+CONSTRUCTION ELEMENTS,MLD,Molding,Moldura,Moldura (término general para todos los tipos).
+CONSTRUCTION ELEMENTS,TRM,Trim,Moldura En Banda,"Moldura en forma de banda (usual alrededor de ventanas, puertas o para zócalos)."
+CONSTRUCTION ELEMENTS,QUOIN,Quoin,Remate En Esquina,Remate en esquina de bloques de mampostería.
+CONSTRUCTION ELEMENTS,WALL COPING,Wall Coping,Remate Superior De Muro,Remate en forma de banda en la parte superior de un muro.
+CONSTRUCTION ELEMENTS,CAP,Cap,Tapa / Remate Superior,Tapa o remate superior de un elemento.
+CONSTRUCTION ELEMENTS,BASEBD,Baseboard,Rodapié / Zócalo,Pieza en la base de paredes interiores para protección/decoración.
+CONSTRUCTION ELEMENTS,CRWN MLD,Crown Moulding,Cornisa,"Cornisa (moldura en el techo, para ocultar la unión entre el mismo y las paredes)."
+CONSTRUCTION ELEMENTS,SHIM,Shim,Calce,Calce.
+CONSTRUCTION ELEMENTS,SCORE LN,Score Line,Línea De Marcado,"Línea de marcado (con función decorativa en elevaciones, típica de stucco y 1” máx)."
+CONSTRUCTION ELEMENTS,RVL,Reveal,Superficie En Receso,Superficie de un elemento en receso en fachada (como un opening o un score line).
+CONSTRUCTION ELEMENTS,RECESS,Recess,Remetido / Quiebre,Remetido (generalmente se refiere a un quiebre en fachada metido hacia dentro).
+CONSTRUCTION ELEMENTS,WIN,Window,Ventana,Ventana.
+CONSTRUCTION ELEMENTS,HRW,Horizontal Roller Window,Ventana Corrediza Horizontal,Ventana corrediza horizontal.
+CONSTRUCTION ELEMENTS,SHW,Single Hung Window,Ventana De Guillotina,Ventana de guillotina.
+CONSTRUCTION ELEMENTS,DHW,Double Hung Window,Ventana De Guillotina Doble,Ventana de guillotina doble.
+CONSTRUCTION ELEMENTS,FW,Fixed Window,Ventana Fija,Ventana fija.
+CONSTRUCTION ELEMENTS,CSMT WIN,Casement Window,Ventana Abatible,Ventana abatible.
+CONSTRUCTION ELEMENTS,ST,Storefront,Ventanal,"Ventanal (usual en ciertas áreas comunes o zonas de uso comercial, altura máx 12')."
+CONSTRUCTION ELEMENTS,SKYLT,Skylight,Lucernario / Claraboya,Lucernario / claraboya.
+CONSTRUCTION ELEMENTS,DRMR,Dormer,Ventana Abuhardillada,Ventana abuhardillada (que sobresale en un techo inclinado).
+CONSTRUCTION ELEMENTS,BULL'S EYE,Bull's Eye / Oculus,Ventana De Ojo De Buey / Óculo,Ventana de ojo de buey / óculo (ventana circular).
+CONSTRUCTION ELEMENTS,MULL,Mullion,Cuarterón,Cuarterón (soporte estructural del panel de vidrio).
+CONSTRUCTION ELEMENTS,MUNT,Muntin,Parteluz,"Parteluz (división sin soporte del panel de vidrio, más delgada que el mullion)."
+CONSTRUCTION ELEMENTS,GLZ,Glazing,Acristalamiento,Panel de vidrio de la ventana/puerta.
+CONSTRUCTION ELEMENTS,DR,Door,Puerta,Puerta.
+CONSTRUCTION ELEMENTS,SOLID DR,Solid Door,Puerta Sólida,Puerta sólida (generalmente de madera o metálica).
+CONSTRUCTION ELEMENTS,FRNCH DR,French Door,Puerta Con Paneles De Vidrio,Puerta con paneles de vidrio.
+CONSTRUCTION ELEMENTS,LVRD DR,Louvered Door,Puerta Con Lamas,Puerta con lamas.
+CONSTRUCTION ELEMENTS,SW DR,Swing Door,Puerta Abatible / Batiente,Puerta abatible / batiente.
+CONSTRUCTION ELEMENTS,SGD,Sliding Glass Door,Puerta Corrediza De Vidrio,Puerta corrediza de vidrio.
+CONSTRUCTION ELEMENTS,BFLD DR,Bifold Door,Puerta Plegable,Puerta plegable.
+CONSTRUCTION ELEMENTS,PKT DR,Pocket Door,Puerta Corrediza Empotrada,Puerta corrediza (que queda oculta dentro de la pared).
+CONSTRUCTION ELEMENTS,BRN DR,Barn Door,Puerta Corrediza Tipo Establo,Puerta corrediza (desliza gracias a una línea de guía sobre la puerta).
+CONSTRUCTION ELEMENTS,BYP DR,Bypass Door,Puerta Corrediza Derivada,Puerta corrediza (similar a barn door pero con paneles deslizantes independientes).
+CONSTRUCTION ELEMENTS,ROLL UP DR,Roll-Up Door,Puerta Persiana,Puerta persiana (generalmente para garajes de viviendas o carports).
+CONSTRUCTION ELEMENTS,HPR DR,Hopper Door,Puerta Tipo Tolva,"Puerta “tipo tolva” (típica en los trash chutes, con sistema de cierre automático)."
+CONSTRUCTION ELEMENTS,REV DR,Revolving Door,Puerta Giratoria,Puerta giratoria.
+CONSTRUCTION ELEMENTS,LND DR,Landing Door,Puerta Del Elevador,Puerta del elevador.
+CONSTRUCTION ELEMENTS,SLF-CLSNG,Self-Closing,Sistema De Cierre Automático,Con sistema de cierre automático.
+CONSTRUCTION ELEMENTS,GTE,Gate,Portón,Portón (típico dentro de los edificios de garaje).
+CONSTRUCTION ELEMENTS,ROLL UP GTE,Roll-Up Gate,Portón Tipo Persiana,Portón tipo persiana (típico dentro de los edificios de garaje).
+CONSTRUCTION ELEMENTS,BAR GTE,Barrier Arm Gate,Portón Tipo Barrera,Portón tipo barrera (típico dentro de los edificios de garaje).
+CONSTRUCTION ELEMENTS,HR GTE,Horizontal Roller Gate,Portón Corredizo,Portón corredizo (típico dentro de los edificios de garaje).
+CONSTRUCTION ELEMENTS,THOLD,Threshold,Umbral,Umbral (usualmente aplica al límite inferior de una puerta).
+CONSTRUCTION ELEMENTS,FRM,Frame,Marco,Marco.
+CONSTRUCTION ELEMENTS,JMB,Jamb,Jamba,"Jamba (partes verticales del marco de la puerta / ventana, que sostienen el dintel)."
+CONSTRUCTION ELEMENTS,LINT,Lintel,Dintel De Obra,Dintel (típico sobre puertas / ventanas) → Usual en construcción en ladrillo / bloque.
+CONSTRUCTION ELEMENTS,HDR,Header,Dintel De Madera,Dintel (típico sobre puertas / ventanas) → Usual en construcción en madera.
+CONSTRUCTION ELEMENTS,SILL,Sill,Alféizar / Banquina,Alféizar / banquina (de una ventana).
+CONSTRUCTION ELEMENTS,TRSM,Transom,Montante,Montante (ventana sobre una puerta/ventana).
+CONSTRUCTION ELEMENTS,SDLT,Sidelite / Sidelight,Panel De Vidrio Lateral,Panel de vidrio lateral (ocasionalmente junto a algunas puertas).
+CONSTRUCTION ELEMENTS,PH,Panic Hardware,Barra Anti-Pánico,Barra anti-pánico (sistema que garantiza la apertura de la puerta en una emergencia).
+CONSTRUCTION ELEMENTS,HNG,Hinge,Bisagra,"Bisagra (normalmente una central, una abajo a 13” máx y una arriba a 11.75” máx)."
+CONSTRUCTION ELEMENTS,LTCH,Latch,Pestillo,Pestillo.
+CONSTRUCTION ELEMENTS,KNB,Knob,Pomo / Manija Circular,Pomo / manija circular (a una altura mínima de 34” desde el suelo acabado).
+CONSTRUCTION ELEMENTS,HNDLE,Handle,Manija,Manija (a una altura mínima de 34” desde el suelo acabado).
+CONSTRUCTION ELEMENTS,LOCK,Lock,Cerrojo,Cerrojo.
+CONSTRUCTION ELEMENTS,PPHL,Peephole,Mirilla,Mirilla.
+CONSTRUCTION ELEMENTS,ELEV,Elevator,Elevador,Elevador (rating de 2h hasta 3 niveles / rating de 2h para más de 3 niveles).
+CONSTRUCTION ELEMENTS,SERV ELEV,Service Elevator,Elevador De Servicio,Elevador de servicio (para trasladar equipo y utensilios del edificio).
+CONSTRUCTION ELEMENTS,FE,Freight Elevator,Montacargas,"Montacargas (para trasladar elementos pesados, como mobiliario)."
+CONSTRUCTION ELEMENTS,PE,Passenger Elevator,Elevador De Pasajeros,Elevador para uso de personas.
+CONSTRUCTION ELEMENTS,ELEV CAR,Elevator Car,Cabina Del Elevador,Cabina del elevador.
+CONSTRUCTION ELEMENTS,ELEV TRVL,Elevator Travel,Trayecto Del Elevador,Distancia que recorre el elevador desde el primer piso hasta el último.
+CONSTRUCTION ELEMENTS,PIT,Elevator Pit / Sump Pit,Foso Del Elevador,"Foso del elevador (fondo típico es de 5', aunque puede ser más en ciertos casos)."
+CONSTRUCTION ELEMENTS,SUMP PUMP,Sump Pump,Bomba De Sumidero,Bomba que expulsa al exterior el agua acumulada en el foso del elevador.
+CONSTRUCTION ELEMENTS,HOOD,Hood,Cubierta De Louver,Cubierta (típica sobre el louver que ventila el hueco del elevador en el techo).
+CONSTRUCTION ELEMENTS,STR,Stair,Escaleras,Escaleras (rating de 2h hasta 3 niveles / rating de 2h para más de 3 niveles).
+CONSTRUCTION ELEMENTS,JMP STR,Jump Stair,Escaleras De Salto,Escaleras (pequeño tramo para conectar los dos laterales de un garaje). A veces son necesarias para poder cumplir la ruta de evacuación en Life Safety.
+CONSTRUCTION ELEMENTS,CONV STR,Convenience Stair,Escaleras De Conveniencia,Escaleras de conveniencia (no poseen pared de separación con el edificio).
+CONSTRUCTION ELEMENTS,SPI STR,Spiral Stair,Escalera De Caracol,Escalera de caracol.
+CONSTRUCTION ELEMENTS,SCSR STR,Scissor Stair,Escalera De Tijera,Escalera de tijera (poseen doble subida y bajada).
+CONSTRUCTION ELEMENTS,LDR,Ladder,Escalera De Mano,Escalera de mano (cuando tienen más de 10' de alto -> necesario bracket intermedio).
+CONSTRUCTION ELEMENTS,LND,Landing,Descanso,Descanso (en una rampa o escalera).
+CONSTRUCTION ELEMENTS,FLGHT,Flight,Tramo De Escalera,Tramo de escalera (entre dos descansos). No puede subir más de 12' seguidos sin descansos.
+CONSTRUCTION ELEMENTS,T,Tread,Huella De Escalera,"Huella de escalera. Típica de 11”, en townhomes mín 10” y en exteriores ocasionalmente de 12”."
+CONSTRUCTION ELEMENTS,R,Riser,Contrahuella De Escalera,"Contrahuella de escalera. Límite máximo general de 7”, y en townhomes de 7 3/4”."
+CONSTRUCTION ELEMENTS,STR NSNG,Stair Nosing,Mamperlán / Pirlán,Mamperlán / pirlán (remate de 1” al final de cada escalón).
+CONSTRUCTION ELEMENTS,BULLNS,Bullnose,Extensión Lateral Redondeada,Extensión lateral (normalmente redondeada) de los peldaños iniciales de la escalera.
+CONSTRUCTION ELEMENTS,STRINGR,Stringer,Zanca / Viga De Escalera,Zanca / viga de escalera.
+CONSTRUCTION ELEMENTS,RUNG,Rung,Barra Peldaño,Barra que sirve como peldaño en una escalera de mano (separadas de forma equidistante entre 10” y 14”).
+CONSTRUCTION ELEMENTS,RLG,Railing,Barandilla,"Barandilla (típica de 3'-6” de altura o 4'-0” en balcones del 1F hacia un courtyard). Se refiere al conjunto completo de la barandilla, incluyendo sus distintas partes."
+CONSTRUCTION ELEMENTS,PKT RLG,Picket Railing,Barandilla De Postes Verticales,Barandilla de postes verticales (separación máxima entre postes = 4”).
+CONSTRUCTION ELEMENTS,GL RLG,Glass Railing,Barandilla Acristalada,Barandilla acristalada.
+CONSTRUCTION ELEMENTS,MSH RLG,Mesh Railing,Barandilla Tipo Malla,Barandilla “tipo malla” (separación máxima entre postes de apoyo = 4').
+CONSTRUCTION ELEMENTS,CABLE RLG,Cable Railing,Barandilla De Cables,Barandilla de cables (mínima obstrucción de vistas. Separación máx entre cables = 4”).
+CONSTRUCTION ELEMENTS,HDRL,Handrail,Pasamanos,"Pasamanos (típico de 2'-10” de altura, y sobresale 12” respecto al último riser)."
+CONSTRUCTION ELEMENTS,CN RL,Cane Rail,Barandilla De Protección Baja,"Barandilla (típica de 2'-3” de altura, bajo la escaleras, como protección)."
+CONSTRUCTION ELEMENTS,GRDRL,Guardrail,Barandilla De Defensa / Guardacuerpo,"Barandilla (típica de 3'-6” de altura, función de barrera para evitar caída al vacío)."
+CONSTRUCTION ELEMENTS,BAR CABLES,Barrier Cables,Barandilla De Cables De Garaje,"Barandilla de cables (típica en los garajes como elemento de protección). Suelen tener una altura de 3'-6”, en ocasiones van montadas sobre un bordillo de 4”. La separación típica entre cada uno de los cables es de 4”."
+CONSTRUCTION ELEMENTS,VEH BAR,Vehicular Barrier,Refuerzo Vehicular,Refuerzo de concreto de 2'-9” mín en la base de paredes de circulación del garaje.
+CONSTRUCTION ELEMENTS,BOL,Bollard,Bolardo,Bolardo (postes verticales de seguridad para delimitar el tráfico). Separación: 3' a 5'.
+CONSTRUCTION ELEMENTS,PAVNG,Paving,Pavimento,Pavimento.
+CONSTRUCTION ELEMENTS,CRB,Curb,Bordillo,Bordillo.
+CONSTRUCTION ELEMENTS,C&G,Curb & Gutter,Bordillo Con Canoa,Bordillo con canoa.
+CONSTRUCTION ELEMENTS,WHLSTP,Wheelstop,Bordillo De Tope,Bordillo de tope en la plaza de parqueo.
+CONSTRUCTION ELEMENTS,CHMNY,Chimney,Chimenea Conducto,Chimenea (hace referencia al conducto vertical que deja salir el humo).
+CONSTRUCTION ELEMENTS,FPL,Fireplace,Hogar De Chimenea,Chimenea (hace referencia a la parte baja que da a la sala).
+CONSTRUCTION ELEMENTS,BALC,Balcony,Balcón,Balcón.
+CONSTRUCTION ELEMENTS,JLT BALC,Juliet Balcony,Balcón Tipo Julieta,Balcón tipo Julieta (usualmente sobresalen máx 1' y tienen un fin decorativo).
+CONSTRUCTION ELEMENTS,FAUX BALC,Faux Balcony,Balcón Falso,"Balcón falso (suelen ser similares a los Julieta, sólo que abajo no tienen deck)."
+CONSTRUCTION ELEMENTS,GRILLE,Grille,Reja,Reja (generalmente metálica y en fachada con función decorativa o de seguridad).
+CONSTRUCTION ELEMENTS,MSH,Mesh,Malla,"Malla (generalmente en balcones, con una retícula mucho más fina que el grille)."
+CONSTRUCTION ELEMENTS,LTTC,Lattice,Entramado / Celosía,Entramado (típico en cercas/vallas de metal o madera con una retícula cuadrada).
+CONSTRUCTION ELEMENTS,LATH,Lath,Mallazo / Metal Desplegado,Mallazo (malla de metal usualmente utilizada en sistemas de impermeabilización).
+CONSTRUCTION ELEMENTS,BIRD SCR,Bird Screen,Malla Anti-Pájaros,Malla anti-pájaros (rejilla que protege huecos de ventilación ante entrada de pájaros).
+CONSTRUCTION ELEMENTS,IS,Insect Screen,Mosquitera,Mosquitera (pantalla para evitar el paso de zancudos).
+CONSTRUCTION ELEMENTS,SDNG,Siding,Revestimiento Exterior,"Revestimiento exterior (típico de 6” o 8”, con solape mínimo entre piezas de 1 1/4”)."
+CONSTRUCTION ELEMENTS,LAP SDNG,Lap Siding,Revestimiento Horizontal Solapado,Revestimiento (con bandas horizontales solapadas).
+CONSTRUCTION ELEMENTS,BD SDNG,Board Siding,Revestimiento En Paneles,Revestimiento (con paneles sobre listones guía y sin solapamiento).
+CONSTRUCTION ELEMENTS,BRKT,Bracket,Ménsula,"Ménsula (elemento decorativo típico en los aleros, con diagonal de soporte)."
+CONSTRUCTION ELEMENTS,OUTLKR,OutlookER,Dentículo,"Dentículo (elemento decorativo típico en los aleros, más pequeño que los brackets)."
+CONSTRUCTION ELEMENTS,DECO,Decoration,Elemento Decorativo,Elemento decorativo.
+CONSTRUCTION ELEMENTS,ORNAM,Ornamentation,Decoración / Ornamentación,Decoración (término más formal que decoration e incuantificable).
+CONSTRUCTION ELEMENTS,SHTR,Shutter,Contraventana,Contraventana.
+CONSTRUCTION ELEMENTS,BHM SHTR,Bahama Shutter,Contraventana Tipo Bahamas,Tipo especial de shutter que se coloca usualmente sobre ventanas como parasol.
+CONSTRUCTION ELEMENTS,LVR,Louver,Parasol / Cortasol,Parasol / cortasol (posee lamas inclinadas para proporcionar sombra y ventilación).
+CONSTRUCTION ELEMENTS,CNPY,Canopy,Toldo / Marquesina Rígida,Toldo / marquesina (posee estructura rígida propia independiente de la pared).
+CONSTRUCTION ELEMENTS,AWN,Awning,Toldo / Marquesina Ligera,Toldo / marquesina (posee estructura liviana que depende del soporte de la pared).
+CONSTRUCTION ELEMENTS,CNPY AWN,Canopy Awning,Toldo Retráctil,"Toldo / marquesina (es similar a un awning regular, solo que es más versátil ya que es retráctil y se puede extender según se necesite, mediante control remoto)."
+CONSTRUCTION ELEMENTS,CANV AWN,Canvas Awning,Toldo De Tela / Lona,Toldo de tela / lona (posee estructura liviana que depende del soporte de la pared).
+CONSTRUCTION ELEMENTS,TRL,Trellis,Pérgola,Pérgola.
+CONSTRUCTION ELEMENTS,EYEBRW,Eyebrow,Marquesina / Ceja,"Marquesina / ceja (extensión horizontal en fachada, usualmente de concreto)."
+CONSTRUCTION ELEMENTS,FIN,Fin,Aleta Vertical,Aleta (elemento vertical no estructural unido a la pared principal del edificio).
+CONSTRUCTION ELEMENTS,ANCHR,Anchor,Anclaje,Anclaje.
+CONSTRUCTION ELEMENTS,RA,Roof Anchor,Anclaje De Techo,Anclaje de techo (sistema de seguridad en techo para evitar caída de trabajadores).
+CONSTRUCTION ELEMENTS,SA,Soffit Anchor,Anclaje De Cielo Raso,Anclaje de cielo raso (sistema de seguridad en el cielo raso).
+CONSTRUCTION ELEMENTS,AB,Anchor Bolt,Perno De Anclaje,Perno de anclaje.
+CONSTRUCTION ELEMENTS,WA,Wedge Anchor / Redhead,Anclaje De Cuña,Anclaje de cuña (se utiliza como anclaje exclusivamente en proyectos de concreto).
+CONSTRUCTION ELEMENTS,TRSS ANCHR,Truss Anchor,Anclaje De Cercha,Anclaje de cercha (elementos de unión perimetral viga-cercha para rigidización).
+CONSTRUCTION ELEMENTS,HURRIC STRP,Hurricane Strap,Tirante Anti-Huracanes,Tirante anti-huracanes (sirven para rigidizar la estructura del techo ante huracanes).
+CONSTRUCTION ELEMENTS,PT,Pressure Treated,Tratamiento Químico A Presión,Con tratamiento químico para evitar podredumbre o plagas (típico en fascias/nailers).
+CONSTRUCTION ELEMENTS,FLASH,Flashing,Botaguas,Botaguas.
+CONSTRUCTION ELEMENTS,ZFLASH,Counterflashing / Z Flashing,Contra-Botaguas / Botaguas En Z,"Botaguas (se utiliza para cubrir el flashing, y así prevenir la entrada de humedad)."
+CONSTRUCTION ELEMENTS,VFLASH,Valley Flashing,Botaguas De Limahoya,Botaguas (específicamente el colocado en las limahoyas del techo).
+CONSTRUCTION ELEMENTS,EJ,Expansion Joint,Junta De Expansión,"Junta de expansión (para mitigar los cambios expansivos del material, de 1” o 2”)."
+CONSTRUCTION ELEMENTS,CJ,Construction Joint,Junta De Construcción,Junta de construcción (derivada del proceso constructivo en obra).
+CONSTRUCTION ELEMENTS,CTRJ,Control Joint / Contraction Joint,Junta De Control,Junta de control (para controlar la forma de agrietado del elemento constructivo).
+CONSTRUCTION ELEMENTS,CLK,Caulking,Calafateado / Sellado Simple,Calafateado (sellado/cierre de una junta con masilla).
+CONSTRUCTION ELEMENTS,SNT,Sealant,Sellante Elástico,"Sellante (más versátil que el caulking, por su elasticidad y por ser resistente al agua)."
+CONSTRUCTION ELEMENTS,BCKR ROD,Backer Rod,Varilla De Respaldo,Varilla de respaldo (cordón de polietileno colocado en las juntas antes de sellarse).
+CONSTRUCTION ELEMENTS,CRNR BEAD,Corner Bead,Guardaesquinas,Guardaesquinas (refuerzo para proteger la esquina de un elemento).
+CONSTRUCTION ELEMENTS,DRIP,Drip Inducer / Water Cut,Cortalágrimas,Cortalágrimas (en elementos en voladizo para evitar que el agua llegue a fachada).
+CONSTRUCTION ELEMENTS,DRIP EDGE,Drip Edge,Cortalágrimas De Alero,Cortalágrimas (específicamente el que se coloca sobre el nailer en los aleros).
+CONSTRUCTION ELEMENTS,TROWELLD,Trowelled,Junta Alisada Con Llana,Rematado de junta en la que se elimina el exceso de mortero → Acabado poroso.
+CONSTRUCTION ELEMENTS,TOOLD,Tooled,Junta Perfilada Con Herramienta,Rematado de junta en la que queda cóncava → Mortero comprimido.
+CONSTRUCTION ELEMENTS,FS,Free Standing,Elemento Independiente / Exento,Elemento independiente / exento.
+CONSTRUCTION ELEMENTS,FURR,Furring,Forro / Trasdosado Estándar,"Forro (típicamente separado de la pared 1 3/8” y con grosor de 5/8” → Total = 2”). Se coloca en la cara interior de las paredes de bloque o concreto con algunas excepciones (staircases, shafts, trash room, elec rooms, garage...)."
+CONSTRUCTION ELEMENTS,FURRT,Furrout,Forro Recrecido,Forro recrecido (generalmente para esconder ductos o mejorar la insulación).
+CONSTRUCTION ELEMENTS,INSUL,Insulation,Aislamiento / Insulación,"Insulación / aislante (llevan un grado tipo R-número, que define su grosor)."
+CONSTRUCTION ELEMENTS,BATT INSUL,Batt Insulation,Aislamiento Laminado Pre-Cortado,Insulación laminada (pre-cortada en piezas de 4' / 8').
+CONSTRUCTION ELEMENTS,BLNKT INSUL,Blanket Insulation,Aislamiento En Rollo,Insulación laminada (en rollo).
+CONSTRUCTION ELEMENTS,FB INSUL,Foil Back Insulation,Aislamiento Con Aluminio,Insulación con aluminio laminado (es útil para evitar la transferencia térmica).
+CONSTRUCTION ELEMENTS,SPRYD INSUL,Sprayed Insulation,Aislamiento Proyectado,Insulación proyectada / rociada (usual en espacios no habitables o casos de VBS).
+CONSTRUCTION ELEMENTS,BLWN INSUL,Blown Insulation,Aislamiento Insuflado,Insulación aplicada con aire (gran versatilidad de aplicación).
+CONSTRUCTION ELEMENTS,EIFS,Exterior Insulation Finishing System,Sistema De Aislamiento Térmico Exterior,Sistema de insulación térmica exterior (aplica para ciertos elementos en fachada).
+CONSTRUCTION ELEMENTS,SOFF,Soffit,Cielo Raso / Sofito,Cielo raso.
+CONSTRUCTION ELEMENTS,PKT SOFF,Pocket Soffit,Foso / Remetido De Cielo Raso,Remetido en el borde del cielo raso (para evitar el pegue contra una ventana alta).
+CONSTRUCTION ELEMENTS,SUSP SOFF,Suspended Soffit,Cielo Raso Suspendido,Cielo raso suspendido (su estructura está suspendida del techo mediante perfiles).
+CONSTRUCTION ELEMENTS,SOFF VENT,Soffit Vent,Ventilación De Sofito / Alero,Ventilación del alero.
+CONSTRUCTION ELEMENTS,MONOL,Monolithic,Monolítico,Monolítico (elemento constructivo conformado por una sola pieza).
+CONSTRUCTION ELEMENTS,FSTNR,Fastener,Fijación / Sujeción,"Mecanismo de unión entre dos piezas (incluye pernos y tornillos, entre otros)."
+CONSTRUCTION ELEMENTS,BOLT,Bolt,Perno / Tornillo Con Tuerca,Tornillo (específicamente los que necesitan una tuerca para el cierre).
+CONSTRUCTION ELEMENTS,SCRW,Screw,Tornillo De Rosca,Tornillo (específicamente los diseñados para encajar en el elemento sin tuerca).
+CONSTRUCTION ELEMENTS,LAG BOLT,Lag Bolt,Tornillo Tirafondo,"Tornillo extremadamente resistente y de cabeza hexagonal. Aunque no necesita tuerca para el encaje, se tiende a llamar incorrectamente “bolt”."
+CONSTRUCTION ELEMENTS,TAPCON,Tapcon Screw,Tornillo Para Concreto,"Tornillo (muy versátiles, típicos en el anclaje de awnings y bahama shutters)."
+CONSTRUCTION ELEMENTS,NUT,Nut,Tuerca,Tuerca.
+CONSTRUCTION ELEMENTS,FLSWK,Falsework,Obra Falsa / Puntales,Puntales (estructura provisional para sostener una permanente en construcción).
+CONSTRUCTION ELEMENTS,FRMWK,Formwork,Encofrado / Formaleta,Encofrado / formaleta (molde provisional sobre el que se da forma al concreto).
+CONSTRUCTION ELEMENTS,SCAFF,Scaffolding,Andamiaje,Andamiaje (estructura temporal para poder trabajar con seguridad elementos altos).
+TABULATIONS AND DIMENSIONING,STBK,Setback,Distancia De Retiro / Retranqueo,Distancia desde el edificio hasta la línea de propiedad.
+TABULATIONS AND DIMENSIONING,FRT STBK,Front Setback,Retiro Frontal,Distancia desde el frente del edificio hasta la línea de propiedad.
+TABULATIONS AND DIMENSIONING,REAR STBK,Rear Setback,Retiro Posterior,Distancia desde la parte posterior del edificio hasta la línea de propiedad.
+TABULATIONS AND DIMENSIONING,SIDE STBK,Side Setback,Retiro Lateral,Distancia desde la parte lateral del edificio hasta la línea de propiedad.
+TABULATIONS AND DIMENSIONING,ENCR,Encroachment,Invasión / Rebasamiento,Distancia de rebasado de un elemento del edificio respecto a la separación límite.
+TABULATIONS AND DIMENSIONING,FRT,Frontage,Frente Del Lote,Dimensión del frente del lote.
+TABULATIONS AND DIMENSIONING,SEPAR,Building Separation,Separación Entre Edificios,Separación entre dos edificios del proyecto (en el punto más próximo).
+TABULATIONS AND DIMENSIONING,CL,Center Line,Línea De Eje / Central,Tipo de línea dashdot (con trazos alternados de líneas y puntos). Sirve para indicar el punto central de un elemento.
+TABULATIONS AND DIMENSIONING,OC,On Center,De Centro A Centro,Distancia de centro a centro.
+TABULATIONS AND DIMENSIONING,OL,Overlap,Superposición / Solape,Superposición (distancia de solape entre dos elementos).
+TABULATIONS AND DIMENSIONING,OH,Overhang,Voladizo / Alero,Voladizo (también es la distancia del voladizo).
+TABULATIONS AND DIMENSIONING,CANT,Cantilever,Voladizo Estructural,Voladizo (caso específico en el que la viga sólo tiene un apoyo).
+TABULATIONS AND DIMENSIONING,OFST,Offset,Desfase / Desplazamiento,Desfase / desplazamiento.
+TABULATIONS AND DIMENSIONING,SPAN,Span,Luz / Vano,Luz (distancia horizontal entre dos elementos estructurales de apoyo).
+TABULATIONS AND DIMENSIONING,BAY,Bay,Crujía,Crujía (distancia horizontal entre dos cerchas consecutivas).
+TABULATIONS AND DIMENSIONING,HDRM,Headroom,Altura Libre / Altura De Paso,Distancia libre para evitar golpear la cabeza al pasar (típico 6'-8” mín en escaleras).
+TABULATIONS AND DIMENSIONING,DBL,Double,Doble,Doble.
+TABULATIONS AND DIMENSIONING,HGT o H,Height,Altura,Altura.
+TABULATIONS AND DIMENSIONING,W,Width,Anchura,Anchura.
+TABULATIONS AND DIMENSIONING,D,Deep,Fondo / Profundidad,Fondo / profundidad.
+TABULATIONS AND DIMENSIONING,THK,Thick / Thickness,Grosor / Espesor,Grosor / espesor.
+TABULATIONS AND DIMENSIONING,SIZE,Size,Tamaño,Tamaño.
+TABULATIONS AND DIMENSIONING,AREA,Area,Área,Área.
+TABULATIONS AND DIMENSIONING,DIAG,Diagonal,Diagonal,Diagonal.
+TABULATIONS AND DIMENSIONING,PARAL,Parallel,Paralelo,Paralelo.
+TABULATIONS AND DIMENSIONING,PERP,Perpendicular,Perpendicular,Perpendicular.
+TABULATIONS AND DIMENSIONING,CHAM,Chamfer,Chaflán,"Chaflán (línea oblicua usualmente a 45º, para eliminar una esquina)."
+TABULATIONS AND DIMENSIONING,BVL,Bevel,Bisel,Bisel (corte oblicuo en el extremo de un elemento).
+TABULATIONS AND DIMENSIONING,FILLET,Fillet,Fillet / Esquina Redondeada,Fillet (esquina redondeada).
+TABULATIONS AND DIMENSIONING,APPROX,Approximately,Aproximadamente,Aproximadamente.
+TABULATIONS AND DIMENSIONING,O/A,Overall,General / Total,General.
+TABULATIONS AND DIMENSIONING,EA,Each,Cada,Cada.
+TABULATIONS AND DIMENSIONING,EQ,Equal,Equivalencia / Igualdad,Equivalencia (generalmente de dimensiones).
+TABULATIONS AND DIMENSIONING,SYM,Symmetrical,Simétrico,Simétrico.
+TABULATIONS AND DIMENSIONING,SIM,Similar,Similar,Similar.
+TABULATIONS AND DIMENSIONING,OPP,Opposite,Opuesto,Opuesto (en la ubicación opuesta).
+TABULATIONS AND DIMENSIONING,ADJ,Adjacent,Adyacente / Contiguo,Adyacente / contiguo (situado a la par).
+TABULATIONS AND DIMENSIONING,INTERST,Interstitial Space,Espacio Intersticial,Espacio intersticial (espacio sin uso habitable entre dos losas estructurales).
+TABULATIONS AND DIMENSIONING,HYB,Hybrid,Híbrida,Híbrida (aplica en unidades que son variaciones de la principal).
+TABULATIONS AND DIMENSIONING,ALT,Alternative,Alternativa ,Alternativa a propuesta principal.
+TABULATIONS AND DIMENSIONING,MOD,Modified,Modificado ,Modificación de propuesta principal.
+TABULATIONS AND DIMENSIONING,OPT,Option,Opción ,Opción.
+TABULATIONS AND DIMENSIONING,QTY,Quantity,Cantidad ,Cantidad.
+TABULATIONS AND DIMENSIONING,NO,Number,Número ,Número.
+TABULATIONS AND DIMENSIONING,TOTAL,Total,Total ,Total.
+TABULATIONS AND DIMENSIONING,PARTIAL,Partial,Parcial ,Parcial.
+TABULATIONS AND DIMENSIONING,RHYM,Rhythm,Ritmo ,"Ritmo (se refiere a la alternancia lleno/vacío, o a la repetición de un elemento)."
+TABULATIONS AND DIMENSIONING,DIM,Dimension,Dimensión ,Dimensión.
+TABULATIONS AND DIMENSIONING,DIST,Distance,Distancia ,Distancia (típico para indicar la longitud de las vías de evacuación).
+TABULATIONS AND DIMENSIONING,PERIM,Perimeter,Perímetro ,Perímetro.
+TABULATIONS AND DIMENSIONING,DIA,Diameter,Diámetro ,Diámetro.
+TABULATIONS AND DIMENSIONING,ID,Inside Diameter,Diámetro Interior,Diámetro interior.
+TABULATIONS AND DIMENSIONING,OD,Outside Diameter,Diámetro Exterior,Diámetro exterior.
+TABULATIONS AND DIMENSIONING,RAD,Radius,Radio ,Radio.
+TABULATIONS AND DIMENSIONING,TURN RAD,Turning Radius,Radio De Giro,"Radio de giro (para accesibilidad, el radio de giro de una silla de ruedas es 5')."
+TABULATIONS AND DIMENSIONING,ARC,Arc,Arco ,Arco.
+TABULATIONS AND DIMENSIONING,VRTX,Vertex,Vértice ,Vértice.
+TABULATIONS AND DIMENSIONING,ANG,Angle,Ángulo ,Ángulo.
+TABULATIONS AND DIMENSIONING,ROT,Rotate,Rotar ,Rotar un elemento.
+TABULATIONS AND DIMENSIONING,FLIP,Flip,Invertir / Reflejar,Darle la vuelta a un elemento (simetría izquierda/derecha o arriba/abajo).
+TABULATIONS AND DIMENSIONING,STRETCH,Stretch,Estirar ,Comando para estirar un elemento en CAD.
+TABULATIONS AND DIMENSIONING,CRNR,Corner,Esquina ,Esquina.
+TABULATIONS AND DIMENSIONING,OCC,Occupants,Ocupantes ,Ocupantes (nº de personas que se calcula puedan ocupar un espacio).
+TABULATIONS AND DIMENSIONING,OCC LOAD,Occupant Load,Carga De Ocupantes,Carga de ocupantes (total de ocupantes calculados para un área o proyecto).
+TABULATIONS AND DIMENSIONING,EVAC,Evacuation,Evacuación ,Evacuación del edificio o vivienda.
+TABULATIONS AND DIMENSIONING,EGRSS,Egress,Egreso / Evacuación,Forma de evacuación del edificio o vivienda.
+TABULATIONS AND DIMENSIONING,EXIT DSCHRG,Exit Discharge,Descarga De Salida,Parte del sistema de evacuación entre la salida y la vía pública.
+TABULATIONS AND DIMENSIONING,LL,Live Load,Carga Viva,Carga viva (el sobrepeso variable del edificio causado por la ocupación y el uso).
+TABULATIONS AND DIMENSIONING,DL,Dead Load,Carga Muerta,Carga muerta (se refiere al peso fijo de los elementos que forman parte del edificio).
+TABULATIONS AND DIMENSIONING,HR,Hour,Hora / Resistencia Horaria,Hora (utilizado para el rating de los elementos para Life Safety).
+TABULATIONS AND DIMENSIONING,ACCESS RT,Accessible Route,Ruta Accesible ,Ruta accesible (es la ruta de 3' de ancho que recorre las units en serie FHA).
+TABULATIONS AND DIMENSIONING,PARAL APRCH,Parallel Approach,Aproximación Paralela,Acceso lateral a un elemento con un rectángulo de accesibilidad (30”x48”).
+TABULATIONS AND DIMENSIONING,FWD APRCH,Forward Approach,Aproximación Frontal,Acceso frontal a un elemento con un rectángulo de accesibilidad (30”x48”).
+TABULATIONS AND DIMENSIONING,FWD RCH,Forward Reach,Alcance Frontal,"Alcance frontal (el rectángulo de 30”x48”, podrá estar bajo un elemento máx 25”)."
+TABULATIONS AND DIMENSIONING,LN,Line,Línea,Línea.
+TABULATIONS AND DIMENSIONING,TRIANG,Triangle,Triángulo,Triángulo.
+TABULATIONS AND DIMENSIONING,SQ,Square,Cuadrado ,Cuadrado.
+TABULATIONS AND DIMENSIONING,PENTAG,Pentagon,Pentágono,Pentágono.
+TABULATIONS AND DIMENSIONING,HEXAG,Hexagon,Hexágono,Hexágono.
+TABULATIONS AND DIMENSIONING,POLYG,Polygon,Polígono,Polígono.
+TABULATIONS AND DIMENSIONING,CIR,Circle,Círculo,Círculo.
+TABULATIONS AND DIMENSIONING,SPH,Sphere,Esfera,Esfera.
+TABULATIONS AND DIMENSIONING,CUBE,Cube,Cubo,Cubo.
+TABULATIONS AND DIMENSIONING,CYL,Cylinder,Cilindro ,Cilindro.
+TABULATIONS AND DIMENSIONING,FT,Feet,Pies,"Pies (como referencia, 1 FT = 30.48 CM)."
+TABULATIONS AND DIMENSIONING,LF,Linear Feet,Pies Lineales,Pies lineales.
+TABULATIONS AND DIMENSIONING,SF o SQFT,Square Feet,Pies Cuadrados,"Pies cuadrados (como referencia, 1,000 SF = 92.90 M2)."
+TABULATIONS AND DIMENSIONING,IN,Inches,Pulgadas,"Pulgadas (como referencia, 1 IN = 2.54 CM)."
+TABULATIONS AND DIMENSIONING,LI,Linear Inches,Pulgadas Lineales ,Pulgadas lineales.
+TABULATIONS AND DIMENSIONING,SI o SQIN,Square Inches,Pulgadas Cuadradas,Pulgadas cuadradas.
+TABULATIONS AND DIMENSIONING,YD,Yard,Yarda,"Yarda (unidad de longitud, típica para los trash bins -> 2 YD BINS. 1 YD = 3 FT)."
+TABULATIONS AND DIMENSIONING,GA,Gauge,Calibre,Calibre (unidad típica para indicar el espesor de una lámina de metal).
+TABULATIONS AND DIMENSIONING,AC,Acre,Acre ,"Acre (unidad de superficie, típica para lotes -> 1 AC = 43,560 SF)."
+TABULATIONS AND DIMENSIONING,LBS,Pounds,Libras,"Libras (unidad de peso, típica en tabulación de elevadores)."
+TABULATIONS AND DIMENSIONING,PSF,Pound Force Per Square Foot,Libras Por Pie Cuadrado ,Libras por pie cuadrado (unidad de presión para cálculo de ventanas en fachada).
+TABULATIONS AND DIMENSIONING,PSI,Pound Force Per Square Inch,Libras Por Pulgada Cuadrada,Libras por pulgada cuadrada (unidad de presión).
+TABULATIONS AND DIMENSIONING,FPM,Feet Per Minute,Pies Por Minuto ,"Pies por minuto (unidad de velocidad, típica en tabulación de elevadores)."
+TABULATIONS AND DIMENSIONING,CONT,Continuous,Continuo ,Continuo.
+TABULATIONS AND DIMENSIONING,SCL,Scale,Escala ,Escala.
+TABULATIONS AND DIMENSIONING,GRAPH SCL,Graphic Scale,Escala Gráfica,Escala gráfica.
+TABULATIONS AND DIMENSIONING,SCL FCTR,Scale Factor,Factor De Escala,"Factor de escala (según la escala del dibujo, la lámina tendrá un factor diferente). Ejemplos habituales: 1/4 -> 48 / 1/8 -> 96 / 1/16 -> 192... Cada factor de escala tiene asociadas sus calidades y tipos de línea."
+TABULATIONS AND DIMENSIONING,LTSCALE,Linetype Scale,Escala De Tipo De Línea,"Escala de tipo de línea (según el factor de escala de la lámina, es un valor distinto)."
+TABULATIONS AND DIMENSIONING,NTS,Not To Scale,No A Escala,No ajustado a escala.
+TABULATIONS AND DIMENSIONING,VIF,Verify In Field,Verificar In Situ,Verificar in situ (dimensión específica).
+TABULATIONS AND DIMENSIONING,FV,Field Verify,Verificar En El Campo / In Situ ,Verificar in situ (dimensión específica).
+TABULATIONS AND DIMENSIONING,VARIES,Varies,Variable ,Dimensión variable (según el caso).
+TABULATIONS AND DIMENSIONING,SIGN,Sign o Signage,Señalización / Cartelería,Señalización.
+TABULATIONS AND DIMENSIONING,STD,Standard,Estándar ,Estándar.
+TABULATIONS AND DIMENSIONING,CALCS,Calculations,Cálculos ,Cálculos.
+TABULATIONS AND DIMENSIONING,MAX,Maximum,Máximo ,Máximo.
+TABULATIONS AND DIMENSIONING,MIN,Minimum,Mínimo ,Mínimo.
+TABULATIONS AND DIMENSIONING,AVG,Average,Promedio ,Promedio.
+TABULATIONS AND DIMENSIONING,ABV,Above,Encima / Por Encima,"Encima (a bastante distancia, se especifica con línea discontinua qué ocurre arriba)."
+TABULATIONS AND DIMENSIONING,OVER,Over,Encima / Cubriendo,Encima (un elemento se encuentra cubriendo otro o a muy poca distancia).
+TABULATIONS AND DIMENSIONING,ON,On,Encima / Sobre ,"Encima (un elemento está directamente sobre el otro, con contacto entre ambos)."
+TABULATIONS AND DIMENSIONING,BLW,Below,Debajo / Por Debajo ,"Debajo (a bastante distancia, se especifica con línea más fina qué ocurre abajo)."
+TABULATIONS AND DIMENSIONING,UNDER,Under,Debajo / Bajo ,Debajo (un elemento se encuentra cubierto por otro o a muy poca distancia).
+TABULATIONS AND DIMENSIONING,BNTH,Beneath,Debajo / Directamente Bajo ,"Debajo (un elemento está directamente bajo el otro, con contacto entre ambos)."
+TABULATIONS AND DIMENSIONING,OHD,Overhead,Elevado / Por Encima De La Cabeza ,"Encima (se usa cuando un elemento cruza justo por encima, eg. puerta de garaje)."
+TABULATIONS AND DIMENSIONING,U/S,Underside,Cara Inferior / Intradós ,Superficie o cara inferior / Envés / Intradós.
+TABULATIONS AND DIMENSIONING,BHND,Behind,Detrás De...,Detrás de...
+TABULATIONS AND DIMENSIONING,BSD,Beside,Junto A... ,Junto a...
+TABULATIONS AND DIMENSIONING,BTWN,Between,Entre ,Entre dos elementos.
+TABULATIONS AND DIMENSIONING,BYND,Beyond,Más Allá / Al Fondo ,"Hacia el fondo (típico en serie 3, para indicar lo que se ve tras el plano frontal)."
+TABULATIONS AND DIMENSIONING,PLNR BRK,Planar Break,Cambio De Plano ,"Cambio de plano (típico en serie 3, para indicar una zona vista en escorzo / oblicua)."
+TABULATIONS AND DIMENSIONING,MTCH LN,Match Line,Línea De Coincidencia / Ajuste,"Línea referencia para mostrar la continuación de un elemento (típico en serie 3, para mostrar una elevación o sección de gran longitud)."
+TABULATIONS AND DIMENSIONING,VP,Vanishing Point,Punto De Fuga,Punto donde convergen las líneas en perspectiva.
+TABULATIONS AND DIMENSIONING,EXT,Exterior,Exterior ,Exterior.
+TABULATIONS AND DIMENSIONING,INT,Interior,Interior ,Interior.
+TABULATIONS AND DIMENSIONING,HORIZ,Horizontal,Horizontal ,Horizontal.
+TABULATIONS AND DIMENSIONING,VERT,Vertical,Vertical ,Vertical.
+TABULATIONS AND DIMENSIONING,HI,High,Alto ,Alto (ejemplo: HI LO DF / High Low Drinking Fountain).
+TABULATIONS AND DIMENSIONING,LO,Low,Bajo ,Bajo (ejemplo: HI LO DF / High Low Drinking Fountain).
+TABULATIONS AND DIMENSIONING,UP,Up,Arriba ,Arriba (indicativo para rampas y escaleras).
+TABULATIONS AND DIMENSIONING,DN,Down,Abajo ,Abajo (indicativo para rampas y escaleras).
+TABULATIONS AND DIMENSIONING,LFT,Left,Izquierda ,Izquierda.
+TABULATIONS AND DIMENSIONING,RGTH,Right,Derecha ,Derecha.
+TABULATIONS AND DIMENSIONING,N,North,Norte ,Norte.
+TABULATIONS AND DIMENSIONING,S,South,Sur ,Sur.
+TABULATIONS AND DIMENSIONING,E,East,Este ,Este.
+TABULATIONS AND DIMENSIONING,W,West,Oeste ,Oeste.
+TABULATIONS AND DIMENSIONING,NE,Northeast,Noreste ,Noreste.
+TABULATIONS AND DIMENSIONING,NW,Northwest,Noroeste ,Noroeste.
+TABULATIONS AND DIMENSIONING,SE,Southeast,Sudeste ,Sudeste.
+TABULATIONS AND DIMENSIONING,SW,Southwest,Sudoeste ,Sudoeste.
+TABULATIONS AND DIMENSIONING,WING,Wing,Ala Del Edificio,"Ala (partes laterales de un edificio, subordinadas a un elemento o estructura central)."
+TABULATIONS AND DIMENSIONING,IN,In,Dentro / Entrada ,Dentro / entrada.
+TABULATIONS AND DIMENSIONING,OUT,Out,Fuera / Salida ,Fuera / salida.
+TABULATIONS AND DIMENSIONING,1-W,One Way,Vía Única ,Única vía.
+TABULATIONS AND DIMENSIONING,2-W,Two Way,Doble Vía ,Doble vía.
+TABULATIONS AND DIMENSIONING,PED,Pedestrian,Peatón / Peatonal,Peatón / peatonal.
+TABULATIONS AND DIMENSIONING,RES,Residents,Residentes ,"Residentes (indica zonas de acceso, paso o uso exclusivo para residentes)."
+TABULATIONS AND DIMENSIONING,VIS,Visitors,Visitantes ,"Visitantes (indica zonas de acceso, paso o uso para visitantes)."
+TABULATIONS AND DIMENSIONING,GUESTS,Guests,Invitados ,"Visitantes invitados (indica zonas de acceso, paso o uso para visitantes invitados)."
+PROJECT TYPOLOGIES AND ZONES,PRCL,Parcel,Parcela / Lote Tributario,Lote (cantidad de terreno asociada con sus impuestos/tasas).
+PROJECT TYPOLOGIES AND ZONES,LOT,Lot,Lote Legal / Predio,"Lote (subdivisión de la propiedad, con una descripción legal y dirección asociada)."
+PROJECT TYPOLOGIES AND ZONES,BLDG,Building,Edificio,Edificio.
+PROJECT TYPOLOGIES AND ZONES,CONDO,Condominium,Condominio,Condominio.
+PROJECT TYPOLOGIES AND ZONES,APT,Apartment,Apartamento,Apartamento.
+PROJECT TYPOLOGIES AND ZONES,HOUSE,House,Casa Estructura,"Casa (el edificio en sí, como estructura permanente)."
+PROJECT TYPOLOGIES AND ZONES,HOME,Home,Hogar / Vivienda,Casa (en el sentido de hogar).
+PROJECT TYPOLOGIES AND ZONES,RESI,Residential,Residencial,Residencial.
+PROJECT TYPOLOGIES AND ZONES,RTL,Retail,Comercial / Local Comercial,Comercial.
+PROJECT TYPOLOGIES AND ZONES,M/U DEV,Mixed-Use Development,Desarrollo De Uso Mixto,"Desarrollo de uso mixto (residencial, comercial, oficinas...)."
+PROJECT TYPOLOGIES AND ZONES,MUPD,Multiple Use Planned Development,Desarrollo Planificado De Usos Múltiples,Desarrollo planificado de usos múltiples.
+PROJECT TYPOLOGIES AND ZONES,ALF,Assisted Living Facility,Complejo De Vivienda Asistida,Complejo de viviendas para personas que requieren asistencia.
+PROJECT TYPOLOGIES AND ZONES,MOB,Medical Office Building,Edificio De Oficinas Médicas,Centro de oficinas médicas.
+PROJECT TYPOLOGIES AND ZONES,SNF,Skilled Nursing Facility,Centro De Enfermería Especializada,Centro de enfermería y rehabilitación.
+PROJECT TYPOLOGIES AND ZONES,CRO,Contract Research Organization,Organización De Investigación Por Contrato,"Centro que da soporte a la industria farmacéutica (análisis, pruebas clínicas...)."
+PROJECT TYPOLOGIES AND ZONES,SFR,Single Family Residence,Vivienda Unifamiliar,Vivienda unifamiliar.
+PROJECT TYPOLOGIES AND ZONES,LRB,Low Rise Building,Edificio De Poca Altura,Edificio de poca altura (4 pisos o menos).
+PROJECT TYPOLOGIES AND ZONES,MRB,Mid Rise Building,Edificio De Altura Media,Edificio de altura media (entre 5 y 12 pisos).
+PROJECT TYPOLOGIES AND ZONES,HRB,High Rise Building,Edificio De Gran Altura,Edificio de gran altura (generalmente a partir de 9 pisos). Un edificio es high rise cuando la altura desde el acceso de calle de los bomberos hasta la vivienda más elevada > 75ft (debido a la dim de la escalera de incendios).
+PROJECT TYPOLOGIES AND ZONES,SKYSCPR,Skyscraper,Rascacielos,Rascacielos (a partir de 40 pisos).
+PROJECT TYPOLOGIES AND ZONES,TWR,Tower,Torre,Torre.
+PROJECT TYPOLOGIES AND ZONES,MDU,Multi-Dwelling Unit,Edificio Multi-Vivienda,Edificio multi-vivienda.
+PROJECT TYPOLOGIES AND ZONES,DU,Dwelling Unit,Unidad De Vivienda,Unidad de vivienda (término genérico para todos los tipos).
+PROJECT TYPOLOGIES AND ZONES,MU,Micro Unit,Micro-Unidad,Micro-unidad de vivienda (usualmente por debajo de los 400 SF).
+PROJECT TYPOLOGIES AND ZONES,ST,Studio,Estudio / Monoambiente,"Estudio (unidad de vivienda de dimensiones reducidas, alrededor de 600 SF)."
+PROJECT TYPOLOGIES AND ZONES,UA,Unit Type A,Unidad Tipo A,Unidad de vivienda tipo A (1 dormitorio / 1 baño) -> Área aproximada 800 SF.
+PROJECT TYPOLOGIES AND ZONES,UB,Unit Type B,Unidad Tipo B,"Unidad de vivienda tipo B (2 dormitorios / 2 baños) -> Área aproximada 1,000 SF."
+PROJECT TYPOLOGIES AND ZONES,UC,Unit Type C,Unidad Tipo C,"Unidad de vivienda tipo C (3 dormitorios / 2 baños) -> Área aproximada 1,200 SF."
+PROJECT TYPOLOGIES AND ZONES,UD,Unit Type D,Unidad Tipo D,"Unidad de vivienda tipo D (3 dormitorios / 2 baños, más espaciosa que la tipo C)."
+PROJECT TYPOLOGIES AND ZONES,PH,Penthouse,Penthouse,Apartamento en el último piso en edificios de gran altura (generalmente lujoso).
+PROJECT TYPOLOGIES AND ZONES,TH,Townhome / Townhouse,Vivienda Adosada,"Vivienda adosada unifamiliar (generalmente de 2 o 3 pisos). Los códigos para edificios multi-family, no necesariamente aplican para TH (por ser de un único propietario). En los pisos superiores, no aplica FHA (Fair Housing Act)."
+PROJECT TYPOLOGIES AND ZONES,LFT,Loft,Loft,Loft (apartamento dentro de un edificio con un uso previamente industrial).
+PROJECT TYPOLOGIES AND ZONES,L/W,Live/Work Unit,Unidad De Vivienda Y Trabajo,Unidad de vivienda diseñada para poder vivir y trabajar.
+PROJECT TYPOLOGIES AND ZONES,MC,Memory Care Unit,Unidad De Cuidado De Memoria,"Unidad para personas con problemas de memoria (alzheimer, demencia... etc). Cuentan con un memory box en la entrada, y no disponen de cocina."
+PROJECT TYPOLOGIES AND ZONES,AL,Assisted Living Unit,Unidad De Vida Asistida,"Unidad de vivienda para personas que requieren asistencia. Cuentan con cocina pequeña (sin fogón, sólo refrigerador, fregadero y despensa)."
+PROJECT TYPOLOGIES AND ZONES,IL,Independent Living Unit,Unidad De Vida Independiente,"Unidad de vivienda para personas que no requieren asistencia. Cuentan con una cocina regular, como las de las unidades convencionales."
+PROJECT TYPOLOGIES AND ZONES,DUP,Duplex,Dúplex,Dúplex.
+PROJECT TYPOLOGIES AND ZONES,VILLA,Villa,Villa,Villa.
+PROJECT TYPOLOGIES AND ZONES,RM,Room,Cuarto / Habitación,Cuarto.
+PROJECT TYPOLOGIES AND ZONES,G/R,Great Room,Salón / Gran Sala,Salón.
+PROJECT TYPOLOGIES AND ZONES,D/R,Dining Room,Comedor,Comedor.
+PROJECT TYPOLOGIES AND ZONES,KIT,Kitchen,Cocina,Cocina.
+PROJECT TYPOLOGIES AND ZONES,KITTE,Kitchenette,Cocina Pequeña,Cocina pequeña (de dimensiones reducidas y menos appliances).
+PROJECT TYPOLOGIES AND ZONES,BD,Bedroom,Dormitorio,Dormitorio.
+PROJECT TYPOLOGIES AND ZONES,MR BD,Master Bedroom,Dormitorio Principal,Dormitorio principal.
+PROJECT TYPOLOGIES AND ZONES,D,Den,Habitación Multi-Uso / Estudio,"Habitación secundaria multi-uso (a diferencia del dormitorio, no necesita ventana)."
+PROJECT TYPOLOGIES AND ZONES,ENTR,Entrance,Entrada,Entrada.
+PROJECT TYPOLOGIES AND ZONES,FOY,Foyer,Vestíbulo De Entrada,Vestíbulo de entrada.
+PROJECT TYPOLOGIES AND ZONES,LBBY,Lobby,Vestíbulo Principal / Lobby,Vestíbulo (generalmente junto a elevadores o escaleras).
+PROJECT TYPOLOGIES AND ZONES,TERR,Terrace,Terraza,"Terraza (en contexto urbanístico, también puede ser una hilera de casas)."
+PROJECT TYPOLOGIES AND ZONES,PRCH,Porch,Porche,Porche (generalmente frente a la fachada principal).
+PROJECT TYPOLOGIES AND ZONES,LANAI,Lanai (haw.),Porche Posterior Extenso,Porche (usualmente más extenso y en la fachada posterior).
+PROJECT TYPOLOGIES AND ZONES,PATIO,Patio,Patio Descubierto,Porche (usualmente descubierto y desconectado de la casa en su parte posterior).
+PROJECT TYPOLOGIES AND ZONES,VERAND,Verandah,Veranda,"Veranda (porche en un costado de la vivienda, a veces envolviendo una esquina)."
+PROJECT TYPOLOGIES AND ZONES,DECK,Deck,Plataforma / Deck,"Deck (usualmente descubierto, elevado y en la fachada posterior, typ de madera)."
+PROJECT TYPOLOGIES AND ZONES,STOOP,Stoop,Escalinata / Acceso Elevado,"Zona previa a la entrada de la casa, ligeramente elevada."
+PROJECT TYPOLOGIES AND ZONES,ATRIUM,Atrium,Atrio,"Atrio (espacio abierto techado en el interior del edificio, generalmente con lucernario)."
+PROJECT TYPOLOGIES AND ZONES,COURT,Courtyard,Patio Interior Exterior,"Patio (espacio a cielo abierto que, a diferencia del atrio, es exterior)."
+PROJECT TYPOLOGIES AND ZONES,BKYD,Backyard,Patio Trasero,Patio trasero.
+PROJECT TYPOLOGIES AND ZONES,SUNRM,Sunroom,Solárium,Solárium (cuarto interior de la vivienda con gran iluminación natural y vista exterior).
+PROJECT TYPOLOGIES AND ZONES,SKY DECK,Sky Deck,Plataforma De Techo / Sky Deck,Deck a cielo abierto (en el último piso de edificios de gran altura).
+PROJECT TYPOLOGIES AND ZONES,RF,Roof,Techo / Cubierta,Techo.
+PROJECT TYPOLOGIES AND ZONES,BSMT,Basement,Sótano,Sótano.
+PROJECT TYPOLOGIES AND ZONES,CORR,Corridor,Corredor / Pasillo,Corredor / pasillo.
+PROJECT TYPOLOGIES AND ZONES,BRZWY,Breezeway,Pasillo Abierto Techado,Paso abierto y techado (normalmente para conectar dos edificios o áreas).
+PROJECT TYPOLOGIES AND ZONES,LOGG,Loggia,Logia / Galería,Corredor cubierto exterior y abierto a zonas verdes generalmente mediante arcos).
+PROJECT TYPOLOGIES AND ZONES,MEZZ,Mezzanine,Entrepiso / Mezanina,Entrepiso.
+PROJECT TYPOLOGIES AND ZONES,RR,Restroom,Baño Común,Baño (de áreas comunes).
+PROJECT TYPOLOGIES AND ZONES,M,Men / Men's Restroom,Baño De Hombres,Baño de hombres (de áreas comunes).
+PROJECT TYPOLOGIES AND ZONES,W,Women / Women's Restroom,Baño De Mujeres,Baño de mujeres (de áreas comunes).
+PROJECT TYPOLOGIES AND ZONES,TLT,Toilet Room,Aseo Común,"Aseo (de áreas comunes, exclusivamente con el inodoro y a veces con lavabo)."
+PROJECT TYPOLOGIES AND ZONES,BATH,Bathroom,Baño De Vivienda,Baño (de vivienda).
+PROJECT TYPOLOGIES AND ZONES,MR BATH,Master Bathroom,Baño Principal,"Baño principal (de vivienda, usualmente con acceso desde la master bedroom)."
+PROJECT TYPOLOGIES AND ZONES,PWDR,Powder Room,Aseo De Vivienda,"Aseo (de vivienda, exclusivamente con el inodoro y a veces con lavabo)."
+PROJECT TYPOLOGIES AND ZONES,TYPE A BATH,Type A Bathroom,Baño Tipo A FHA,"Baño tipo A -> Requieren accesibilidad (30”x48”) para todos los elementos. Esto incluye la tina/ducha, el inodoro y el lavabo (ambos si es doble). Frecuentemente, tienen forma alargada debido a la disposición de sus elementos. Si la unit tiene baño(s) tipo A, en ese caso no podrá tener ninguno de tipo Usable."
+PROJECT TYPOLOGIES AND ZONES,TYPE B BATH,Type B Bathroom,Baño Tipo B FHA,"Baño tipo B -> Requieren accesibilidad (30”x48”) para uno de cada tipo de elemento. Como consecuencia, este tipo de baño tiene un acceso a la tina más espacioso. Frecuentemente, tienen forma más ancha debido a la disposición de sus elementos. Si la unit tiene al menos un baño tipo B, los demás pueden ser de tipo Usable."
+PROJECT TYPOLOGIES AND ZONES,USABLE BATH,Usable Bathroom,Baño Tipo Usable FHA,"Baño tipo Usable -> No requieren accesibilidad (30”x48”) para sus elementos. Su único requisito es que su puerta tenga un clearance de 32”mín, y que disponga de 30”x48” libres, para que una persona en silla de ruedas pueda entrar y cerrar. Frecuentemente, suelen ser muy compactos y de dimensiones reducidas."
+PROJECT TYPOLOGIES AND ZONES,MUD RM,Mud Room,Cuarto De Barro / Transición,"Cuarto de barro (en algunas viviendas, zona de transición entre exterior e interior)."
+PROJECT TYPOLOGIES AND ZONES,MUD NK,Mud Nook,Rincón De Barro / Transición,"Rincón de barro (en algunas viviendas, zona de transición entre exterior e interior)."
+PROJECT TYPOLOGIES AND ZONES,LANDR,Laundry Room,Cuarto De Pilas / Lavandería,Cuarto de pilas.
+PROJECT TYPOLOGIES AND ZONES,VEST,Vestibule,Vestíbulo,Vestíbulo.
+PROJECT TYPOLOGIES AND ZONES,WIC,Walk In Closet,Vestidor / Walk-In Closet,Vestidor.
+PROJECT TYPOLOGIES AND ZONES,CL,Closet,Armario / Clóset,Armario.
+PROJECT TYPOLOGIES AND ZONES,BR CL,Broom Closet,Escobero,Escobero.
+PROJECT TYPOLOGIES AND ZONES,ENCL,Enclosure,Recinto / Cerramiento,Recinto.
+PROJECT TYPOLOGIES AND ZONES,STO,Storage,Almacén / Depósito,Almacén.
+PROJECT TYPOLOGIES AND ZONES,TEN STO,Tenant Storage,Almacén De Inquilinos,Almacén (sólo para uso de los inquilinos).
+PROJECT TYPOLOGIES AND ZONES,BIKE STO,Bike Storage,Almacén De Bicicletas,Almacén de bicicletas.
+PROJECT TYPOLOGIES AND ZONES,BIKE RCK,Bike Rack,Soporte Para Bicicletas,Soporte para bicicletas.
+PROJECT TYPOLOGIES AND ZONES,MAINT,Maintenance Room,Cuarto De Mantenimiento,Cuarto de mantenimiento.
+PROJECT TYPOLOGIES AND ZONES,ELEC,Electrical Room,Cuarto Eléctrico,Cuarto eléctrico.
+PROJECT TYPOLOGIES AND ZONES,MECH,Mechanical Room,Cuarto Mecánico,Cuarto mecánico.
+PROJECT TYPOLOGIES AND ZONES,MDF,Main Distribution Frame,Centro De Cableado Principal,Centro de cableado principal.
+PROJECT TYPOLOGIES AND ZONES,IDF,Intermediate Distribution Frame,Centro De Cableado Secundario,Centro de cableado secundario.
+PROJECT TYPOLOGIES AND ZONES,AV,Audio Visual Room,Cuarto Audio-Visual,Cuarto con equipamiento y conexiones audio-visuales.
+PROJECT TYPOLOGIES AND ZONES,CATV,Community Antenna Television,Cuarto De Televisión Por Cable,Cuarto con equipamiento para televisión por cable comunitaria.
+PROJECT TYPOLOGIES AND ZONES,IT,Information Technology Room,Cuarto De TI,Cuarto con equipamiento de tecnología de la información.
+PROJECT TYPOLOGIES AND ZONES,GEN RM,Generator Room,Cuarto Del Generador,Cuarto del generador.
+PROJECT TYPOLOGIES AND ZONES,ECR,Elevator Control Room,Cuarto De Control Del Elevador,Cuarto de control del elevator (usualmente ubicados en el último piso).
+PROJECT TYPOLOGIES AND ZONES,EMR,Elevator Machine Room,Cuarto De Máquinas Del Elevador,Cuarto de maquinas (contiene la maquinaria propia del elevador).
+PROJECT TYPOLOGIES AND ZONES,FCR,Fire Control Room,Cuarto De Control De Incendios,Cuarto de control de incendios.
+PROJECT TYPOLOGIES AND ZONES,FACP,Fire Alarm Control Panel,Panel De Control De Alarma De Incendios,Cuarto con el panel de control de alarma de incendios.
+PROJECT TYPOLOGIES AND ZONES,FIRE COMM,Fire Command Room,Cuarto De Comando De Incendios,Cuarto con uso de centro de operaciones para los bomberos en caso de incendio.
+PROJECT TYPOLOGIES AND ZONES,DOM PUMP,Domestic Pump,Sistema De Bombeo Doméstico,Sistema doméstico de bombeo.
+PROJECT TYPOLOGIES AND ZONES,FR PUMP,Fire Pump,Sistema De Bombeo Contra Incendios,Sistema de bombeo en caso de incendio (para asegurar el suministro de agua).
+PROJECT TYPOLOGIES AND ZONES,ER,Emergency Room,Cuarto De Emergencias,Cuarto de emergencias.
+PROJECT TYPOLOGIES AND ZONES,RFG AREA,Refuge Area,Área De Refugio,"Área de refugio (sirve para casos de emergencia/incendio, para resguardarse)."
+PROJECT TYPOLOGIES AND ZONES,VLT RM,Vault Room,Cámara Acorazada Eléctrica,Cámara acorazada (contiene transformadores y equipo de distribución eléctrica).
+PROJECT TYPOLOGIES AND ZONES,FPL VLT,Florida Power & Light Vault,Cámara Eléctrica FPL,Cámara acorazada (contiene transformadores y equipo de distribución eléctrica).
+PROJECT TYPOLOGIES AND ZONES,MTR RM,Meter Room,Cuarto De Medidores,Cuarto con los medidores.
+PROJECT TYPOLOGIES AND ZONES,BRDG,Bridge,Puente,Puente.
+PROJECT TYPOLOGIES AND ZONES,PED BRDG,Pedestrian Bridge,Pasarela Peatonal,Pasarela.
+PROJECT TYPOLOGIES AND ZONES,MAIL RM,Mail Room,Cuarto De Correos,Cuarto de correos.
+PROJECT TYPOLOGIES AND ZONES,MBOX,Mailbox,Buzón De Correos,Buzón de correos.
+PROJECT TYPOLOGIES AND ZONES,BUS CTR,Business Center,Centro De Negocios,Centro de negocios.
+PROJECT TYPOLOGIES AND ZONES,AMEN,Amenity,Área De Amenidades,Área de amenidades (zonas para uso y disfrute de los residentes del edificio).
+PROJECT TYPOLOGIES AND ZONES,FIT CTR,Fitness Center,Centro De Fitness,Centro de fitness.
+PROJECT TYPOLOGIES AND ZONES,SPIN,Spinning,Área De Spinning,Área de spinning.
+PROJECT TYPOLOGIES AND ZONES,GYM,Gymnasium,Gimnasio,Gimnasio.
+PROJECT TYPOLOGIES AND ZONES,YG,Yoga,Área De Yoga,Área de yoga.
+PROJECT TYPOLOGIES AND ZONES,LCKR,Locker,Área De Lockers / Taquillas,Área de lockers / taquillas.
+PROJECT TYPOLOGIES AND ZONES,MOVIE RM,Movie Room,Sala De Cine,Sala de cine.
+PROJECT TYPOLOGIES AND ZONES,BWLNG,Bowling Area,Área De Boliche / Bolera,Boliche.
+PROJECT TYPOLOGIES AND ZONES,SPA,Salus Per Aquam,Spa,Spa.
+PROJECT TYPOLOGIES AND ZONES,PET SPA,Pet Spa,Spa Para Mascotas,Spa para mascotas.
+PROJECT TYPOLOGIES AND ZONES,STM RM,Steam Room,Baño Turco / Sala De Vapor,Baño turco.
+PROJECT TYPOLOGIES AND ZONES,LIBR,Library,Biblioteca,Biblioteca.
+PROJECT TYPOLOGIES AND ZONES,MRN OFF,Marina Office,Oficina Marítima,Oficina marítima (en los proyectos ubicados junto a zona marítima).
+PROJECT TYPOLOGIES AND ZONES,MGR,Manager Office,Oficina Del Gerente,Oficina del manager.
+PROJECT TYPOLOGIES AND ZONES,ASST MGR,Assistant Manager Office,Oficina Del Asistente Del Gerente,Oficina del asistente.
+PROJECT TYPOLOGIES AND ZONES,ADMIN OFF,Administration Office,Oficina Administrativa,Oficina administrativa.
+PROJECT TYPOLOGIES AND ZONES,CO-WORK,Co-Working,Espacio De Trabajo Colaborativo,Espacio de trabajo colaborativo.
+PROJECT TYPOLOGIES AND ZONES,CONF,Conference Room,Sala De Conferencias,Sala de conferencias.
+PROJECT TYPOLOGIES AND ZONES,MED SUP,Medical Supply,Cuarto De Suministros Médicos,Cuarto de suministros médicos.
+PROJECT TYPOLOGIES AND ZONES,PHYS THER,Physical Therapy,Cuarto De Terapia Física / Rehabilitación,Cuarto de rehabilitación (terapia física).
+PROJECT TYPOLOGIES AND ZONES,CLER,Clerical,Oficina Administrativa Médica,"Oficina administrativa en centro médico (recibe llamadas, coordina citas médicas...)."
+PROJECT TYPOLOGIES AND ZONES,TRIAGE,Triage,Triaje Médicos,"Triaje (en centros médicos, clasificación de pacientes según su gravedad)."
+PROJECT TYPOLOGIES AND ZONES,WAIT RM,Waiting Room,Sala De Espera,Sala de espera.
+PROJECT TYPOLOGIES AND ZONES,EXAM,Examination Room,Cuarto De Consultas / Examen,Cuarto de consultas (donde se atiende individualizadamente a los pacientes).
+PROJECT TYPOLOGIES AND ZONES,TREAT,Treatment Room,Sala De Tratamiento,Sala de tratamiento.
+PROJECT TYPOLOGIES AND ZONES,DR OFF,Doctor Office,Oficina Del Doctor,Oficina del doctor.
+PROJECT TYPOLOGIES AND ZONES,LAB,Laboratory,Laboratorio,Laboratorio.
+PROJECT TYPOLOGIES AND ZONES,PHARM,Pharmacy,Farmacia,Farmacia.
+PROJECT TYPOLOGIES AND ZONES,IRB,Institutional Review Board,Junta De Revisión Institucional,Junta de Revisión Institucional (supervisa las pruebas médicas en pacientes).
+PROJECT TYPOLOGIES AND ZONES,JAN CL,Janitor Closet,Cuarto Del Conserje / Limpieza,Cuarto del conserje.
+PROJECT TYPOLOGIES AND ZONES,RECEP,Reception,Recepción,Recepción.
+PROJECT TYPOLOGIES AND ZONES,LSE,Leasing,Área De Alquiler / Leasing,Área destinada a operaciones de alquiler con opción a compra.
+PROJECT TYPOLOGIES AND ZONES,OFF,Office,Oficina,Oficina.
+PROJECT TYPOLOGIES AND ZONES,BRK RM,Break Room,Sala De Descanso / Break Room,Sala de descanso.
+PROJECT TYPOLOGIES AND ZONES,PLAY RM,Play Room,Sala De Juegos,Sala de juegos.
+PROJECT TYPOLOGIES AND ZONES,MISC,Miscellaneous,Misceláneo,Misceláneo (cuarto de uso variado).
+PROJECT TYPOLOGIES AND ZONES,MP,Multi-Purpose,Polivalente / Multi-Uso,Polivalente (cuarto de uso variado).
+PROJECT TYPOLOGIES AND ZONES,BOH,Back Of House,Zonas Auxiliares / De Servicio,Zonas auxiliares / de servicio.
+PROJECT TYPOLOGIES AND ZONES,VOID,Void Space,Espacio Vacío,Espacio vacío / sin uso (generalmente debajo de una rampa / escalera).
+PROJECT TYPOLOGIES AND ZONES,TRSH RM,Trash Room,Cuarto De Basura,Cuarto de basura.
+PROJECT TYPOLOGIES AND ZONES,THR,Trash Holding Room,Almacenamiento Temporal De Basura,Área de almacenamiento de basura (espacio independiente del trash room).
+PROJECT TYPOLOGIES AND ZONES,RECYC RM,Recycling Room,Cuarto De Reciclaje,Cuarto de reciclaje de basura.
+PROJECT TYPOLOGIES AND ZONES,PKG RM,Package Room,Almacén De Paquetería,Almacén de paquetería.
+PROJECT TYPOLOGIES AND ZONES,GAR,Garage,Garaje / Estacionamiento,Garaje.
+PROJECT TYPOLOGIES AND ZONES,PD,Parking Deck,Edificio De Garaje De Pocos Niveles,Edificio de garaje de pocos niveles (usualmente 2).
+PROJECT TYPOLOGIES AND ZONES,ONST PARK,Onstreet Parking,Parqueo En Vía Pública,"Espacio de parqueo exteriores, en la vía pública."
+PROJECT TYPOLOGIES AND ZONES,OFFST PARK,Offstreet Parking,Parqueo Fuera De Vía Pública,"Espacio de parqueo fuera de la vía pública (pueden ser exteriores en superficie si están en un lote, o interiores en edificios de garaje o aparcamientos subterráneos)."
+PROJECT TYPOLOGIES AND ZONES,SRFC PARK,Surface Parking,Parqueo En Superficie,Espacio de parqueo en superficie (incluye los “onstreet” y los “offstreet”).
+PROJECT TYPOLOGIES AND ZONES,SP,Standard Parking,Espacio De Parqueo Estándar,Espacio de parqueo regular (dimensión típica de 9' x 18').
+PROJECT TYPOLOGIES AND ZONES,CP,Compact Parking,Espacio De Parqueo Compacto,"Espacio de parqueo compacto (dimensión mínima de 8' x 16'). En parqueos exteriores, su número no puede superar el 25% del total de parqueos."
+PROJECT TYPOLOGIES AND ZONES,PP,Parallel Parking,Espacio De Parqueo En Paralelo,Espacio de parqueo en paralelo (dimensión típica de 8'-6” x 22').
+PROJECT TYPOLOGIES AND ZONES,HC (VAN),Handicap Parking,Espacio De Parqueo Para Discapacitados,"Espacio de parqueo para discapacitados (dimensión típica de 12' x 18'). Se colocan cerca de los accesos, y disponen de un paso lateral de 5' de ancho. En caso de ser HC VAN, necesitan una altura libre mínima de 8'-2”. Para calcular el número requerido hay que revisar el número total de parqueos: 1-25sp -> 1HC / 26-50sp -> 2HC / 51-75sp -> 3HC / 76-100sp -> 4HC... / 500+sp -> 2%."
+PROJECT TYPOLOGIES AND ZONES,TP,Tandem Parking,Espacio De Parqueo Pareado,"Espacio de parqueo pareado (tienen longitud doble, usualmente 32'). Ahorran espacio, pero el inconveniente es que un carro bloquea la salida al otro."
+PROJECT TYPOLOGIES AND ZONES,EV,Electric Vehicle Parking,Espacio De Parqueo Vehículo Eléctrico,"Espacio de parqueo para vehículos eléctricos (disponen de equipo de recarga). No todos los proyectos requieren este tipo de parqueos, depende de cada caso. Para calcular el número requerido hay que revisar el número total de parqueos: 10-25sp -> 1EV / 26-50sp -> 2EV / 51-75sp -> 4EV / 76-100sp -> 5EV... / 200+sp -> 6%."
+PROJECT TYPOLOGIES AND ZONES,B/O SP,Back Out Space,Espacio De Maniobra De Parqueo,Espacio reservado para maniobrar en un garaje o parqueo. Su tamaño depende del número de vías y de su ubicación.
+PROJECT TYPOLOGIES AND ZONES,AISLE,Parking Aisle / Drive Aisle,Zonas De Paso / Tránsito De Garaje,"Zona de paso / tránsito (en garajes, usualmente 14' -> Una vía / 24' -> Dos vías)."
+PROJECT TYPOLOGIES AND ZONES,PRT-COCHERE,Porte-Cochère,Apeadero / Entrada De Carros Cubierta,Entrada para carros (es un porche cubierto que sirve de acceso principal al edificio).
+PROJECT TYPOLOGIES AND ZONES,CP,Carport,Cobertizo De Aparcamiento,Cobertizo de aparcamiento.
+PROJECT TYPOLOGIES AND ZONES,STALL,Stall,Plaza De Parqueo En Cobertizo,Plaza de parqueo (dentro de un carport).
+PROJECT TYPOLOGIES AND ZONES,WH,Warehouse,Edificio De Almacenes,Edificio de almacenes.
+PROJECT TYPOLOGIES AND ZONES,CH,Clubhouse,Casa Club,Casa club (reúne las áreas de amenidades del condominio / proyecto).
+PROJECT TYPOLOGIES AND ZONES,GCH,Golf Clubhouse,Casa Club De Golf,Casa club de golf.
+PROJECT TYPOLOGIES AND ZONES,BBQ,Barbeque Area,Área De Barbacoas,Área de barbacoas.
+PROJECT TYPOLOGIES AND ZONES,ANC,Ancillary,Edificios Secundarios / Auxiliares,Edificios secundarios / auxiliares.
+PROJECT TYPOLOGIES AND ZONES,PAV,Pavilion,Pabellón,Pabellón.
+PROJECT TYPOLOGIES AND ZONES,PP,Pool Pavilion,Pabellón De Piscina,Pabellón de piscina.
+PROJECT TYPOLOGIES AND ZONES,PEP,Pool Equipment Pavilion,Pabellón De Equipamiento De Piscina,Pabellón del equipamiento de la piscina.
+PROJECT TYPOLOGIES AND ZONES,LP,Lake Pavilion,Pabellón De Lago,Pabellón de lago.
+PROJECT TYPOLOGIES AND ZONES,PH,Pool House,Edificio Auxiliar De Piscina,Edificio auxiliar junto a la piscina (generalmente con los baños).
+PROJECT TYPOLOGIES AND ZONES,PD,Pool Deck,Área De La Piscina,Área de la piscina.
+PROJECT TYPOLOGIES AND ZONES,PC,Pool Cabana,Cabaña De Piscina,Cabañita (junto a la piscina).
+PROJECT TYPOLOGIES AND ZONES,TL,Tot Lot,Zona De Juego Para Niños,Zona de juego para niños (pequeño pavilion independiente).
+PROJECT TYPOLOGIES AND ZONES,GZ,Gazebo,Gazebo,Gazebo.
+PROJECT TYPOLOGIES AND ZONES,RO,Residential Overlook,Mirador Residencial,Mirador residencial.
+PROJECT TYPOLOGIES AND ZONES,ST,Summer Terrace,Terraza De Verano,Terraza de verano.
+PROJECT TYPOLOGIES AND ZONES,SK,Summer Kitchen,Cocina De Verano,Cocina de verano.
+PROJECT TYPOLOGIES AND ZONES,STNG AREA,Seating Area,Área Para Sentarse,Área para sentarse.
+PROJECT TYPOLOGIES AND ZONES,PATH,Walking Path,Sendero,Sendero.
+PROJECT TYPOLOGIES AND ZONES,LAKE,Lake,Lago,Lago.
+PROJECT TYPOLOGIES AND ZONES,POND,Pond,Estanque / Lago Pequeño,Lago (más pequeño y menos profundo que “lake”).
+PROJECT TYPOLOGIES AND ZONES,BKS,Bike Shop,Negocio De Bicicletas,Negocio de bicicletas.
+PROJECT TYPOLOGIES AND ZONES,MK,Mail Kiosk,Kiosco De Correos,Kiosco de correos.
+PROJECT TYPOLOGIES AND ZONES,DP,Dog Park,Parque Para Perros,Parque para perros.
+PROJECT TYPOLOGIES AND ZONES,DWASH,Dog Wash,Área Para Bañar Perros,Área para bañar a los perros.
+PROJECT TYPOLOGIES AND ZONES,DOG SPA,Dog Spa,Spa Para Perros,Spa para perros.
+PROJECT TYPOLOGIES AND ZONES,DOG PARLOR,Dog Parlor,Cuidado De Perros,Área para el cuidado de perros.
+PROJECT TYPOLOGIES AND ZONES,EF,Entrance Feature,Elemento De Entrada,Elemento de entrada (del condominio).
+PROJECT TYPOLOGIES AND ZONES,EG,Entry Gates,Portones De Entrada,Portones de entrada (a veces necesitan un permiso independiente).
+PROJECT TYPOLOGIES AND ZONES,MSW,Monument Sign Wall,Pared Señalizada De Entrada,Pared señalizada con el nombre del proyecto en la entrada de la propiedad.
+PROJECT TYPOLOGIES AND ZONES,TC,Trash Compactor,Edificio Compactador De Basura,Edificio con el compactador de basura.
+PROJECT TYPOLOGIES AND ZONES,TD,Trash Dumpster,Contenedor De Basura / Dumpster,Edificio con el compactador de basura.
+PROJECT TYPOLOGIES AND ZONES,MB,Maintenance Building,Edificio De Mantenimiento,Edificio de mantenimiento.
+PROJECT TYPOLOGIES AND ZONES,CT,Construction Trailer,Caseta De Obra Temporal,Vehículo o estructura temporal donde hacer acopio de material en obra o con uso de oficina y espacio de trabajo durante el proceso constructivo.
+PROJECT TYPOLOGIES AND ZONES,O/P,Outparcel,Lote Comercial De Reserva,"Área en zona comercial, para futura construcción de negocio (typ: restaurante)."
+PROJECT TYPOLOGIES AND ZONES,REST,Restaurant,Restaurante,Restaurante.
+PROJECT TYPOLOGIES AND ZONES,F&B,Food & Beverages,Venta De Comidas Y Bebidas,Local de venta de comidas/bebidas (no se cocina dentro del local).
+PROJECT TYPOLOGIES AND ZONES,B&B,Bed & Breakfast,Hostal Con Desayuno,Hostal económico con desayuno incluido.
+PROJECT TYPOLOGIES AND ZONES,DRIVE THRU,Drive Through,Autoservicio,Zona de atención al cliente dentro de su vehículo.
+PROJECT TYPOLOGIES AND ZONES,BUS SHLTR,Bus Shelter,Parada De Autobuses Con Marquesina,Parada de autobuses (con marquesina).
+PROJECT TYPOLOGIES AND ZONES,RD,Road,Carretera,Carretera.
+PROJECT TYPOLOGIES AND ZONES,XRD,Crossroad,Cruce,Cruce.
+PROJECT TYPOLOGIES AND ZONES,AVE,Avenue,Avenida,Avenida.
+PROJECT TYPOLOGIES AND ZONES,BLVD,Boulevard,Boulevard,Boulevard.
+PROJECT TYPOLOGIES AND ZONES,ST,Street,Calle,Calle.
+PROJECT TYPOLOGIES AND ZONES,ALLEY,Alley,Callejón,Callejón.
+PROJECT TYPOLOGIES AND ZONES,S/W,Sidewalk,Acera,Acera.
+PROJECT TYPOLOGIES AND ZONES,XWLK,Crosswalk,Paso De Peatones,Paso de peatones.
+PROJECT TYPOLOGIES AND ZONES,HWY,Highway,Pista / Autopista,Pista.
+PROJECT TYPOLOGIES AND ZONES,ADDR,Address,Dirección,Dirección (ubicación del proyecto).
+PROJECT TYPOLOGIES AND ZONES,D/T,Downtown,Centro De La Ciudad,Centro de la ciudad.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",FIXT,Fixtures,Elementos Fijos,"Elementos fijos (se consideran como parte de la propiedad). Ejemplos: muebles de cocina, isla, inodoro, tina..."
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",APP,Appliances,Electrodomésticos / Elementos Semi-Fijos,"Elementos semi-fijos (se pueden sacar de la propiedad sin dañarla/afectarla). Ejemplos: refrigerador, lavadora, secadora..."
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",FURN,Furnitures,Mobiliario,Mobiliario.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",FURNSH,Furnishings,Mobiliario Y Acabados,"Mobiliario (incluye elementos adicionales como cortinas, alfombras y acabados)."
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",FF&E,"Furniture, Fixtures & Equipment","Mobiliario, Accesorios Y Equipamiento","Mobiliario, accesorios y equipamientos."
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",SK,Sink,Fregadero,Fregadero.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",UC SK,Under Counter Sink,Fregadero Bajo El Sobre,Fregadero bajo el sobre.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",REF,Refrigerator,Refrigerador,Refrigerador.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",UC REF,Under Counter Refrigerator,Refrigerador Bajo El Sobre,Refrigerador bajo el sobre.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",REF SP,Refrigerator Side Panel,Panel Lateral Del Refrigerador,Panel lateral del refrigerador.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",FRZ,Freezer,Congelador,Congelador.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",IM,Ice Maker,Máquina De Hielo,Máquina de hielo.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",D/W,Dishwasher,Lavaplatos,Lavaplatos.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",R,Range,Cocina / Fogón,Cocina (fogón).
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",R/O,Range / Oven,Cocina Con Horno,Cocina / Horno.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",M/W,Microwave,Microondas,Microondas.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",CAB,Cabinet,Mueble De Cocina / Gabinete,Mueble de cocina.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",UC,Upper Cabinet,Mueble De Cocina Aéreo,Mueble de cocina aéreo.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",BC,Base Cabinet,Mueble De Cocina Bajo,Mueble de cocina bajo.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",MC,Medicine Cabinet,Mueble De Medicamentos / Botiquín,Mueble de los medicamentos.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",DB,Drawer Base Cabinet,Mueble Bajo De Gavetas,Base de gavetas del mueble de cocina.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",SB,Sink Base Cabinet,Mueble Bajo Fregadero,Mueble bajo el fregadero.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",DRWR,Drawer,Gaveta / Cajón,Gaveta.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",SH,Shelves,Estantes / Repisas,Estantes.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",R&S,Rod & Shelf,Estante Con Barra,Estante con una barra debajo para colgar la ropa.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",NCH,Niche,Nicho / Hornacina,"Nicho (espacio remetido en una pared, para colocar elementos decorativos)."
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",ALC,Alcove,Alcoba / Recodo,"Alcoba (espacio remetido en una sala, generalmente para leer o sentarse)."
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",P,Pantry,Despensa / Alacena,Despensa.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",ISL,Island,Isla De Cocina,Isla (debe tener un clearance mínimo de 40” hasta los muebles de cocina).
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",CNTP,Countertop,Sobre / Encimera,Sobre.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",TOE KICK,Toe Kick,Zócalo Remetido / Rodapié,"Remetido (típico en la parte baja de los vanities o islas, para evitar pegar con el pie)."
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",BKSPLS,Backsplash,Salpicadero / Placa Anti-Salpicaduras,Backsplash (placa anti-salpicaduras).
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",LAV,Lavatory,Lavabo / Lavamanos De Baño,Lavabo.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",VNTY,Vanity,Mueble De Baño / Tocador,Tocador (mueble del baño).
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",VDB,Vanity Drawer Base,Mueble De Baño Con Gavetas,Base de gavetas del vanity.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",VSB,Vanity Sink Base,Mueble Bajo Lavamanos,Base del vanity (bajo el lavamanos).
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",BSV,Base Skin Veneer,Enchapado De Base / Acabado Exterior,Base del vanity (bajo el lavamanos).
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",MIR,Mirror,Espejo,Espejo.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",FCT,Faucet,Llave / Grifo,Llave / Grifo del agua.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",WC,Water Closet,Inodoro / Sanitario,Inodoro.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",UR,Urinal,Urinario / Mingitorio,Urinario.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",TPD,Toilet Paper Dispenser,Dispensador De Papel Higiénico,Dispensador de papel higiénico.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",TPH,Toilet Paper Holder,Portarrollos De Papel Higiénico,Dispensador de papel higiénico.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",SD,Soap Dispenser,Dispensador De Jabón,Dispensador de jabón.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",DCT,Diaper Changing Table / Baby Station,Cambiador De Pañales / Estación De Bebé,Soporte para cambio de pañales.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",SHO,Shower,Ducha,Ducha.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",TUB,Bathtub,Tina / Bañera,Tina.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",GB,Grab Bar,Barra De Agarre / Seguridad,"Barra de agarre (En restrooms: detrás del inodoro -> barra de 3', a 6” de la pared / lateral del inodoro -> barra de 3'-6”, a 12” de la pared)."
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",TB,Towel Bar,Barra Para Toallas / Toallero,Barra para toallas / Toallero.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",SHO ROD,Shower Rod,Barra De Cortina De Ducha,Barra de la ducha (donde van colgadas las cortinas).
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",SHO HD,Shower Head,Cabezal De Ducha / Regadera,Cabezal de la ducha.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",REINF,Reinforcing,Refuerzo Estructural En Pared,Refuerzo (típico en las paredes de las units donde se ubican las barras de agarre).
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",LIN,Linen Closet,Clóset De Blancos / Ropería,Closet de blancos.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",DSK,Desk,Escritorio,Escritorio.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",TV,Television,Televisor,Televisor.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",CPT,Carpet,Alfombra,Alfombra.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",PADDNG,Padding,Base Acolchada De Alfombra,Base acolchada (típica en algunas alfombras).
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",BLND,Blind,Persiana,Persiana.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",W,Washer,Lavadora,Lavadora.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",D,Dryer,Secadora,Secadora.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",W/D,Washer / Dryer,Lavadora Y Secadora,Lavadora / Secadora.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",DF,Drinking Fountain,Fuente De Agua / Bebedero,Fuente para beber (1 necesaria por cada 500 ocupantes en CH).
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",DWS,Dog Washing Station,Estación De Lavado De Perros,Pileta para el lavado de perros.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",MOP SK,Mop Sink,Fregadero De Trapeador / Vertedero,Fregadero de trapeador.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",VEND,Vending Machine,Máquina Expendedora,Máquina expendedora.
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",AP,Access Panel,Panel De Acceso,Panel de acceso (al techo).
+"FIXTURES, APPLIANCES AND OTHER INTERIOR ELEMENTS",MEMO BOX,Memory Box,Caja De Memoria / Panel De Reconocimiento,Panel en la entrada de las viviendas para personas con problemas de memoria. Muestran objetos personales del inquilino que le ayuden a ubicar su vivienda.
+GENERAL PLAN USE,PRJ,Project,Proyecto,Proyecto.
+GENERAL PLAN USE,ARCH,Architectural,Arquitectónico,Arquitectónico.
+GENERAL PLAN USE,CAD,Computer Aided Design,Diseño Asistido Por Computadora,Diseño asistido por computadora.
+GENERAL PLAN USE,BIM,Building Information Modeling,Modelado De Información Del Edificio,Modelado de información del edificio.
+GENERAL PLAN USE,DWG,Drawing,Dibujo / Archivo CAD,Dibujo (formato de los archivos de AutoCAD).
+GENERAL PLAN USE,RVT,Revit,Archivo Revit,Formato de archivos de Revit.
+GENERAL PLAN USE,PDF,Portable Document Format,Formato De Documento Portable,Formato de documento.
+GENERAL PLAN USE,CTB,Customizable Color Tables,Tabla De Colores Personalizable / Plumillas,Formato de plumillas (para aplicar distintas calidades de línea en la impresión).
+GENERAL PLAN USE,PSD,Photoshop Designated File,Archivo Designado De Photoshop,Formato de archivo de Photoshop (mantiene la información de layers de la imagen).
+GENERAL PLAN USE,JPEG O JPG,Joint Photographic Experts Group,Grupo Conjunto De Expertos En Fotografía,Formato de compresión de imagen más popular.
+GENERAL PLAN USE,RENDER,Rendering,Imagen Renderizada / Perspectiva,Imagen renderizada.
+GENERAL PLAN USE,IMG,Image,Imagen,Imagen.
+GENERAL PLAN USE,PIC,Picture,Imagen / Fotografía,Imagen.
+GENERAL PLAN USE,PHOTO,Photography,Fotografía,Fotografía.
+GENERAL PLAN USE,SS,Screenshot,Captura De Pantalla,Captura de imagen.
+GENERAL PLAN USE,TEXTURE,Texture,Textura,"Textura (imágenes texturizadas, para simular el patrón de un material o elemento)."
+GENERAL PLAN USE,3DM,3D Model,Modelo 3D,Modelo en 3D.
+GENERAL PLAN USE,XREF,X-Reference,Referencia Externa,Referencia dentro de un archivo de CAD.
+GENERAL PLAN USE,BASE,Base,Referencia Base,Referencia base (para el armado de un proyecto).
+GENERAL PLAN USE,BLK,Block,Bloque,Bloque (para ahorrar tiempo y obtener consistencia si hay elem repetidos en un file).
+GENERAL PLAN USE,FILE,File,Archivo,Archivo.
+GENERAL PLAN USE,BAK,Backup,Respaldo / Copia De Seguridad,Respaldo.
+GENERAL PLAN USE,RECORD,Record,Registro Archivo,Registro de archivos (organizados por fecha).
+GENERAL PLAN USE,ETRANSMIT,Electronic Transmit,Transmisión Electrónica / eTransmit,Tipo de respaldo de un archivo cad en el que todas las referencias se mantienen.
+GENERAL PLAN USE,BIND,Bind,Unir Referencias / Bind,Tipo de respaldo de un archivo cad en el que las referencias se convierten a bloque.
+GENERAL PLAN USE,ZIP,Zip,Archivo Comprimido ZIP,Formato de archivo compressed.
+GENERAL PLAN USE,TEMPL,Template,Plantilla,Plantilla (de dibujo).
+GENERAL PLAN USE,DRFT,Draft,Borrador / Anteproyecto,Borrador.
+GENERAL PLAN USE,CONCPT,Concept,Concepto / Plano Conceptual,Concepto (plano conceptual).
+GENERAL PLAN USE,DES,Design,Diseño,Diseño.
+GENERAL PLAN USE,REDES,Redesign,Rediseño,Rediseño.
+GENERAL PLAN USE,LYT,Layout,Disposición / Diseño / Lámina,Disposición / Diseño (en una lámina o en una zona específica del proyecto).
+GENERAL PLAN USE,LYR,Layer,Capa,Capa (en cualquier software de dibujo o en un elemento constructivo).
+GENERAL PLAN USE,OVLAY,Overlay,Superposición,Superposición (por ejemplo al montar una planta sobre otra para compararlas).
+GENERAL PLAN USE,HTCH,Hatch,Sombreado / Achurado,Sombreado / Achurado (para expresar gráficamente el material/tipo de un elemento).
+GENERAL PLAN USE,SHD,Shade,Sombreado Sólido,Sombreado (de tipo sólido).
+GENERAL PLAN USE,LNTYP,Linetype,Tipo De Línea,"Tipo de línea (continua, discontinua, punteada... etc)."
+GENERAL PLAN USE,HID,Hidden,Elemento Oculto,Elemento oculto del punto de vista (se representa mediante líneas discontinuas).
+GENERAL PLAN USE,DASH,Dashed Line,Línea Discontinua,"Tipo de línea discontinua (sirve para mostrar elementos ocultos del punto de vista). Cuando los trazos están más separados, se indica que el elemento está más lejano."
+GENERAL PLAN USE,DOT,Dotted Line,Línea Punteada,Tipo de línea punteada (sirve para mostrar elementos ocultos muy cercanos).
+GENERAL PLAN USE,DASHDOT,Dashdotted Line,Línea De Trazo Y Punto,Tipo de línea con alternancia de líneas y puntos (se usan para indicar ejes).
+GENERAL PLAN USE,GRID,Grid,Retícula De Ejes,Retícula con los ejes del proyecto (números para verticales/letras para horizontales).
+GENERAL PLAN USE,GRIDLN,Gridline,Línea De Eje,"Eje (línea auxiliar para ubicar elementos importantes, como paredes o columnas)."
+GENERAL PLAN USE,PLINE,Polyline,Polilínea,Poli-línea.
+GENERAL PLAN USE,TYP,Typical,Típico,Aplica como caso general).
+GENERAL PLAN USE,LOD,Level Of Detail,Nivel De Detalle,Nivel de detalle (dependiente de la escala en la lámina).
+GENERAL PLAN USE,FLDR,Folder,Carpeta,Carpeta.
+GENERAL PLAN USE,SHEET,Sheet,Lámina / Hoja,Lámina (tamaños typ: XL -> 42x30 / L -> 36x24 / Tabloid -> 17x11 / Letter -> 11x8.5).
+GENERAL PLAN USE,PLOTSHEETS,Plotsheets,Subcarpeta De Láminas,Subcarpeta dentro del folder de un proyecto en la que se agrupan todas las láminas.
+GENERAL PLAN USE,SCANS,Scans,Subcarpeta De Escaneos,Subcarpeta en el folder de un proyecto con los mark-ups por fecha.
+GENERAL PLAN USE,PLOTS,Plots,Subcarpeta De Impresiones,Subcarpeta en el folder de un proyecto con impresiones PDF por fecha.
+GENERAL PLAN USE,PLOTSTMP,Plotstamp,Sello De Impresión,"Información añadida en el borde de la hoja impresa (fecha, hora, nombre, stat...)."
+GENERAL PLAN USE,PLOTCFGS,Plot Control-Flow Graphs,Gráficos De Control De Flujo De Impresión,Formato de representación gráfica para impresión en CAD.
+GENERAL PLAN USE,LISP,List Processor,Procesador De Listas / Rutina LISP,Lenguaje de programación para crear rutinas (para uso de CAD u otros programas).
+GENERAL PLAN USE,NOTES,Notes,Subcarpeta De Notas,Subcarpeta en el folder de un proyecto con referencias de leyendas y notas).
+GENERAL PLAN USE,0-SER,0-Series,Serie 0 / Láminas Iniciales,"Serie 0 (incluye las láminas de cover, index e información del site plan)."
+GENERAL PLAN USE,1-SER,1-Series,Serie 1 / Seguridad De Vida,"Serie 1 (incluye las láminas de Life Safety, también denominadas LS)."
+GENERAL PLAN USE,2-SER,2-Series,Serie 2 / Plantas Y Techos,"Serie 2 (incluye las láminas de plantas, techos, cielos y láminas relacionadas)."
+GENERAL PLAN USE,3-SER,3-Series,Serie 3 / Elevaciones Y Secciones,Serie 3 (incluye las láminas de elevaciones y secciones generales).
+GENERAL PLAN USE,4-SER,4-Series,Serie 4 / Tipologías De Unidades,Serie 4 (incluye las láminas relacionadas con las tipologías de unidades de vivienda).
+GENERAL PLAN USE,5-SER,5-Series,Serie 5 / Ampliaciones Y Zonas Comunes,Serie 5 (incluye las láminas de ampliaciones y de tabulaciones de zonas comunes).
+GENERAL PLAN USE,6-SER,6-Series,Serie 6 / Secciones De Pared,Serie 6 (incluye las láminas de secciones de pared).
+GENERAL PLAN USE,7-SER,7-Series,Serie 7 / Circulaciones Y Chutes,"Serie 7 (incluye las láminas de escaleras, elevadores y chutes)."
+GENERAL PLAN USE,8-SER,8-Series,Serie 8 / Detalles Generales,Serie 8 (incluye las láminas de detalles).
+GENERAL PLAN USE,9-SER,9-Series,Serie 9 / Detalles De Paredes,Serie 9 (incluye las láminas de detalles más centrados en tipos de paredes).
+GENERAL PLAN USE,TB,Title Block,Cajetín / Tarjeta,Cajetín (de las láminas).
+GENERAL PLAN USE,CS,Cover Sheet,Lámina De Portada,Lámina de portada (normalmente lleva una imagen distintiva del proyecto).
+GENERAL PLAN USE,SEAL,Seal,Sello Profesional,"Sello (del arquitecto que firma el proyecto, con su número de arquitecto registrado)."
+GENERAL PLAN USE,JOB NO,Job Number,Número De Proyecto,Número con el que se asigna a cada proyecto.
+GENERAL PLAN USE,INDX,Index,Índice De Láminas,Índice con la lista completa de láminas del proyecto (subdivididas por categoría).
+GENERAL PLAN USE,SUMM,Summary,Resumen,Resumen.
+GENERAL PLAN USE,RECAP,Recapitulation,Recapitulación,Recapitulación (reiterar los puntos principales en una presentación).
+GENERAL PLAN USE,SP,Site Plan,Plano De Situación / Emplazamiento,Plano de situación.
+GENERAL PLAN USE,OSP,Overall Site Plan,Plano De Situación General,Plano de situación general.
+GENERAL PLAN USE,MSP,Master Site Plan,Plano De Situación Maestro,Plano de situación maestro (muestra un área mayor y puede incluir varios proyectos).
+GENERAL PLAN USE,MDP,Master Development Plan,Plano Maestro De Desarrollo,Plano maestro de desarrollo.
+GENERAL PLAN USE,SDP,Site Development Plan,Plano De Desarrollo Del Sitio,Plano que detalla el desarrollo de un proyecto.
+GENERAL PLAN USE,PHP,Phasing Plan,Plano De Fases,Plano de fases (muestra las distintas fases en el desarrollo de un proyecto).
+GENERAL PLAN USE,AP,Address Plan,Plano De Direcciones / Numeración,Plano de direcciones.
+GENERAL PLAN USE,OSD,Open Space Diagram,Diagrama De Espacio Abierto,Diagrama de espacio abierto (muestra el tipo de espacios abiertos dentro del lote).
+GENERAL PLAN USE,PRESENT,Presentation,Presentación,Presentación.
+GENERAL PLAN USE,AERIAL,Aerial View,Vista Aérea / Ortofoto,Ortofoto (fotografía aérea del lote del proyecto).
+GENERAL PLAN USE,FP,Floor Plan,Planta Del Edificio,Planta del edificio.
+GENERAL PLAN USE,LP,Location Plan,Plano De Ubicación Esquematizado,Plano de ubicación (muestra de forma esquemática la ubicación del proyecto).
+GENERAL PLAN USE,KP,Keyplan,Plano Keyplan / Esquema De Llave,Plano que muestra la ubicación de ciertos elementos dentro del diseño del proyecto.
+GENERAL PLAN USE,KNTE,Keynote,Nota Clave,Notas clave (aplica en tabulaciones y legends).
+GENERAL PLAN USE,LGND,Legend,Leyenda Explicativa,Leyenda (tabla explicativa con información clave acerca de una lámina o plano).
+GENERAL PLAN USE,SCHED,Schedule,Tabla / Listado / Planilla,Listado.
+GENERAL PLAN USE,U-MIX,Unit Mix,Tabla De Mezcla De Unidades,Tabla con un desglose completo de los tipos de unidades de vivienda del proyecto.
+GENERAL PLAN USE,RCP,Reflected Ceiling Plan,Plano De Cielos / Reflejado,Plano de cielos.
+GENERAL PLAN USE,DIM PLAN,Dimension Plan,Plano De Dimensiones / Acotado,Plano de dimensiones (se muestran elementos estructurales y las dims entre ellos).
+GENERAL PLAN USE,LS,Life Safety,Seguridad De Vida / Protección,Protección / Seguridad de Vida (planos de serie 1).
+GENERAL PLAN USE,ENLARG,Enlargement,Ampliación,Ampliación (zona mostrada a una escala mayor para incluir mayor nivel de detalle).
+GENERAL PLAN USE,BLOW-UP,Blow-Up,Ampliación Detallada,Ampliación (zona mostrada a una escala mayor para incluir mayor nivel de detalle).
+GENERAL PLAN USE,CALL-OUT,Call-Out,Llamada De Detalle / Recuadro,Recuadro que señaliza una zona que se mostrará ampliada y su ubicación.
+GENERAL PLAN USE,ELEV,Elevation,Elevación / Alzado,Elevación.
+GENERAL PLAN USE,FCDE,Facade / Façade,Fachada Principal,Elevación frontal (es específicamente la fachada principal y más distintiva).
+GENERAL PLAN USE,FRONT ELEV,Front Elevation,Elevación Frontal,Elevación frontal.
+GENERAL PLAN USE,REAR ELEV,Rear Elevation,Elevación Posterior,Elevación posterior.
+GENERAL PLAN USE,SIDE ELEV,Side Elevation,Elevación Lateral,Elevación lateral.
+GENERAL PLAN USE,INT ELEV,Interior Elevation,Elevación Interior,Elevación interior (se muestra con detalle la disposición de cocinas o baños).
+GENERAL PLAN USE,SECT,Section,Sección / Corte,Sección.
+GENERAL PLAN USE,X SECT,Cross Section,Sección Transversal,Sección transversal.
+GENERAL PLAN USE,LONG SECT,Longitudinal Section,Sección Longitudinal,Sección longitudinal.
+GENERAL PLAN USE,WALL SECT,Wall Section,Corte De Pared / Sección Constructiva,Corte de pared.
+GENERAL PLAN USE,ST VIEW,Street View,Vista De Calle,Vista de calle.
+GENERAL PLAN USE,ISOM,Isometric,Isométrico,"Isométrico (representación gráfica en la que los 3 ejes, x / y / z, se separan 120º)."
+GENERAL PLAN USE,DIMET,Dimetric,Dimétrico,"Dimétrico (representación gráfica en la que los 3 ejes, x / y / z, se separan con dos ángulos iguales entre sí y uno de ellos diferente)."
+GENERAL PLAN USE,TRIMET,Trimetric,Trimétrico,"Trimétrico (representación gráfica en la que los 3 ejes, x / y / z, se separan con los tres ángulos diferentes entre sí)."
+GENERAL PLAN USE,CAB,Cabinet,Proyección Gabinete,Representación gráfica oblicua de tipo gabinete (la elevación se muestra de frente en verdadera magnitud y el fondo se escala a la mitad en un eje inclinado).
+GENERAL PLAN USE,CAV,Cavalier,Proyección Caballera,Representación gráfica caballera (la elevación se muestra de frente en verdadera magnitud y el fondo se mantiene a escala en un eje inclinado).
+GENERAL PLAN USE,MILIT,Militar,Proyección Militar,Representación gráfica militar (la planta se muestra de frente en verdadera magnitud y la altura se mantiene a escala en un eje vertical).
+GENERAL PLAN USE,TOB,Top Of Beam,Altura Superior De Viga,Altura de la parte superior de la viga.
+GENERAL PLAN USE,TOS,Top Of Slab,Altura Superior De Losa,Altura de la parte superior de la losa.
+GENERAL PLAN USE,TOP,Top Of Parapet,Altura Superior De Parapeto,Altura de la parte superior del parapeto.
+GENERAL PLAN USE,TOW,Top Of Wall / Top Of Window,Altura Superior De Pared O Ventana,Altura de la parte superior de la pared o de la ventana (según el contexto).
+GENERAL PLAN USE,TOR,Top Of Ridge / Top Of Railing,Altura De Cumbrera O Barandilla,Altura de la cumbrera o de la barandilla (según el contexto).
+GENERAL PLAN USE,TOF,Top Of Footing,Altura Superior De Zapata,Altura de la parte superior de la zapata.
+GENERAL PLAN USE,BOT,Bottom,Altura Inferior,Altura de la parte inferior de un elemento.
+GENERAL PLAN USE,BOB,Bottom Of Beam,Altura Inferior De Viga,Altura de la parte inferior de la viga.
+GENERAL PLAN USE,BOS,Bottom Of Slab,Altura Inferior De Losa,Altura de la parte inferior de la losa.
+GENERAL PLAN USE,BOW,Bottom Of Wall / Bottom Of Window,Altura Inferior De Pared O Ventana,Altura de la parte interior de la pared o de la ventana.
+GENERAL PLAN USE,BOF,Bottom Of Footing,Altura Inferior De Zapata,Altura de la parte inferior de la zapata.
+GENERAL PLAN USE,EOS,Edge Of Slab,Borde De Losa,Borde de la losa.
+GENERAL PLAN USE,DROP,Drop,Caída / Desnivel,"Caída (se usa para indicar la diferencia de nivel entre dos superficies). Es una dimensión variable. En la puerta de los balconies, típicamente es 3/4”."
+GENERAL PLAN USE,FLUSH,Flush,A Paño / Rasante / Alineado,Dos superficies rasantes (perfectamente alineadas entre sí).
+GENERAL PLAN USE,RET,Return,Retorno De Pared / Quiebre,Parte de la pared que se quiebra en ángulo recto (hasta el remate de una puerta).
+GENERAL PLAN USE,AFF,Above Finished Floor,Sobre Nivel De Piso Terminado,Altura sobre el nivel del suelo acabado.
+GENERAL PLAN USE,FFE,Finished Floor Elevation,Elevación De Piso Terminado,Altura sobre el nivel del suelo acabado.
+GENERAL PLAN USE,1ST,First,Primero,Primero.
+GENERAL PLAN USE,2ND,Second,Segundo,Segundo.
+GENERAL PLAN USE,3RD,Third,Tercero,Tercero.
+GENERAL PLAN USE,4TH...20TH,Fourth...Twentieth,Cuarto...Vigésimo,Cuarto...vigésimo.
+GENERAL PLAN USE,21ST,Twenty First,Vigésimo Primero,"Vigésimo primero. Ojo con los ordinales 21, 31, 41..., porque vuelven a tener ST."
+GENERAL PLAN USE,22ND,Twenty Second,Vigésimo Segundo,"Vigésimo segundo. Ojo con los ordinales 22, 32, 42..., porque vuelven a tener ND."
+GENERAL PLAN USE,23RD,Twenty Third,Vigésimo Tercero,"Vigésimo tercero. Ojo con los ordinales 23, 33, 43..., porque vuelven a tener RD."
+GENERAL PLAN USE,STRY,Storey / Story,Número De Pisos,"Número de pisos del edificio (se coloca tras el número, ej: four-story building)."
+GENERAL PLAN USE,FLR,Floor,Nivel / Piso Habitable,Nivel / Piso (generalmente aplica a edificios residenciales y/o habitables).
+GENERAL PLAN USE,LVL,Level,Nivel / Planta General,"Nivel / Piso (generalmente aplica a edificios no habitables, por ejemplo un garaje. También se usa al referirse a un overall plan (porque puede incluir un garaje)."
+GENERAL PLAN USE,TIER,Tier,Nivel De Parqueo / Grada,"Nivel / Piso (aplica al calcular la ventilación del garaje, los niveles son tiers)."
+GENERAL PLAN USE,THRU,Through,A Través De / Desde... Hasta...,A través de / Desde... hasta...
+GENERAL PLAN USE,ALONG,Along,A Lo Largo De,A lo largo de...
+GENERAL PLAN USE,OPN,Open,Abierto,"Abierto (nota para indicar que hay una abertura, habitual en serie 3)."
+GENERAL PLAN USE,OPNG,Opening,Abertura / Vano,Abertura.
+GENERAL PLAN USE,OPN TO BLW,Open To Below,Abierto Hacia Abajo,Nota que se coloca en el piso superior de una doble altura.
+GENERAL PLAN USE,OPN TO SKY,Open To Sky,A Cielo Abierto,Espacio descubierto).
+GENERAL PLAN USE,CLG,Ceiling,Cielo / Cielorraso,Cielo.
+GENERAL PLAN USE,CLEAR,Clearance,Espacio Libre / Clearance,Libre (para especificar que una dimensión específica es suficiente).
+GENERAL PLAN USE,HC,Handicapped,Accesible / Discapacidad,Accesibilidad para personas con discapacidad (y parqueos de discapacitados).
+GENERAL PLAN USE,RO,Rough Opening,Buque / Vano En Bruto,Buque.
+GENERAL PLAN USE,MO,Masonry Opening,Buque En Mampostería,Buque (en pared de mampostería).
+GENERAL PLAN USE,RF PTCH,Roof Pitch,Pendiente De Techo,"Pendiente del techo (se expresa en valores en base 12, por ejemplo 4:12)."
+GENERAL PLAN USE,FTPRNT,Footprint,Huella Del Edificio,Outline del edificio (correspondiente al espacio ocupado por su cimentación).
+GENERAL PLAN USE,PL,Property Line,Línea De Propiedad,"Línea de propiedad (delimita una zona específica con un propietario legal, que debe responsabilizarse de su mantenimiento y el pago de las tasas respectivas)."
+GENERAL PLAN USE,BDRY,Boundary Line,Línea De Límite / Frontera,"Límite (normalmente es equivalente a la línea de propiedad, pero técnicamente a diferencia de esta, el boundary line no considera la propiedad legal). Al tratarse de un límite territorial, puede ser establecido por los topógrafos."
+GENERAL PLAN USE,ESMT,Easement,Derecho De Acceso / Servidumbre,Derecho de acceso / Servidumbre.
+GENERAL PLAN USE,ROW O R/W,Right Of Way,Derecho De Paso / Servidumbre De Paso,Derecho de paso / Servidumbre (es un tipo específico de easement).
+GENERAL PLAN USE,UE,Utility Easement,Servidumbre De Infraestructura / Servicios Públicos,"Derecho de acceso en una porción del lote para compañías de luz, agua, internet... para el arreglo/mantenimiento de la infraestructura por el beneficio de la comunidad."
+GENERAL PLAN USE,SECTR,Sector,Sector,"Sector (cada zona separada dentro de un proyecto grande). En el keyplan, dichas separaciones se suelen representar mediante match lines."
+GENERAL PLAN USE,PHSE,Phase,Fase,"Fase (a diferencia de un sector, es una zona del proyecto a construir en el futuro)."
+GENERAL PLAN USE,DTL,Detail,Detalle,Detalle.
+GENERAL PLAN USE,SPEC,Specification,Especificación,Especificación.
+GENERAL PLAN USE,REM,Remark,Observación,Observación.
+GENERAL PLAN USE,COMM,Comment,Comentario,Comentario (típico en revisiones del proyecto).
+GENERAL PLAN USE,TXT,Text,Texto,Texto.
+GENERAL PLAN USE,FONT,Font,Fuente / Tipo De Letra,Fuente de letra.
+GENERAL PLAN USE,SYMB,Symbol,Símbolo,Símbolo.
+GENERAL PLAN USE,TAG,Tag,Etiqueta / Tag,"Tag / Etiqueta (con información básica de un elemento). Ejemplos: Hexagonal -> Ventanas / Circular -> Puertas / Triangular -> Revisiones / Elíptico -> Altura de cielos / Cuadrado -> Keynote general / Rombo -> Tipos de pared, Pentagonal -> Elementos de units (o louvers en algunos proyectos)... etc."
+GENERAL PLAN USE,EXIST,Existing,Existente,Ya existente con anterioridad.
+GENERAL PLAN USE,LOC,Located,Ubicado,Ubicado.
+GENERAL PLAN USE,RELOC,Relocated,Reubicado,Reubicado.
+GENERAL PLAN USE,MRK-UP,Mark-Up,Marca De Revisión / Corrección,"Marca (indicación relacionada con cambios, ajustes o añadidos en el proyecto)."
+GENERAL PLAN USE,SKTCH,Sketch,Boceto / Croquis,Boceto.
+GENERAL PLAN USE,FHAND,Freehand,A Mano Alzada,A mano alzada.
+GENERAL PLAN USE,DOODLE,Doodle,Garabato,Garabato.
+GENERAL PLAN USE,COLOR SCHM,Color Scheme,Esquema De Colores,"Patrón de colores (típico en serie 3, para mostrar los colores en fachada)."
+GENERAL PLAN USE,COLOR,Main Color,Color Principal,Color principal.
+GENERAL PLAN USE,ACCENT,Accent Color,Color De Acento,"Color acentuado (en serie 3, especifica las zonas con colores secundarios que sirven como contraste respecto al color principal de la fachada)."
+GENERAL PLAN USE,REV,Revision,Revisión,Revisión (modificaciones del proyecto asociadas a una fecha/motivo específico).
+GENERAL PLAN USE,REVCLOUD,Revision Cloud,Nube De Revisión,Nube de revisión (para indicar qué se vio afectado en una revisión específica).
+GENERAL PLAN USE,ALLOWD,Allowed,Permitido,Permitido.
+GENERAL PLAN USE,REQD,Required,Requerido,Requerido / Necesario.
+GENERAL PLAN USE,PROVD,Provided,Provisto / Suministrado,Provisto / Proporcionado.
+GENERAL PLAN USE,PROPD,Proposed,Propuesto,Propuesto.
+GENERAL PLAN USE,INCL,Including,Incluyendo,Incluyendo.
+GENERAL PLAN USE,EXCL,Excluding,Excluyendo,Excluyendo.
+GENERAL PLAN USE,RFR TO,Refer To...,Consultar A... / Remitirse A...,Referente a...
+GENERAL PLAN USE,AS SHWN,As Shown,Tal Como Se Muestra,Tal como se muestra.
+GENERAL PLAN USE,SHWN FR REF,Shown For Reference,Mostrado Como Referencia,"Mostrado como referencia (cuando algo no es parte del alcance del proyecto, pero se muestra a modo informativo en el plano, por ejemplo un edificio existente)."
+GENERAL PLAN USE,AS OFF NOW,As Off Now,A Partir De Ahora,A partir de este momento.
+GENERAL PLAN USE,N/U,Not Used,No Utilizado,"No utilizado (típico para elementos en tabulaciones, los cuales ya no aplican)."
+GENERAL PLAN USE,OLD,Old,Desactualizado / Archivo Viejo,"Viejo (para nombrar archivos desactualizados, pero que se mantienen en el folder)."
+EXTERNAL AGENTS AND ELEMENTS,MEP,"Mechanical, Electrical, Plumbing","Mecánico, Eléctrico Y Plomería","Conjunto mecánico, eléctrico y plomería."
+EXTERNAL AGENTS AND ELEMENTS,MECH,Mechanical,Mecánico,Mecánico.
+EXTERNAL AGENTS AND ELEMENTS,ELEC,Electrical,Eléctrico,Eléctrico.
+EXTERNAL AGENTS AND ELEMENTS,PLUMB,Plumbing,Plomería,Plomería.
+EXTERNAL AGENTS AND ELEMENTS,ID,Interior Design,Diseño De Interiores,Diseño de Interiores.
+EXTERNAL AGENTS AND ELEMENTS,STR,Structural / Structure,Estructural / Estructura,Estructural / Estructura.
+EXTERNAL AGENTS AND ELEMENTS,FA,Fire Alarm,Alarma De Incendios,Alarma ante incendios.
+EXTERNAL AGENTS AND ELEMENTS,FS,Fire Sprinkler,Rociadores Contra Incendios,Rociación de incendios.
+EXTERNAL AGENTS AND ELEMENTS,FP,Fire Protection,Protección Contra Incendios,Protección ante incendios.
+EXTERNAL AGENTS AND ELEMENTS,SRVY,Survey,Levantamiento Topográfico / Estudio De Lote,"Análisis detallado del lote o propiedad del proyecto (topografía, límites... etc)."
+EXTERNAL AGENTS AND ELEMENTS,C,Civil,Obra Civil,"Obra civil (carreteras, vías, caminos... etc)."
+EXTERNAL AGENTS AND ELEMENTS,GRD,Grade,Nivel Del Terreno / Rasante,Nivel del terreno.
+EXTERNAL AGENTS AND ELEMENTS,BM,Benchmark,Nivel De Referencia / Cota Fija,Nivel de referencia.
+EXTERNAL AGENTS AND ELEMENTS,L,Landscape,Paisajismo / Arquitectura De Paisaje,Paisajismo.
+EXTERNAL AGENTS AND ELEMENTS,HRD,Hardscape,Elementos Paisajísticos Artificiales / Obra Civil Ligera,"Elementos paisajísticos artificiales (gazebos, bancos, cercas... etc)."
+EXTERNAL AGENTS AND ELEMENTS,SFT,Softscape,Elementos Paisajísticos Naturales / Vegetación,"Elementos paisajísticos naturales (jardines, vegetación, terreno... etc)."
+EXTERNAL AGENTS AND ELEMENTS,FZ,Flood Zone,Zona De Inundabilidad,Inundabilidad de la zona (clasificación en función del riesgo de inundación del área). Zonas A -> Riesgo alto / Zonas B -> Riesgo moderado / Zonas C o X -> Riesgo bajo.
+EXTERNAL AGENTS AND ELEMENTS,SFHA,Special Flood Hazard Area,Área De Especial Peligro De Inundación,Área de especial peligro ante inundaciones (zonas de inundabilidad tipo A).
+EXTERNAL AGENTS AND ELEMENTS,PERV,Pervious,Superficies Permeables,"Superficies permeables del lote (jardines, gravilla, adoquines porosos... etc). Como consecuencia, estas superficies aumentan el volumen de agua drenada."
+EXTERNAL AGENTS AND ELEMENTS,IMPERV,Impervious,Superficies Impermeables,"Superficies impermeables del lote (concreto, asfalto, piedra... etc). Como consecuencia, estas superficies aumentan las escorrentías."
+EXTERNAL AGENTS AND ELEMENTS,RUN-OFF,Run-Off,Escorrentía,Corriente de agua que discurre por una superficie impermeable.
+EXTERNAL AGENTS AND ELEMENTS,VUA,Vehicular Use Area,Área De Uso Vehicular,Área de uso vehicular.
+EXTERNAL AGENTS AND ELEMENTS,VISIB TRNGL,Visibility Triangle,Triángulo De Visibilidad,Zonas sin obstrucciones para visibilidad en intersecciones.
+EXTERNAL AGENTS AND ELEMENTS,BFFR,Buffer,Barrera Verde / Zona De Mitigación,Transición en el perímetro del lote como barrera visual y acústica.
+EXTERNAL AGENTS AND ELEMENTS,FNC,Fence,Valla / Cerca,Valla / Cerca.
+EXTERNAL AGENTS AND ELEMENTS,CHN LNK FNC,Chain Link Fence,Valla De Alambre / Cerca Eslabonada,Valla / Cerca de alambre.
+EXTERNAL AGENTS AND ELEMENTS,PKT FNC,Picket Fence,Valla De Postes Verticales,Valla de postes verticales.
+EXTERNAL AGENTS AND ELEMENTS,BRBD FNC,Barbed Fence,Valla De Alambre De Púas,Valla con alambre de púas.
+EXTERNAL AGENTS AND ELEMENTS,SITE FNC,Site Fence,Valla De Protección Del Lote,Valla / Cerca de protección del lote.
+EXTERNAL AGENTS AND ELEMENTS,BNCH,Bench,Banco / Banca,Banco.
+EXTERNAL AGENTS AND ELEMENTS,PLNTR,Planter,Jardinera,Jardinera.
+EXTERNAL AGENTS AND ELEMENTS,TREE GRT,Tree Grate,Alcorque / Rejilla De Árbol,"Espacio alrededor del tronco del árbol, para almacenar el agua."
+EXTERNAL AGENTS AND ELEMENTS,VEGET,Vegetation,Vegetación,Vegetación.
+EXTERNAL AGENTS AND ELEMENTS,SHRB,Shrub,Arbusto / Vegetación Baja,Arbusto / Vegetación baja.
+EXTERNAL AGENTS AND ELEMENTS,TURF,Turf,Zacate / Césped,Zacate / Césped.
+EXTERNAL AGENTS AND ELEMENTS,LWN,Lawn,Zacate / Césped / Prado,Zacate / Césped.
+EXTERNAL AGENTS AND ELEMENTS,SOIL,Soil,Tierra / Terreno / Suelo,Tierra / Terreno.
+EXTERNAL AGENTS AND ELEMENTS,SWL,Swale,Depresión Del Terreno / Cuneta Verde,Depresión en el terreno (donde se tiende a acumular agua).
+EXTERNAL AGENTS AND ELEMENTS,CLPR,Caliper,Diámetro Del Tronco / Calibre,Dimensión del diámetro del tronco de un árbol a la altura del pecho.
+EXTERNAL AGENTS AND ELEMENTS,EQUIP,Equipment,Equipamiento / Equipo,Equipamiento.
+EXTERNAL AGENTS AND ELEMENTS,FE,Fire Extinguisher,Extintor De Incendios,Extintor de incendios.
+EXTERNAL AGENTS AND ELEMENTS,RFE,Recessed Fire Extinguisher,Extintor De Incendios Empotrado,Extintor de incendios empotrado.
+EXTERNAL AGENTS AND ELEMENTS,SFE,Surface Fire Extinguisher,Extintor De Incendios Superficial / Rasante,Extintor de incendios rasante.
+EXTERNAL AGENTS AND ELEMENTS,FEC,Fire Extinguisher Cabinet,Gabinete De Extintor De Incendios,Armario con extintor de incendios.
+EXTERNAL AGENTS AND ELEMENTS,FHC,Fire Hose Cabinet,Gabinete De Manguera De Incendios,Armario con la toma de la manguera de incendios.
+EXTERNAL AGENTS AND ELEMENTS,FHV,Fire Hose Valve,Válvula De Manguera De Incendios,Válvula de la manguera de incendios.
+EXTERNAL AGENTS AND ELEMENTS,FRT,Fire Retardant Treated,Tratado Con Retardante De Fuego,Tratado con retardante ante incendios (usualmente cerchas de madera o wood trusses).
+EXTERNAL AGENTS AND ELEMENTS,FSE,Fire Service Elevator,Elevador De Servicio De Bomberos,Elevador de servicio ante incendios.
+EXTERNAL AGENTS AND ELEMENTS,DRFTSTP,Draftstop,Cortafuegos / Barrera De Tiro,Compartimentación en techos para evitar la propagación del fuego.
+EXTERNAL AGENTS AND ELEMENTS,SMK COMP,Smoke Compartment,Compartimento De Humo,Área compartimentada anti-incendios (evita propagación del humo).
+EXTERNAL AGENTS AND ELEMENTS,SD,Smoke Detector,Detector De Humo,Detector de humos.
+EXTERNAL AGENTS AND ELEMENTS,SPKR,Sprinkler,Rociador / Aspersor,Rociador.
+EXTERNAL AGENTS AND ELEMENTS,PIPE,Pipe,Tubería / Ducto,Tubería / Ducto.
+EXTERNAL AGENTS AND ELEMENTS,SP,Standpipe,Columna Seca / Tubo Vertical,Instalación vertical para uso de los bomberos en caso de incendio.
+EXTERNAL AGENTS AND ELEMENTS,FSP,Fire Standpipe,Columna Seca Contra Incendios,Instalación vertical para uso de los bomberos en caso de incendio.
+EXTERNAL AGENTS AND ELEMENTS,FASS,Fire Apparatus Setup Site,Zona De Estacionamiento De Bomberos,Espacio de estacionamiento reservado para el camión de bomberos (47'x21').
+EXTERNAL AGENTS AND ELEMENTS,FCS,Fire Control Symbol,Símbolo De Control De Fuego,"Símbolo para el control del fuego (identifica en fachada al edificio con una categoría para facilitar el trabajo de los bomberos). Variaciones: F (Floor Trusses), R (Roof Trusses), RF (Floor & Roof Trusses)."
+EXTERNAL AGENTS AND ELEMENTS,AED,Automatic External Defibrillator,Desfibrilador Externo Automático,Desfibrilador externo automático.
+EXTERNAL AGENTS AND ELEMENTS,HVAC,"Heating, Ventilation And Cooling","Calefacción, Ventilación Y Aire Acondicionado","Sistema de calefacción, ventilación y enfriamiento."
+EXTERNAL AGENTS AND ELEMENTS,CU,Condensing Unit,Unidad Condensadora,Unidad de condensación.
+EXTERNAL AGENTS AND ELEMENTS,AHU,Air Handling Unit,Unidad Manejadora De Aire,Unidad de tratamiento de aire.
+EXTERNAL AGENTS AND ELEMENTS,RTU,Rooftop Unit,Unidad De Aire Acondicionado En Techo,Unidad de aire acondicionado en el techo del edificio.
+EXTERNAL AGENTS AND ELEMENTS,EX,Exhaust,Extractor De Aire / Extracción,Extractor de aire (ventilación).
+EXTERNAL AGENTS AND ELEMENTS,IN,Intake,Toma De Aire / Admisión,Toma de aire (ventilación).
+EXTERNAL AGENTS AND ELEMENTS,O/A,Outside Air,Toma De Aire Exterior,Toma de aire (ventilación).
+EXTERNAL AGENTS AND ELEMENTS,REF LINES,Refrigeration Lines,Líneas De Refrigeración,Líneas de cobre que llevan refrigerante entre unidades de HVAC interna y externa.
+EXTERNAL AGENTS AND ELEMENTS,VTR,Ventilation Through Roof,Ventilación A Través Del Techo,Ventilación a través del techo.
+EXTERNAL AGENTS AND ELEMENTS,SHFT,Shaft,Ducto Vertical / Shaft,Hueco vertical que comunica varios pisos (siempre con clasificación de resistencia al fuego de 2h).
+EXTERNAL AGENTS AND ELEMENTS,CHS,Chase,Ducto / Caja De Instalaciones / Chase,Hueco que puede comunicar varios pisos y puede ser horizontal (no siempre llevan clasificación de resistencia al fuego).
+EXTERNAL AGENTS AND ELEMENTS,HSTWY,Hoistway,Caja De Elevador / Hueco De Izado,Hueco vertical específicamente del elevador (siempre con clasificación de resistencia al fuego de 2h).
+EXTERNAL AGENTS AND ELEMENTS,TRSH CHT,Trash Chute,Ducto De Basura,Ducto vertical de basura (conecta todos los pisos con el cuarto de basura en el primer nivel). En su parte inferior se permite un desfase máximo de 15 grados. Siempre con resistencia de 2h.
+EXTERNAL AGENTS AND ELEMENTS,TELESC CHT,Telescopic Security Chute,Ducto Telescópico De Seguridad,Ducto telescópico de seguridad (conexión horizontal del compactador de basura con el exterior).
+EXTERNAL AGENTS AND ELEMENTS,TRSH BIN,Trash Bin,Contenedor De Basura / Basurero,Contenedor para reciclaje o desechos comunes.
+EXTERNAL AGENTS AND ELEMENTS,RECYC BIN,Recycling Bin,Contenedor De Reciclaje,Contenedor para reciclaje.
+EXTERNAL AGENTS AND ELEMENTS,K-BOX,Knox Box,Caja De Seguridad Para Llaves / Knox Box,Caja cerrada donde se guardan las llaves de acceso a servicios del edificio.
+EXTERNAL AGENTS AND ELEMENTS,J-BOX,Junction Box,Caja De Conexiones / Registro,Caja de conexiones.
+EXTERNAL AGENTS AND ELEMENTS,EL,Emergency Lighting,Iluminación De Emergencia,Iluminación de emergencia.
+EXTERNAL AGENTS AND ELEMENTS,EP,Electrical Panel,Panel Eléctrico / Tablero,Panel eléctrico.
+EXTERNAL AGENTS AND ELEMENTS,EVSE,Electric Vehicle Supply Equipment,Equipo De Suministro De Vehículos Eléctricos,Equipamiento de carga de vehículos eléctricos.
+EXTERNAL AGENTS AND ELEMENTS,HV,High Voltage,Alto Voltaje / Alta Tensión,Alto voltaje.
+EXTERNAL AGENTS AND ELEMENTS,LV,Low Voltage,Bajo Voltaje / Baja Tensión,Bajo voltaje.
+EXTERNAL AGENTS AND ELEMENTS,LVP,Low Voltage Panel,Panel De Bajo Voltaje,Panel de bajo voltaje.
+EXTERNAL AGENTS AND ELEMENTS,XFMR,Transformer,Transformador,Transformador.
+EXTERNAL AGENTS AND ELEMENTS,EF,Exhaust Fan,Ventilador De Extracción / Extractor,Ventilador de extracción.
+EXTERNAL AGENTS AND ELEMENTS,SCEF,Smoke Control Exhaust Fan,Ventilador De Extracción De Humo,Ventilador de extracción de humo.
+EXTERNAL AGENTS AND ELEMENTS,CF,Ceiling Fan,Ventilador De Techo,Ventilador (montado en el cielo raso).
+EXTERNAL AGENTS AND ELEMENTS,GFI,Ground Fault Interruptor,Interruptor De Falla De Tierra / GFCI,Interruptor de falla de tierra.
+EXTERNAL AGENTS AND ELEMENTS,LTG,Lighting,Iluminación / Alumbrado,Iluminación / Punto de luz.
+EXTERNAL AGENTS AND ELEMENTS,FLUOR,Fluorescent,Fluorescente,Fluorescente.
+EXTERNAL AGENTS AND ELEMENTS,LED,Light Emitting Diode,Diodo Emisor De Luz / LED,Luz tipo LED.
+EXTERNAL AGENTS AND ELEMENTS,WALL SCNC,Wall Sconce,Aplique De Pared,Elemento de iluminación instalado en la pared.
+EXTERNAL AGENTS AND ELEMENTS,WALL-MTD,Wall Mounted,Montado En La Pared,Montado en la pared (típico para los puntos de iluminación en fachada).
+EXTERNAL AGENTS AND ELEMENTS,CLG-MTD,Ceiling Mounted,Montado En El Cielo Raso,Montado en el cielo raso (habitual para los puntos de iluminación interiores).
+EXTERNAL AGENTS AND ELEMENTS,LP,Light Pole,Poste De Luz / Farola,Farola / Poste de luz.
+EXTERNAL AGENTS AND ELEMENTS,2-WC,Two-Way Communication,Comunicación Bidireccional,Sistema de comunicación bidireccional (común en elevadores).
+EXTERNAL AGENTS AND ELEMENTS,SYS,System,Sistema,Sistema.
+EXTERNAL AGENTS AND ELEMENTS,TECH,Technical,Técnico,Técnico.
+EXTERNAL AGENTS AND ELEMENTS,MTR,Meter,Medidor / Contador,Medidor.
+EXTERNAL AGENTS AND ELEMENTS,SW,Switch,Interruptor / Apagador,Interruptor.
+EXTERNAL AGENTS AND ELEMENTS,PEB,Push To Enter Button,Botón De Presionar Para Entrar,Botón para entrada.
+EXTERNAL AGENTS AND ELEMENTS,PB,Palm Button,Botón De Palma,Botón accionable con la palma de la mano (típico en la puerta de tolva o hopper door del trash chute).
+EXTERNAL AGENTS AND ELEMENTS,FOB,Key Fob,Dispositivo Electrónico De Apertura / Mando,Dispositivo electrónico de apertura a distancia (control).
+EXTERNAL AGENTS AND ELEMENTS,AUTO,Automatic,Automático,Automático.
+EXTERNAL AGENTS AND ELEMENTS,CCTV,Closed Circuit Television,Circuito Cerrado De Televisión,Circuito cerrado de televisión (para sistema de cámaras de vigilancia).
+EXTERNAL AGENTS AND ELEMENTS,WP,Weatherproof / Waterproof,A Prueba De Intemperie / Impermeable,A prueba de la intemperie / A prueba de agua.
+EXTERNAL AGENTS AND ELEMENTS,DP,Damp-Proof,A Prueba De Humedad,A prueba de la humedad (del terreno).
+EXTERNAL AGENTS AND ELEMENTS,DPC,Damp-Proof Course,Barrera Horizontal Contra La Humedad,Membrana a prueba de humedad (del terreno).
+EXTERNAL AGENTS AND ELEMENTS,DS,Downspout,Bajante Pluvial Exterior,Bajante (en la fachada del edificio). Usualmente tienen un diámetro de 3” o 4”.
+EXTERNAL AGENTS AND ELEMENTS,RWL,Rainwater Leader,Bajante Pluvial Interior,Bajante (en el interior del edificio). Usualmente tienen un diámetro de 4” o superior.
+EXTERNAL AGENTS AND ELEMENTS,GTR,Gutter,Canoa / Canalón,Canoa.
+EXTERNAL AGENTS AND ELEMENTS,SPL BLK,Splash Block,Bloque Disipador / Anti-Salpicaduras,Protección anti-salpicaduras (se coloca ocasionalmente justo bajo los downspouts).
+EXTERNAL AGENTS AND ELEMENTS,SPL GRD,Splash Guard,Protector Contra Salpicaduras,Protección anti-salpicaduras (se coloca ocasionalmente justo bajo los downspouts).
+EXTERNAL AGENTS AND ELEMENTS,EOS,Emergency Overflow Scupper,Gárgola De Rebose De Emergencia,Rebalse de emergencia.
+EXTERNAL AGENTS AND ELEMENTS,OS,Overflow Scupper,Gárgola De Rebose / Desagüe,Rebalse.
+EXTERNAL AGENTS AND ELEMENTS,HB,Hose Bib,Toma Para Manguera / Grifo De Patio,Toma para manguera.
+EXTERNAL AGENTS AND ELEMENTS,HYD,Hydrant,Hidrante / Toma De Agua,Hidrante.
+EXTERNAL AGENTS AND ELEMENTS,FD,Floor Drain,Drenaje De Piso / Sumidero,Drenaje (en el suelo).
+EXTERNAL AGENTS AND ELEMENTS,RD,Roof Drain,Drenaje De Techo,Drenaje (en el techo). No puede ubicarse a más de 16' del parapeto (línea interior).
+EXTERNAL AGENTS AND ELEMENTS,TD,Trench Drain,Drenaje De Zanja / Lineal,Drenaje de zanja (drenaje lineal).
+EXTERNAL AGENTS AND ELEMENTS,PD,Planter Drain,Drenaje De Jardinera,Drenaje de jardinera.
+EXTERNAL AGENTS AND ELEMENTS,AD,Auxiliary Drain,Drenaje Auxiliar,Drenaje auxiliar.
+EXTERNAL AGENTS AND ELEMENTS,CB,Catch Basin,Colector / Arqueta De Registro,Colector / Arqueta.
+EXTERNAL AGENTS AND ELEMENTS,FCO,Floor Cleanout,Tapa De Registro De Limpieza,Tapa de drenaje (se utiliza para poder acceder al sistema de drenaje y limpiarlo).
+EXTERNAL AGENTS AND ELEMENTS,WPHL,Weep Hole,Orificio De Drenaje / Mechinal,Orificio de drainage (típico en los compactadores de basura).
+EXTERNAL AGENTS AND ELEMENTS,STRN DOME,Strainer Dome,Cúpula De Rejilla / Filtro De Domo,Tapa de drenaje semicircular (se utiliza en los roof drains).
+EXTERNAL AGENTS AND ELEMENTS,WT,Water Tank,Tanque De Agua / Cisterna,Tanque de agua.
+EXTERNAL AGENTS AND ELEMENTS,CW,Cold Water,Agua Fría,Agua fría.
+EXTERNAL AGENTS AND ELEMENTS,HW,Hot Water,Agua Caliente,Agua caliente.
+EXTERNAL AGENTS AND ELEMENTS,HWH,Hot Water Heater,Calentador De Agua / Termotanque,Calentador de agua.
+EXTERNAL AGENTS AND ELEMENTS,TSTAT,Thermostat,Termostato,Termostato.
+EXTERNAL AGENTS AND ELEMENTS,BYP,Bypass,Derivación / Bypass,Derivación.
+EXTERNAL AGENTS AND ELEMENTS,SAN,Sanitary,Instalación Sanitaria,Sanitario (planos de instalaciones sanitarias).
+EXTERNAL AGENTS AND ELEMENTS,SWG,Sewage,Sistema De Alcantarillado / Aguas Negras,Sistema de desagüe (de aguas residuales).
+EXTERNAL AGENTS AND ELEMENTS,DWV,Drain Waste Vent,"Drenaje, Desecho Y Ventilación",Sistema de entrada de aire en el desagüe para limpieza de aguas negras y grises.
+EXTERNAL AGENTS AND ELEMENTS,LIFT STAT,Lift Station,Estación De Bombeo / Elevadora,Estación de bombeo (sirve para drenar aguas negras y grises con más facilidad).
+EXTERNAL AGENTS AND ELEMENTS,WRB,Water Resistive Barrier,Barrera Resistente Al Agua,Barrera impermeable.
+EXTERNAL AGENTS AND ELEMENTS,VB,Vapor Barrier,Barrera De Vapor,Barrera de vapor (previene que la humedad del terreno pase a la estructura).
+EXTERNAL AGENTS AND ELEMENTS,COMP FILL,Compacted Fill,Relleno Compactado,Relleno compactado (para aumentar su resistencia y reducir su porosidad).
+EXTERNAL AGENTS AND ELEMENTS,EXCAV,Excavation,Excavación,Excavación.
+EXTERNAL AGENTS AND ELEMENTS,DEMO,Demolition,Demolición,Demolición.
+EXTERNAL AGENTS AND ELEMENTS,ETR,Existing To Remain,Existente A Mantener,"El edificio o elemento existente indicado, se mantiene."
+EXTERNAL AGENTS AND ELEMENTS,RBBL,Rubble,Escombros / Cascote,Escombros.
+EXTERNAL AGENTS AND ELEMENTS,RENOV,Renovation,Renovación,Renovación (cambios significativos con objetivo de mejorar el proyecto).
+EXTERNAL AGENTS AND ELEMENTS,RESTOR,Restoration,Restauración,Restauración (cambios con objetivo de preservar la forma original del proyecto).
+EXTERNAL AGENTS AND ELEMENTS,ALTER LVL,Alteration Level,Nivel De Alteración / Reforma,Clasificación para determinar el nivel de cambios en una reforma.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",LEED,Leadership In Energy & Environment Design,Liderazgo En Diseño Energético Y Ambiental,Liderazgo en Diseño Energético y Ambiental.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",FBC,Florida Building Code,Código De Edificación De Florida,Código de Edificación de Florida.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",FHA,Fair Housing Act,Ley Federal De Equidad De Viviendas,Ley Federal de Equidad de Viviendas. Regula los estándares de accesibilidad para vivienda privada.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",FHADM,Fair Housing Act Design Manual,Manual De Diseño De La Ley Federal De Equidad De Viviendas,Manual de diseño que regula los estándares de accesibilidad para vivienda privada.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",ADA,Americans With Disabilities Act,Ley Federal Para Estadounidenses Con Discapacidades,Ley Federal para Estadounidenses con Discapacidades. Regula los estándares de accesibilidad para zonas públicas.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",FAC,Florida Accessibility Code,Código De Accesibilidad De Florida,"Regula los estándares de accesibilidad para zonas públicas (específico para Florida). A diferencia de ADA (que engloba los estandarizados federales de diseño), el FAC es un código de edificación (y por tanto tiene más peso en materia legal)."
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",CFR,Code Of Federal Regulations,Código De Regulaciones Federales,Código de Regulaciones Federales.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",FDOT,Florida Department Of Transportation,Departamento De Transporte De Florida,"Departamento de Transporte de Florida (regulación movilidad: aceras, carreteras...)."
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",FGBC,Florida Green Building Coalition,Coalición De Florida Para La Construcción Sostenible,Coalición de Florida para la Construcción Sostenible.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",NFPA,National Fire Protection Association,Asociación Nacional De Protección Contra Incendios,Asociación Nacional de Protección ante Incendios.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",FFPC,Florida Fire Prevention Code,Código De Prevención De Incendios De Florida,Código de Prevención de Incendios de Florida.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",FPL,Florida Power & Light,Compañía De Fuerza Y Luz De Florida,Compañía de Fuerza y Luz de Florida.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",FEMA,Federal Emergency Management Agency,Agencia Federal Para El Manejo De Emergencias,Agencia Federal para el Manejo de Emergencias.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",OSHA,Occupational Safety & Health Administration,Administración De Seguridad Y Salud Ocupacional,Administración de Seguridad y Salud Ocupacional.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",AIA,American Institute Of Architects,Instituto Estadounidense De Arquitectos,Institución Estadounidense de Arquitectos.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",HOA,Home Owner's Association,Asociación De Propietarios,Asociación de Propietarios.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",DBR,Design Review Board,Junta De Revisión De Diseño,Entidad supervisora del proyecto diseñado para su aprobación.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",DRC,Design Review Committee,Comité De Revisión De Diseño,Comité supervisor del proyecto.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",ASTM,American Society For Testing & Materials,Sociedad Estadounidense Para Pruebas Y Materiales,Sociedad Estadounidense para Pruebas y Materiales.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",ANSI,American National Standards Institute,Instituto Nacional Estadounidense De Estándares,Institución Estadounidense que coordina los estándares tecnológicos. El código ANSI A117.1 Standard aplica para áreas privadas y DUs (al igual que FHA).
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",ISO,International Standards Organization,Organización Internacional De Normalización,Organización internacional que coordina los estandarizados.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",NGVD,National Geodetic Vertical Datum ('29),Dátum Vertical Geodésico Nacional De 1929,"Referencia fijada para datos de alturas del terreno (en 1929). Es la predecesora de NAVD, y por lo tanto es menos precisa."
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",NAVD,North American Vertical Datum ('88),Dátum Vertical Norteamericano De 1988,Referencia fijada para datos de alturas del terreno (en 1988). Se utiliza en FEMA. Mayor precisión en los datos (algo importante para evitar casos de inundaciones).
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",RFI,Request For Information,Solicitud De Información,Solicitud de información.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",RFP,Request For Proposal,Solicitud De Propuesta,Solicitud de propuesta (para que el vendedor indique costos por distintos servicios).
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",RFQ,Request For Quote,Solicitud De Presupuesto,Solicitud de presupuesto (para que el vendedor indique el costo de algo específico).
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",NOA,Notice Of Acceptance,Notificación De Aprobación / Aceptación,Notificación de aprobación por parte del fabricante.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",NOC,Notice Of Completion,Notificación De Terminación,Notificación de completado por parte del dueño/desarrollador.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",ASPR,Administrative Site Plan Review,Revisión Administrativa Del Plano De Situación,Revisión administrativa del plano de situación.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",AHJ,Authority Having Jurisdiction,Autoridad Con Jurisdicción,Entidades responsables de que se cumplan los códigos en una jurisdicción.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",LLC,Limited Liability Company,Sociedad De Responsabilidad Limitada / SRL,"Sociedad de Responsabilidad Limitada (SRL) -> Limitada al capital aportado. Sin doble tributación, las ganancias o pérdidas son asumidas por sus miembros."
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",INC,Incorporated / Corporation,Sociedad Anónima / SA,Sociedad Anónima (SA) -> Posee accionistas y puede entrar en bolsa de valores. Poseen doble tributación (C-Corp). Sus socios/accionistas no declaran impuestos.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",O,Owner,Dueño / Propietario,Dueño.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",GC,General Contractor,Contratista General,Contratista general (se encarga de coordinar múltiples aspectos del proyecto).
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",SPC,Specialty Contractor,Contratista Especializado,Contratista especializado (coordina un aspecto específico del proyecto).
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",SC,Subcontractor,Subcontratista,"Subcontratista (posee relación contractual con el contratista, pero no con el dueño)."
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",DEV,Developer,Desarrollador / Promotor,Desarrollador (su objetivo es la venta del proyecto tras ser finalizado).
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",MFR,Manufacturer,Fabricante,Fabricante.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",RA,Registered Architect,Arquitecto Registrado / Colegiado,Arquitecto Registrado.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",ENG,Engineer,Ingeniero,Ingeniero.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",SURVYR,Surveyor,Topógrafo / Agrimensor,Topógrafo.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",P&Z,Planning & Zoning Commission,Comisión De Planeamiento Y Zonificación,Comisión de Planeamiento y Zonificación.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",PM,Project Manager,Gestor De Proyectos / Director De Proyecto,Gestor de Proyectos.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",A/E,Architect & Engineer,Arquitecto E Ingeniero,Arquitecto e ingeniero.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",A/E APPRVL,Architect & Engineer Approval,Aprobación De Arquitecto E Ingeniero,Aprobado por el arquitecto y el ingeniero.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",OAE MEETING,"Owner, Architect & Engineer Meeting","Reunión De Propietario, Arquitecto E Ingeniero","Reunión entre el dueño, el arquitecto y el ingeniero (típicamente bisemanal)."
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",CM,Construction Manager,Gerente De Construcción,Gerente de construcción.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",CF,Construction Foreman,Supervisor De Obra / Capataz,Supervisor de obra.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",CONSTR LOG,Construction Logbook,Bitácora De Obra / Libro De Incidencias,Bitácora / Libro de obra (se anota el avance de los trabajos y cambios en obra).
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",SHRHOLDER,Shareholder,Accionista,Accionista de una compañía.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",STKHOLDER,Stakeholder,Parte Interesada,Parte interesada de una compañía (sin ser necesariamente accionista de la misma).
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",HUD,House And Urban Development,Desarrollo Urbanístico Y De Vivienda,Desarrollo urbanístico y de vivienda.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",INFILL,Infill Development,Desarrollo De Relleno / Infill,"Desarrollo de relleno (proyecto en zona urbana sin uso, que aumenta la densidad)."
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",IFC,Issued For Construction,Emitido Para Construcción,Planos entregados al contratista para ser revisados antes de enviarse a la ciudad.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",PERMIT SET,Permit Set,Set De Permiso,Set de permiso (conjunto de planos destinados a obtener permiso de construcción).
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",SUBMTTAL,Submittal,Envío De Documentación / Entrega,Envío de un set de planos (para una entrega específica de un proyecto).
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",RESUBMTTAL,Resubmittal,Reenvío De Documentación,Reenvío de un set de planos (para una entrega específica de un proyecto).
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",ADD,Addendum,Apéndice / Adenda,Apéndice (información añadida para clarificar un proyecto sin modificarlo).
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",AMEND,Amendment,Enmienda,Enmienda (información añadida que modifica de forma significativa el proyecto).
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",CO,Change Order,Orden De Cambio,Orden de cambio (registro de una modificación en el alcance del contrato original). Básicamente es un tipo de enmienda del contrato para la construcción del proyecto.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",ASI,Architect's Supplemental Instructions,Instrucciones Suplementarias Del Arquitecto,"Instrucciones suplementarias del arquitecto (documento en el que se solicitan cambios en obra respecto al set de planos constructivos, sin que aumente el costo)."
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",SHOP DWGS,Shop Drawings,Planos De Taller / Fabricación,"Planos que detallan componentes específicos del proyecto usualmente prefabricados como elevadores, cerchas, ventanas o elementos de carpintería. Deben ser revisados y aprobados por el equipo a cargo de la construcción."
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",CONST DWGS,Construction Drawings,Planos Constructivos / De Ejecución,Planos constructivos (sirven como guía para todos los gremios que intervienen en el proyecto y la coordinación entre los mismos).
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",AB DWGS,As Built Drawings,Planos Como Construido / As-Built,Planos que reflejan los cambios de último momento en obra.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",CPM,Critical Path Method,Método De La Ruta Crítica,Método de la Ruta Crítica (análisis del cronograma en gestión de proyectos).
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",FEASIB STUDY,Feasibility Study,Estudio De Viabilidad,"Estudio de viabilidad (en función del presupuesto, tiempo y alcance del proyecto)."
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",TCO,Temporary Certificate Of Occupancy,Certificado Temporal De Ocupación,Certificado Temporal de Ocupación.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",GMP,Guaranteed Maximum Price,Precio Máximo Garantizado,"Precio Máximo Garantizado (es una modalidad de contrato entre el dueño y el constructor, en el que este último se compromete a un costo máximo de ejecución y a asumir de su bolsillo el sobrecoste, si se produjese)."
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",CMAR,Construction Manager At Risk,Gerente De Construcción A Riesgo,"Esquema de entrega de proyecto en el que el dueño posee contratos independientes con el arquitecto y el contratista, y ambos colaboran durante el diseño del proyecto. Asimismo, el contratista tiene un costo máximo de ejecución (GMP) cuyo exceso, si se produjese, debe asumirlo de su bolsillo."
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",DBB,Design Bid Build,"Diseño, Licitación, Construcción","Esquema de entrega de proyecto más habitual. El dueño contrata inicialmente al arquitecto para diseñar el proyecto. Posteriormente, durante la fase de licitación, selecciona al contratista. La responsabilidad se divide en tres partes."
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",DB,Design Build,Diseño Y Construcción / Llave En Mano,Esquema de entrega de proyecto en el que el dueño Plasma a una sola compañía para manejar tanto el diseño como la construcción del proyecto.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",JOC,Job Order Contracting,Contratación Por Orden De Trabajo,Esquema de entrega de proyecto indefinido. Se caracteriza por poder incluir múltiples proyectos en un solo contrato a largo plazo.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",BPO,Business Process Outsourcing,Externalización De Procesos De Negocio,Externalización / Subcontratación.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",FOLIO,Folio,Folio Real / Catastral,Folio (documento oficial con una descripción del lote y el nombre de su propietario).
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",BOQ,Bill Of Quantities,Catálogo De Conceptos / Presupuesto Detallado,Factura de materiales y mano de obra.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",BDGT,Budget,Presupuesto,Presupuesto.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",CONTING,Contingency,Contingencia / Imprevistos,Porcentaje del presupuesto del proyecto reservado para gastos inesperados.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",CONTRACT,Contract,Contrato,Contrato.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",NIC,Not In Contract,No Incluido En El Contrato,No figura en el contrato.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",NIS,Not In Scope,Fuera Del Alcance,Fuera del alcance del trabajo.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",SOW,Scope Of Work,Alcance Del Trabajo,Delimitación del trabajo a entregar en cada proyecto.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",PL,Punch List,Lista De Pendientes / Punch List,Lista de tareas del alcance que deben finalizarse para declarar proyecto completado.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",TAKE-OFF,Take-Off,Cuantificación De Materiales / Take-Off,Lista de materiales / costos estimados para finalizar un proyecto.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",WAIVER,Waiver,Exención / Renuncia Legítima,Exención.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",PPE,Personal Protective Equipment,Equipo De Protección Personal / EPP,Equipamiento de protección personal (en obra).
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",BY OTHERS,By Others,Por Otros,Cuando una parte específica del proyecto va a ser desarrollada por otra oficina.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",SEP PERMIT,Separate Permit,Permiso Separado / Independiente,Permiso separado (cuando una parte del proyecto requiere permiso independiente).
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",OAE,Or Approved Equal,O Equivalente Aprobado,Posibilidad de sustituir un elemento por otro equivalente que esté aprobado.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",MASSING,Massing,Volumetría / Análisis De Masa,"Análisis de la volumetría del proyecto y la relación entre sus distintas partes, y también la relación entre el mismo y su contexto alrededor."
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",ZNG,Zoning,Zonificación,"Análisis del código que aplica al lote (alturas máx, separaciones... etc). Según la ubicación y características del lote, se le asigna un código (letra/número). La letra indica el uso (R = Residencial / C = Comercial / I = Industrial... etc). El número indica el nivel o la intensidad de uso para dicho lote."
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",FLU,Future Land Use,Uso Futuro Del Suelo,Uso futuro del terreno (código diferente según el tipo de uso).
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",MLU,Multiple Land Use,Uso Mixto Del Suelo,Uso múltiple del terreno.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",RENT,Rent,Alquiler / Arrendamiento,Alquiler.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",MRTG,Mortgage,Hipoteca,Hipoteca.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",GENIUS LOCI,Genius Loci,Genius Loci / Espíritu Del Lugar,Diseño arquitectónico cuando toma en cuenta el contexto/cultura de la ubicación.
+"CODES, INSTITUTIONS AND CONTRACTUAL LANGUAGE",PARTI,Parti Pris,Idea Base / Concepto Arquitectónico,Punto de partida / Concepto (la idea fundamental a partir de la que nace el proyecto).
+OFFICE COMMUNICATION,PTO,Paid Time Off,Tiempo Libre Remunerado,Tiempo libre remunerado (incluye días de vacaciones y los de baja por enfermedad).
+OFFICE COMMUNICATION,PH,Paid Holiday,Feriado De Pago Obligatorio,Feriado de pago obligatorio.
+OFFICE COMMUNICATION,VAC,Vacation,Vacaciones,Vacaciones.
+OFFICE COMMUNICATION,OT,Overtime,Horas Extra,Horas extra.
+OFFICE COMMUNICATION,S/L,Sick Leave,Baja Por Enfermedad,Baja por enfermedad.
+OFFICE COMMUNICATION,M/L,Maternity Leave,Baja Por Maternidad,Baja por maternidad.
+OFFICE COMMUNICATION,WFH,Work From Home,Teletrabajo / Trabajo Desde Casa,Tele-trabajo.
+OFFICE COMMUNICATION,TIM,Timecard,Tarjeta De Registro De Horario,Tarjeta de registro de horario.
+OFFICE COMMUNICATION,PAYROLL,Payroll,Nómina Salarial,Nómina salarial.
+OFFICE COMMUNICATION,PP,Pay Period,Periodo De Pago,Periodo de pago.
+OFFICE COMMUNICATION,XMAS BONUS,Christmas Bonus,Aguinaldo,Aguinaldo.
+OFFICE COMMUNICATION,OOO,Out Of Office,Fuera De La Oficina,Fuera de la oficina en el momento.
+OFFICE COMMUNICATION,D/L,Deadline,Fecha Límite,Fecha límite (para una entrega).
+OFFICE COMMUNICATION,EOD,End Of Day,Final Del Día,Para el final del día (deadline).
+OFFICE COMMUNICATION,EOW,End Of Week,Final De La Semana,Para el final de la semana (deadline).
+OFFICE COMMUNICATION,EOM,End Of Month,Final Del Mes,Para el final del mes (deadline).
+OFFICE COMMUNICATION,WIP,Work In Progress,Trabajo En Progreso,Trabajo en progreso.
+OFFICE COMMUNICATION,NARR,Narrative,Narrativa,Narrativa (documentación detallada de modificaciones relacionadas con el proyecto).
+OFFICE COMMUNICATION,BRKDN,Breakdown,Desglose,Desglose.
+OFFICE COMMUNICATION,UNF,Unfinished,Sin Terminar,Sin terminar.
+OFFICE COMMUNICATION,UPD,Updated,Actualizado,Actualizado.
+OFFICE COMMUNICATION,STAFF,Staff,Planilla / Personal,Planilla (conjunto de los trabajadores de la empresa).
+OFFICE COMMUNICATION,EMP,Employee,Empleado,Empleado.
+OFFICE COMMUNICATION,TEAM,Team,Equipo,Equipo.
+OFFICE COMMUNICATION,TEAMWK,Teamwork,Trabajo En Equipo,Trabajo en equipo.
+OFFICE COMMUNICATION,TEAM LDR,Team Leader,Líder De Equipo,Líder de equipo.
+OFFICE COMMUNICATION,COORD,Coordination,Coordinación,Coordinación.
+OFFICE COMMUNICATION,W/,With,Con,Con.
+OFFICE COMMUNICATION,W/O,Without,Sin,Sin.
+OFFICE COMMUNICATION,THX,Thanks,Gracias,Gracias.
+OFFICE COMMUNICATION,EG,Exempli Gratia,Por Ejemplo,Por ejemplo.
+OFFICE COMMUNICATION,IE,Id Est,Esto Es / En Otras Palabras,Esto es... (en otras palabras...)
+OFFICE COMMUNICATION,ETC,Etcetera,Etcétera,Etcétera.
+OFFICE COMMUNICATION,INFO,Information,Información,Información.
+OFFICE COMMUNICATION,AM,Ante Meridiem,Antes Del Mediodía,Antes del mediodía.
+OFFICE COMMUNICATION,PM,Post Meridiem,Después Del Mediodía,Después del mediodía.
+OFFICE COMMUNICATION,MON,Monday,Lunes,Lunes.
+OFFICE COMMUNICATION,TUE,Tuesday,Martes,Martes.
+OFFICE COMMUNICATION,WED,Wednesday,Miércoles,Miércoles.
+OFFICE COMMUNICATION,THU,Thursday,Jueves,Jueves.
+OFFICE COMMUNICATION,FRI,Friday,Viernes,Viernes.
+OFFICE COMMUNICATION,SAT,Saturday,Sábado,Sábado.
+OFFICE COMMUNICATION,SUN,Sunday,Domingo,Domingo.
+OFFICE COMMUNICATION,WKND,Weekend,Fin De Semana,Fin de semana.
+OFFICE COMMUNICATION,WRK DAYS,Working Days,Días Hábiles / Laborables,Días hábiles / laborables.
+OFFICE COMMUNICATION,TGIF,Thank God It's Friday,Gracias A Dios Es Viernes,Gracias a Dios es viernes.
+OFFICE COMMUNICATION,JAN,January,Enero,Enero.
+OFFICE COMMUNICATION,FEB,February,Febrero,Febrero.
+OFFICE COMMUNICATION,MAR,March,Marzo,Marzo.
+OFFICE COMMUNICATION,APR,April,Abril,Abril.
+OFFICE COMMUNICATION,MAY,May,Mayo,Mayo.
+OFFICE COMMUNICATION,JUN,June,Junio,Junio.
+OFFICE COMMUNICATION,JUL,July,Julio,Julio.
+OFFICE COMMUNICATION,AUG,August,Agosto,Agosto.
+OFFICE COMMUNICATION,SEP,September,Septiembre,Septiembre.
+OFFICE COMMUNICATION,OCT,October,Octubre,Octubre.
+OFFICE COMMUNICATION,NOV,November,Noviembre,Noviembre.
+OFFICE COMMUNICATION,DEC,December,Diciembre,Diciembre.
+OFFICE COMMUNICATION,@,At,En / Arroba,En.
+OFFICE COMMUNICATION,#,Pound / Number,Número,"Número (aplica a número en un listado, no a cantidad)."
+OFFICE COMMUNICATION,&,And,Y / Ampersand,Y.
+OFFICE COMMUNICATION,PRNT,Printer,Impresora,Impresora.
+OFFICE COMMUNICATION,PLT,Plotter,Plotter,Plotter.
+OFFICE COMMUNICATION,PC,Personal Computer,Computadora Personal,Computadora.
+OFFICE COMMUNICATION,DESKT,Desktop,Escritorio / Computadora De Escritorio,Escritorio.
+OFFICE COMMUNICATION,EMAIL,Electronic Mail,Correo Electrónico,Correo (electrónico).
+OFFICE COMMUNICATION,SENT,Sent,Enviado,Enviado.
+OFFICE COMMUNICATION,RECD,Received,Recibido,Recibido.
+OFFICE COMMUNICATION,SERVER,Server,Servidor,Servidor.
+OFFICE COMMUNICATION,DNL,Download,Descarga,Descarga (a través de internet).
+OFFICE COMMUNICATION,UPL,Upload,Subida,Subida de archivos (a través de internet).
+OFFICE COMMUNICATION,LINK,Link,Enlace / Vínculo,Enlace (de descarga o de subida).
+OFFICE COMMUNICATION,CC,Carbon Copy,Con Copia,"Vía email, copia del mensaje a un destinatario adicional."
+OFFICE COMMUNICATION,BCC,Blind Carbon Copy,Con Copia Oculta,"Vía email, copia del mensaje a un destinatario adicional sin notificarla al principal."
+OFFICE COMMUNICATION,RE,Reply,Responder,Responder por email exclusivamente al remitente original.
+OFFICE COMMUNICATION,RE ALL,Reply All,Responder A Todos,Responder por email al remitente original y a los destinatarios adicionales.
+OFFICE COMMUNICATION,FW O FWD,Forward,Reenviar,"Vía email, reenvía el mensaje a un nuevo contacto."
+OFFICE COMMUNICATION,N/A,Not Applicable,No Aplica,No aplica.
+OFFICE COMMUNICATION,UNO,Unless Noted Otherwise,A Menos Que Se Especifique Lo Contrario,A menos que se especifique lo contrario.
+OFFICE COMMUNICATION,UON,Unless Otherwise Noted,A Menos Que Se Especifique Lo Contrario,A menos que se especifique lo contrario.
+OFFICE COMMUNICATION,TBD,To Be Determined / Defined,Aún Por Definir,Aún por definir.
+OFFICE COMMUNICATION,ASAP,As Soon As Possible,Tan Pronto Como Sea Posible,Tan pronto como sea posible.
+OFFICE COMMUNICATION,IAM,In A Meeting,En Reunión,En reunión en este momento.
+OFFICE COMMUNICATION,BRB,Be Right Back,Regreso En Un Momento,Regreso en un momento.
+OFFICE COMMUNICATION,LET,Leaving Early Today,Salida Temprana Hoy,Salida de la oficina temprana.
+OFFICE COMMUNICATION,FTR,For The Record,Para Que Quede Registrado,Para que quede registrado.
+OFFICE COMMUNICATION,FYI,For Your Information,Para Su Información,Para su información.

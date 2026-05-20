@@ -1,0 +1,416 @@
+term_vs,acronym_abrev,term_eng,criterion_and_use
+RAMP vs GARAGE RAMP vs SLOPE vs CROSS SLOPE vs PITCH,RAMP,Ramp,Rampas entre 1:20 y 1:12 de pendiente. Pendiente 1:20 → Landing 5' (cada 40') / Pendiente 1:16 → Landing 5' (cada 40') / Pendiente 1:12 → Landing 5' (cada 30'). Las rampas necesitarán handrail siempre que suban más de 6”. Ninguna rampa peatonal debe subir más de 30” por tramo.
+RAMP vs GARAGE RAMP vs SLOPE vs CROSS SLOPE vs PITCH,GAR RAMP,Garage Ramp,Rampa con parqueos → Pendiente max 6.67% → Jump stairs (si fuera necesario). Rampa sin parqueos (speed ramp) → Pendiente max 20%. Cuando la pendiente supera el 10% → Transiciones 8' al inicio y final de la rampa. Dichas transiciones tendrán una pendiente con la mitad de % que la principal. Esto es para que el carro no pegue al iniciar la subida y poder tener visibilidad arriba.
+RAMP vs GARAGE RAMP vs SLOPE vs CROSS SLOPE vs PITCH,SL,Slope,"Rampas con pendiente menor de 1:20 (usualmente se expresa en X/FT, eg 1/4”/FT). Generalmente aplica en zonas con variación pequeña de altura o para drenaje. Slope también es la palabra genérica para indicar la pendiente de cualquier elemento."
+RAMP vs GARAGE RAMP vs SLOPE vs CROSS SLOPE vs PITCH,XSL,Cross Slope,Peralte (es la pendiente en sentido perpendicular a la pendiente principal). El peralte máximo de cualquier tipo de rampa es 1:48 (∼2%).
+RAMP vs GARAGE RAMP vs SLOPE vs CROSS SLOPE vs PITCH,RF PTCH,Roof Pitch,"Pendiente del techo (se expresa en valores en base 12, por ejemplo 4:12). La intersección entre dos vertientes del techo con la misma pendiente → 45º. Pero si las vertientes tienen diferente pendiente, pasos para calcular la intersección: 1. En el roof plan, se busca el punto de intersección en el arranque de ambas. 2. Se dibujan offsets en cada vertiente (cuyas distancias dependen de la pendiente). 3. El offset será la distancia que dicha vertiente necesite para elevarse 1'. 4. Por ejemplo, para 3:12 sería 4', para 4:12 sería 3' y para 6:12 sería 2'. 5. La intersección entre ambos offsets, definirá la intersección de las vertientes."
+FLOOR AREA RATIO (FAR) vs BUILDING COVERAGE RATIO (BCR),FAR,Floor Area Ratio,Coeficiente de edificabilidad. Se calcula dividiendo las áreas brutas totales del edificio entre el área total del lote.
+FLOOR AREA RATIO (FAR) vs BUILDING COVERAGE RATIO (BCR),BCR,Building Coverage Ratio / Lot Coverage,Coeficiente de ocupación del lote. Se calcula dividiendo el área del outline del edificio entre el área total del lote.
+GROSS SQUARE FOOTAGE (GSF) vs NET SQUARE FOOTAGE (NSF),GSF,Gross Square Footage,Superficie bruta en pies cuadrados (incluye el área inutilizable de las paredes).
+GROSS SQUARE FOOTAGE (GSF) vs NET SQUARE FOOTAGE (NSF),NSF,Net Square Footage,Superficie neta en pies cuadrados (sólo incluye el área interior).
+LEASABLE vs NON-LEASABLE vs LEASABLE AMENITY,LEAS,Leasable Area,"Área arrendable (se toma el área bruta de todas las units del edificio, sin balcones)."
+LEASABLE vs NON-LEASABLE vs LEASABLE AMENITY,NON-LSE,Non-Leasable Area,"Área no arrendable (corredores, escaleras, elevadores, cuartos eléctricos...etc)."
+LEASABLE vs NON-LEASABLE vs LEASABLE AMENITY,LSE AMEN,Leasable Amenity Area,Área arrendable exclusivamente para amenidades.
+FIXTURES vs APPLIANCES,FIXT,Fixtures,"Elementos fijos (se consideran como parte de la propiedad). Ejemplos: Muebles de cocina, isla, inodoro, tina..."
+FIXTURES vs APPLIANCES,APP,Appliances,"Elementos semi-fijos (se pueden sacar de la propiedad sin dañarla/afectarla). Ejemplos: Refrigerador, lavadora, secadora..."
+FURNITURES vs FURNISHINGS,FURN,Furnitures,Mobiliario.
+FURNITURES vs FURNISHINGS,FURNSH,Furnishings,"Mobiliario (incluye elementos adicionales como cortinas, alfombras y acabados)."
+TRUSS vs RAFTER,TRSS,Truss,Cercha de madera o metal (pre-fabricada).
+TRUSS vs RAFTER,RFTR,Rafter,Cercha de madera o metal (creada in situ).
+SHEAR WALL vs TUNNEL WALL vs DEMISING WALL vs PARTITION,SHR WALL,Shear Wall,"Muro cortante (posee gran resistencia a esfuerzos laterales, como viento o sismos)."
+SHEAR WALL vs TUNNEL WALL vs DEMISING WALL vs PARTITION,TNL WALL,Tunnel Wall,"Pared “tipo tunel” (para estructuras modulares o repetitivas, agiliza la construcción)."
+SHEAR WALL vs TUNNEL WALL vs DEMISING WALL vs PARTITION,DMS WALL,Demising Wall,Pared divisoria / Medianera.
+SHEAR WALL vs TUNNEL WALL vs DEMISING WALL vs PARTITION,PTN,Partition,"Tabique / Pared liviana (sin función estructural, sólo de división espacial)."
+RETAINING WALL vs BULKHEAD vs BATTER,RTN WALL,Retaining Wall,Muro de retención (su función es retener masas de terreno).
+RETAINING WALL vs BULKHEAD vs BATTER,BULKHD,Bulkhead,"Muro de retención (retiene tierra a un lado del muro, mientras que al otro hay agua)."
+RETAINING WALL vs BULKHEAD vs BATTER,BTTR,Batter,Talud.
+COLUMN vs PILLAR vs PILASTER,COL,Column,Columna.
+COLUMN vs PILLAR vs PILASTER,PIL,Pillar,"Pilar (frecuentemente es sinónimo de columna, pero en ocasiones también puede ser un elemento decorativo aislado, sin función estructural)."
+COLUMN vs PILLAR vs PILASTER,PILSTR,Pilaster,Pilastra (usualmente de sección rectangular y semi-embebida contra una pared).
+ONE WAY JOIST SLAB vs WAFFLE SLAB vs FOUNDATION SLAB vs WARP SLAB,1-W JST SLB,One Way Joist Slab,Losa unidireccional (cuyas viguetas van sólo en una dirección).
+ONE WAY JOIST SLAB vs WAFFLE SLAB vs FOUNDATION SLAB vs WARP SLAB,WFL SLB,Waffle Slab,Losa bidireccional (cuyas viguetas se entrecruzan en forma de retícula).
+ONE WAY JOIST SLAB vs WAFFLE SLAB vs FOUNDATION SLAB vs WARP SLAB,FND SLB,Foundation Slab,Losa de cimentación.
+ONE WAY JOIST SLAB vs WAFFLE SLAB vs FOUNDATION SLAB vs WARP SLAB,WRP SLB,Warp Slab,Losa alabeada (inclinada siguiendo una curvatura alabeada).
+REINFORCED CONCRETE SLAB vs POST-TENSION SLAB vs RIBBON SLAB,RC SLAB,Reinforced Concrete Slab,Losa de concreto reforzado (la losa de uso más habitual).
+REINFORCED CONCRETE SLAB vs POST-TENSION SLAB vs RIBBON SLAB,PT SLAB,Post-Tension Slab,"Losa postensada (se le aplica tensión mediante cables de alta resistencia, a través de los anclajes. Ventaja → Menor cantidad de concreto y más altura libre. Desventaja → Tendencia a formarse grietas en la losa)."
+REINFORCED CONCRETE SLAB vs POST-TENSION SLAB vs RIBBON SLAB,RBBN SLB,Ribbon Slab,Losa postensada (en la que los cables de alta resistencia discurren por la superficie de la losa). Útil en cimentación para usos con alta ocupación o grandes cargas.
+BOND BEAM vs TIE BEAM vs UPTURN BEAM vs RAKE BEAM vs RIDGE BEAM vs TRANSFER BEAM vs CANTILEVER BEAM,BND BM,Bond Beam,Viga perimetral (suele utilizarse en los muros perimetrales de CMU).
+BOND BEAM vs TIE BEAM vs UPTURN BEAM vs RAKE BEAM vs RIDGE BEAM vs TRANSFER BEAM vs CANTILEVER BEAM,TIE BM,Tie Beam,"Viga de atado (en los techos, conecta cerchas opuestas rigidizando a la estructura)."
+BOND BEAM vs TIE BEAM vs UPTURN BEAM vs RAKE BEAM vs RIDGE BEAM vs TRANSFER BEAM vs CANTILEVER BEAM,UPT BM,Upturn Beam,Viga de repunte (sobresale hacia arriba respecto a la losa).
+BOND BEAM vs TIE BEAM vs UPTURN BEAM vs RAKE BEAM vs RIDGE BEAM vs TRANSFER BEAM vs CANTILEVER BEAM,RK BM,Rake Beam,"Viga inclinada (para estabilidad en elementos con inclinación, como gable ends)."
+BOND BEAM vs TIE BEAM vs UPTURN BEAM vs RAKE BEAM vs RIDGE BEAM vs TRANSFER BEAM vs CANTILEVER BEAM,RDG BM,Ridge Beam,Viga corona (para soportar los extremos superiores de las cerchas en la cumbrera).
+BOND BEAM vs TIE BEAM vs UPTURN BEAM vs RAKE BEAM vs RIDGE BEAM vs TRANSFER BEAM vs CANTILEVER BEAM,XFR BM,Transfer Beam,Viga de transferencia (cuando las columnas/muros no están verticalmente alineados).
+BOND BEAM vs TIE BEAM vs UPTURN BEAM vs RAKE BEAM vs RIDGE BEAM vs TRANSFER BEAM vs CANTILEVER BEAM,CANT BM,Cantilever Beam,"Viga en voladizo (viga fijada/empotrada en un extremo, y libre en el otro, en voladizo)."
+HOIST BEAM vs DIVIDER BEAM,HST BM,Hoist Beam,Viga de elevación / de izado (típica en la parte superior de elevadores).
+HOIST BEAM vs DIVIDER BEAM,DIV BM,Divider Beam,"Viga divisora (en elevadores dobles/triples, se usa cuando comparten un sólo shaft)."
+PURLIN vs CHANNEL,PURL,Purlin,"Perfil metálico (uso en techos. Su grosor fino es constante en toda su sección. Se produce a partir de rollos laminados en frío, el perfil más habitual es el C o el Z)."
+PURLIN vs CHANNEL,CHNL,Channel,"Perfil metálico (uso versátil. Su grosor es mayor en el alma y menor en las alas. Dado su grosor, posee una mayor resistencia, y proporciona mayor estabilidad. Se produce laminado en caliente, el perfil más habitual es el C o el MC)."
+FLANGE vs WEB,FLG,Flange,Patín / Ala (en una viga o perfil metálico).
+FLANGE vs WEB,WEB,Web,Alma (en una viga o perfil metálico).
+DU vs MU vs ST vs UA vs UB vs UC vs UD vs PH vs TH,DU,Dwelling Unit,Unidad de vivienda (término genérico para todos los tipos).
+DU vs MU vs ST vs UA vs UB vs UC vs UD vs PH vs TH,MU,Micro Unit,Micro-unidad de vivienda (usualmente por debajo de los 400 SF).
+DU vs MU vs ST vs UA vs UB vs UC vs UD vs PH vs TH,ST,Studio,"Estudio (unidad de vivienda de dimensiones reducidas, alrededor de 600 SF)."
+DU vs MU vs ST vs UA vs UB vs UC vs UD vs PH vs TH,UA,Unit Type A,Unidad de vivienda tipo A (1 dormitorio / 1 baño) → Área aproximada 800 SF.
+DU vs MU vs ST vs UA vs UB vs UC vs UD vs PH vs TH,UB,Unit Type B,"Unidad de vivienda tipo B (2 dormitorios / 2 baños) → Área aproximada 1,000 SF."
+DU vs MU vs ST vs UA vs UB vs UC vs UD vs PH vs TH,UC,Unit Type C,"Unidad de vivienda tipo C (3 dormitorios / 2 baños) → Área aproximada 1,200 SF."
+DU vs MU vs ST vs UA vs UB vs UC vs UD vs PH vs TH,UD,Unit Type D,"Unidad de vivienda tipo D (3 dormitorios / 2 baños, más espaciosa que la tipo C)."
+DU vs MU vs ST vs UA vs UB vs UC vs UD vs PH vs TH,PH,Penthouse,Apartamento en el último piso en edificios de gran altura (generalmente lujoso).
+DU vs MU vs ST vs UA vs UB vs UC vs UD vs PH vs TH,TH,Townhome / Townhouse,"Vivienda adosada unifamiliar (generalmente de 2 o 3 pisos). Los códigos para edificios multi-family, no necesariamente aplican para TH (por ser de un único propietario). En los pisos superiores, no aplica FHA (Fair Housing Act)."
+MEMORY CARE UNIT vs ASSISTED LIVING UNIT vs INDEPENDENT LIVING UNIT,MC,Memory Care Unit,"Unidad para personas con problemas de memoria (alzheimer, demencia...etc). Cuentan con un memory box en la entrada, y no disponen de cocina."
+MEMORY CARE UNIT vs ASSISTED LIVING UNIT vs INDEPENDENT LIVING UNIT,AL,Assisted Living Unit,"Unidad de vivienda para personas que requieren asistencia. Cuentan con cocina pequeña (sin fogón, sólo refrigerador, fregadero y despensa)."
+MEMORY CARE UNIT vs ASSISTED LIVING UNIT vs INDEPENDENT LIVING UNIT,IL,Independent Living Unit,"Unidad de vivienda para personas que no requieren asistencia. Cuentan con una cocina regular, como las de las unidades convencionales."
+BIFOLD vs POCKET vs BARN vs BYPASS vs SLIDER vs SWING vs ROLL-UP vs HOPPER vs REVOLVING,BFLD DR,Bifold Door,Puerta plegable.
+BIFOLD vs POCKET vs BARN vs BYPASS vs SLIDER vs SWING vs ROLL-UP vs HOPPER vs REVOLVING,PKT DR,Pocket Door,Puerta corrediza (que queda oculta dentro de la pared).
+BIFOLD vs POCKET vs BARN vs BYPASS vs SLIDER vs SWING vs ROLL-UP vs HOPPER vs REVOLVING,BRN DR,Barn Door,Puerta corrediza (desliza gracias a una línea de guía sobre la puerta).
+BIFOLD vs POCKET vs BARN vs BYPASS vs SLIDER vs SWING vs ROLL-UP vs HOPPER vs REVOLVING,BYP DR,Bypass Door,Puerta corrediza (similar a barn door pero con paneles deslizantes independientes).
+BIFOLD vs POCKET vs BARN vs BYPASS vs SLIDER vs SWING vs ROLL-UP vs HOPPER vs REVOLVING,SGD,Sliding Glass Door,Puerta corrediza de vidrio.
+BIFOLD vs POCKET vs BARN vs BYPASS vs SLIDER vs SWING vs ROLL-UP vs HOPPER vs REVOLVING,SW DR,Swing Door,Puerta abatible / batiente.
+BIFOLD vs POCKET vs BARN vs BYPASS vs SLIDER vs SWING vs ROLL-UP vs HOPPER vs REVOLVING,ROLL UP DR,Roll-up Door,Puerta persiana (generalmente para garages de viviendas o carports).
+BIFOLD vs POCKET vs BARN vs BYPASS vs SLIDER vs SWING vs ROLL-UP vs HOPPER vs REVOLVING,HPR DR,Hopper Door,"Puerta “tipo tolva” (típica en los trash chutes, con sistema de cierre automático)."
+BIFOLD vs POCKET vs BARN vs BYPASS vs SLIDER vs SWING vs ROLL-UP vs HOPPER vs REVOLVING,REV DR,Revolving Door,Puerta giratoria.
+SOLID DOOR vs FRENCH DOOR vs LOUVERED DOOR,SOLID DR,Solid Door,Puerta sólida (generalmente de madera o metálica).
+SOLID DOOR vs FRENCH DOOR vs LOUVERED DOOR,FRNCH DR,French Door,Puerta con paneles de vidrio.
+SOLID DOOR vs FRENCH DOOR vs LOUVERED DOOR,LVRD DR,Louvered Door,Puerta con lamas.
+FIXED vs CASEMENT vs SINGLE HUNG vs DOUBLE HUNG vs ROLLER,FW,Fixed Window,Ventana fija.
+FIXED vs CASEMENT vs SINGLE HUNG vs DOUBLE HUNG vs ROLLER,CSMT WIN,Casement Window,Ventana abatible.
+FIXED vs CASEMENT vs SINGLE HUNG vs DOUBLE HUNG vs ROLLER,SHW,Single Hung Window,Ventana de guillotina.
+FIXED vs CASEMENT vs SINGLE HUNG vs DOUBLE HUNG vs ROLLER,DHW,Double Hung Window,Ventana de guillotina doble.
+FIXED vs CASEMENT vs SINGLE HUNG vs DOUBLE HUNG vs ROLLER,HRW,Horizontal Roller Window,Ventana corrediza horizontal.
+STOREFRONT vs CURTAIN WALL,ST,Storefront,"Ventanal (usual en ciertas áreas comunes o zonas de uso comercial, altura max 12')."
+STOREFRONT vs CURTAIN WALL,CRTN WALL,Curtain Wall,Muro cortina (sistema exterior auto-portante generalmente ligero y acristalado). Sistema recomendable para acristalamientos de más de 12' de alto.
+TRANSOM vs SIDELITE,TRSM,Transom,Montante (ventana sobre una puerta/ventana).
+TRANSOM vs SIDELITE,SDLT,Sidelite / Sidelight,Panel de vidrio lateral (ocasionalmente junto a algunas puertas).
+LINTEL vs HEADER,LINT,Lintel,Dintel (típico sobre puertas / ventanas) → En construcción en ladrillo / bloque.
+LINTEL vs HEADER,HDR,Header,Dintel (típico sobre puertas / ventanas) → En construcción en madera.
+MULLION vs MUNTIN,MULL,Mullion,Cuarterón (soporte estructural del panel de vidrio).
+MULLION vs MUNTIN,MUNT,Muntin,"Parteluz (división sin soporte del panel de vidrio, más delgada que el mullion)."
+SILL vs THRESHOLD,SILL,Sill,Alféizar / Banquina (de una ventana).
+SILL vs THRESHOLD,THOLD,Threshold,Umbral (usualmente aplica al límite inferior de una puerta).
+HINGE vs LATCH vs KNOB vs HANDLE vs LOCK,HNG,Hinge,"Bisagra (normalmente una central, una abajo a 13” max y una arriba a 11.75” max)."
+HINGE vs LATCH vs KNOB vs HANDLE vs LOCK,LTCH,Latch,Pestillo.
+HINGE vs LATCH vs KNOB vs HANDLE vs LOCK,KNB,Knob,Pomo / manija circular (a una altura mínima de 34” desde el suelo acabado).
+HINGE vs LATCH vs KNOB vs HANDLE vs LOCK,HNDLE,Handle,Manija (a una altura mínima de 34” desde el suelo acabado).
+HINGE vs LATCH vs KNOB vs HANDLE vs LOCK,LOCK,Lock,Cerrojo.
+AWNING vs CANOPY vs CANOPY AWNING vs LOUVER vs SHUTTER vs BAHAMA SHUTTER vs EYEBROW,AWN,Awning,Toldo / Marquesina (posee estructura liviana que depende del soporte de la pared).
+AWNING vs CANOPY vs CANOPY AWNING vs LOUVER vs SHUTTER vs BAHAMA SHUTTER vs EYEBROW,CNPY,Canopy,Toldo / Marquesina (posee estructura rígida propia independiente de la pared).
+AWNING vs CANOPY vs CANOPY AWNING vs LOUVER vs SHUTTER vs BAHAMA SHUTTER vs EYEBROW,CNPY AWN,Canopy Awning,"Toldo / Marquesina (es similar a un awning regular, solo que es más versátil ya que es retráctil y se puede extender según se necesite, mediante control remoto)."
+AWNING vs CANOPY vs CANOPY AWNING vs LOUVER vs SHUTTER vs BAHAMA SHUTTER vs EYEBROW,LVR,Louver,Parasol / Cortasol (posee lamas inclinadas para proporcionar sombra y ventilación).
+AWNING vs CANOPY vs CANOPY AWNING vs LOUVER vs SHUTTER vs BAHAMA SHUTTER vs EYEBROW,SHTR,Shutter,Contraventana.
+AWNING vs CANOPY vs CANOPY AWNING vs LOUVER vs SHUTTER vs BAHAMA SHUTTER vs EYEBROW,BHM SHTR,Bahama Shutter,Tipo especial de shutter que se coloca usualmente sobre ventanas como parasol.
+AWNING vs CANOPY vs CANOPY AWNING vs LOUVER vs SHUTTER vs BAHAMA SHUTTER vs EYEBROW,EYEBRW,Eyebrow,"Marquesina / Ceja (extensión horizontal en fachada, usualmente de concreto)."
+HIP vs VALLEY vs RIDGE vs CRICKET,HIP,Hip,"Limatón / Limatesa (intersección entre dos vertientes del techo, en ángulo convexo)."
+HIP vs VALLEY vs RIDGE vs CRICKET,VALLEY,Valley,"Limahoya (intersección entre dos vertientes del techo, en ángulo cóncavo)."
+HIP vs VALLEY vs RIDGE vs CRICKET,RDG,Ridge,Cumbrera.
+HIP vs VALLEY vs RIDGE vs CRICKET,RF CRKT,Roof Cricket,Techo falso (sirve para evitar que el agua se acumule contra elementos verticales).
+HIP ROOF vs GABLE ROOF vs DUTCH GABLE ROOF vs MANSARD ROOF vs GAMBREL ROOF vs FLAT ROOF,HIP RF,Hip Roof,Techo a cuatro aguas.
+HIP ROOF vs GABLE ROOF vs DUTCH GABLE ROOF vs MANSARD ROOF vs GAMBREL ROOF vs FLAT ROOF,GAB RF,Gable Roof,Techo a dos aguas.
+HIP ROOF vs GABLE ROOF vs DUTCH GABLE ROOF vs MANSARD ROOF vs GAMBREL ROOF vs FLAT ROOF,DTCH GAB RF,Dutch Gable Roof,"Techo holandés (a cuatro aguas, pero con el remate final en dos aguas)."
+HIP ROOF vs GABLE ROOF vs DUTCH GABLE ROOF vs MANSARD ROOF vs GAMBREL ROOF vs FLAT ROOF,MNSRD RF,Mansard Roof,Techo amansardado (con vertientes quebradas).
+HIP ROOF vs GABLE ROOF vs DUTCH GABLE ROOF vs MANSARD ROOF vs GAMBREL ROOF vs FLAT ROOF,GMBRL RF,Gambrel Roof,Techo abuhardillado a dos aguas (techo simétrico con dos pendientes a cada lado).
+HIP ROOF vs GABLE ROOF vs DUTCH GABLE ROOF vs MANSARD ROOF vs GAMBREL ROOF vs FLAT ROOF,FLT RF,Flat Roof,Techo plano.
+CONCRETE TILE vs SPANISH TILE vs ASPHALT SHINGLE vs STANDING SEAM,CONC TL,Concrete Tile,"Teja de concreto (muy resistente y durable, generalmente se utiliza la plana)."
+CONCRETE TILE vs SPANISH TILE vs ASPHALT SHINGLE vs STANDING SEAM,SPAN/BRRL TL,Spanish Tile / Barrel Tile,"Teja cerámica (cara pero muy resistente, sólo en pendientes mayores a 4:12)."
+CONCRETE TILE vs SPANISH TILE vs ASPHALT SHINGLE vs STANDING SEAM,ASPH SHNG,Asphalt Shingle,"Teja asfáltica (más económica que la teja regular, pero menos resistente al viento)."
+CONCRETE TILE vs SPANISH TILE vs ASPHALT SHINGLE vs STANDING SEAM,STND SEAM,Standing Seam,Sistema de paneles metálicos unidos con juntas verticales estancas (en techos).
+BRACKET vs OUTLOOKER,BRKT,Bracket,"Ménsula (elemento decorativo típico en los aleros, con diagonal de soporte)."
+BRACKET vs OUTLOOKER,OUTLKR,Outlooker,"Dentículo (elemento decorativo típico en los aleros, más pequeño que los brackets)."
+TOP CHORD BEARING vs BOTTOM CHORD EXTENDED,TCB,Top Chord Bearing,Tipo de techo en el que el alero continúa bajando por debajo del TOB.
+TOP CHORD BEARING vs BOTTOM CHORD EXTENDED,BCE,Bottom Chord Extended,Tipo de techo en el que el alero comienza a subir a partir del TOB.
+OVERHANG vs CANTILEVER,OH,Overhang,Voladizo (también es la distancia del voladizo).
+OVERHANG vs CANTILEVER,CANT,Cantilever,Voladizo (caso específico en el que la viga sólo tiene un apoyo).
+ROOF ANCHOR vs TRUSS ANCHOR,RA,Roof Anchor,Anclaje de techo (sistema de seguridad en techo para evitar caída de trabajadores).
+ROOF ANCHOR vs TRUSS ANCHOR,TRSS ANCHR,Truss Anchor,Anclaje de cercha (elementos de unión perimetral viga-cercha para rigidización).
+FASCIA vs NAILER,FASC,Fascia,Precinta (generalmente suele ser una pieza de 2”x8”).
+FASCIA vs NAILER,NLR,Nailer,"Clavador (pieza que va unida a la fascia, generalmente de 1”x2”)."
+FASTENER vs BOLT vs SCREW,FSTNR,Fastener,"Mecanismo de unión entre dos piezas (incluye bolts y screws, entre otros)."
+FASTENER vs BOLT vs SCREW,BOLT,Bolt,Tornillo (específicamente los que necesitan una tuerca para el cierre).
+FASTENER vs BOLT vs SCREW,SCRW,Screw,Tornillo (específicamente los diseñados para encajar en el elemento sin tuerca).
+WOOD vs LUMBER,WD,Wood,Madera.
+WOOD vs LUMBER,LMBR,Lumber,Madera (ya cortada y/o procesada para construcción).
+CEMENT vs MORTAR vs CONCRETE,CEM,Cement,Cemento (conglomerante formado con caliza y arcillas calcinadas. Su principal propiedad es endurecerse tras entrar en contacto con agua).
+CEMENT vs MORTAR vs CONCRETE,MORT,Mortar,"Mortero (mezcla de cemento, arena y agua, útil para aparejar bloques constructivos. Su proporción de agua vs cemento es alta, lo que le da cualidades adhesivas. Pero su resistencia es mucho menor que la del concreto, lo que limita su uso)."
+CEMENT vs MORTAR vs CONCRETE,CONC,Concrete,"Concreto (mezcla de cemento, arena y agua, junto con agregados como grava). Su proporción de agua vs cemento es baja, lo que le da cualidades resistivas. Gran vesatilidad como material estructural (en conjunción con las varillas de armado)."
+TEMPERED GLASS vs FROSTED GLASS vs STAINED GLASS vs BEVELED GLASS,TGL,Tempered Glass,Vidrio temperado (tratamiento para aumentar la resistencia del vidrio al impacto).
+TEMPERED GLASS vs FROSTED GLASS vs STAINED GLASS vs BEVELED GLASS,FRSTD GL,Frosted Glass,Vidrio esmerilado / opacado (tratamiento para crear un efecto translúcido).
+TEMPERED GLASS vs FROSTED GLASS vs STAINED GLASS vs BEVELED GLASS,STND GL,Stained Glass,Vitral / Vidriera.
+TEMPERED GLASS vs FROSTED GLASS vs STAINED GLASS vs BEVELED GLASS,BVLD GL,Beveled Glass,Vidrio biselado.
+LIVE LOAD vs DEAD LOAD,LL,Live Load,Carga viva (el sobrepeso variable del edificio causado por la ocupación y el uso).
+LIVE LOAD vs DEAD LOAD,DL,Dead Load,Carga muerta (se refiere al peso fijo de los elementos que forman parte del edificio).
+JULIET BALCONY vs FAUX BALCONY,JLT BALC,Juliet Balcony,Balcón tipo Julieta (usualmente sobresalen max 1' y tienen un fin decorativo).
+JULIET BALCONY vs FAUX BALCONY,FAUX BALC,Faux Balcony,"Balcón falso (suelen ser similares a los Julieta, sólo que abajo no tienen deck)."
+DOWNSPOUT vs RAINWATER LEADER,DS,Downspout,Bajante (en la fachada del edificio). Usualmente tienen un diámetro de 3” o 4”.
+DOWNSPOUT vs RAINWATER LEADER,RWL,Rainwater Leader,Bajante (en el interior del edificio). Usualmente tienen un diámetro de 4” o superior.
+FLOOR DRAIN vs ROOF DRAIN vs TRENCH DRAIN vs PLANTER DRAIN,FD,Floor Drain,Drenaje (en el suelo).
+FLOOR DRAIN vs ROOF DRAIN vs TRENCH DRAIN vs PLANTER DRAIN,RD,Roof Drain,Drenaje (en el techo). No puede ubicarse a más de 16' del parapeto (línea interior).
+FLOOR DRAIN vs ROOF DRAIN vs TRENCH DRAIN vs PLANTER DRAIN,TD,Trench Drain,Drenaje de zanja (drenaje lineal).
+FLOOR DRAIN vs ROOF DRAIN vs TRENCH DRAIN vs PLANTER DRAIN,PD,Planter Drain,Drenaje de jardinera.
+OVERFLOW SCUPPER vs WEEP HOLE vs CATCH BASIN vs FLOOR CLEANOUT,OS,Overflow Scupper,Rebalse
+OVERFLOW SCUPPER vs WEEP HOLE vs CATCH BASIN vs FLOOR CLEANOUT,WPHL,Weep Hole,Orificio de drenaje (típico en los trash compactors).
+OVERFLOW SCUPPER vs WEEP HOLE vs CATCH BASIN vs FLOOR CLEANOUT,CB,Catch Basin,Colector / Arqueta.
+OVERFLOW SCUPPER vs WEEP HOLE vs CATCH BASIN vs FLOOR CLEANOUT,FCO,Floor Cleanout,Tapa de drenaje (se utiliza para poder acceder al sistema de drenaje y limpiarlo).
+RESTROOM vs TOILET vs BATHROOM vs POWDER,RR,Restroom,Baño (de áreas comunes).
+RESTROOM vs TOILET vs BATHROOM vs POWDER,TLT,Toilet Room,"Aseo (de áreas comunes, exclusivamente con el inodoro y a veces con lavabo)."
+RESTROOM vs TOILET vs BATHROOM vs POWDER,BATH,Bathroom,Baño (de vivienda).
+RESTROOM vs TOILET vs BATHROOM vs POWDER,PWDR,Powder Room,"Aseo (de vivienda, exclusivamente con el inodoro y a veces con lavabo)."
+TYPE A BATHROOM vs TYPE B BATHROOM vs USABLE BATHROOM,TYPE A BATH,Type A Bathroom,"Baño tipo A → Requieren accesibilidad (30”x48”) para todos los elementos. Esto incluye la tina/ducha, el inodoro y el lavabo (ambos si es doble). Frecuentemente, tienen forma alargada debido a la disposición de sus elementos. Si la unit tiene baño(s) tipo A, en ese caso no podrá tener ninguno de tipo Usable."
+TYPE A BATHROOM vs TYPE B BATHROOM vs USABLE BATHROOM,TYPE B BATH,Type B Bathroom,"Baño tipo B → Requieren accesibilidad (30”x48”) para uno de cada tipo de elemento. Como consecuencia, este tipo de baño tiene un acceso a la tina más espacioso. Frecuentemente, tienen forma más ancha debido a la disposición de sus elementos. Si la unit tiene al menos un baño tipo B, los demás pueden ser de tipo Usable."
+TYPE A BATHROOM vs TYPE B BATHROOM vs USABLE BATHROOM,USABLE BATH,Usable Bathroom,"Baño tipo Usable → No requieren accesibilidad (30”x48”) para sus elementos. Su único requisito es que su puerta tenga un clearance de 32”min, y que disponga de 30”x48” libres, para que una persona en silla de ruedas pueda entrar y cerrar. Frecuentemente, suelen ser muy compactos y de dimensiones reducidas."
+PARALLEL APPROACH vs FORWARD APPROACH vs FORWARD REACH,PARAL APRCH,Parallel Approach,Acceso lateral a un elemento con un rectángulo de accesibilidad (30”x48”).
+PARALLEL APPROACH vs FORWARD APPROACH vs FORWARD REACH,FWD APRCH,Forward Approach,Acceso frontal a un elemento con un rectángulo de accesibilidad (30”x48”).
+PARALLEL APPROACH vs FORWARD APPROACH vs FORWARD REACH,FWD RCH,Forward Reach,"Alcance frontal (el rectángulo de 30”x48”, podrá estar bajo un elemento max 25”)."
+PUSH vs PULL,PUSH,Push,Empujar → Distancias min para los distintos casos de empujar puertas abatibles: - Acceso frontal → Empujar → 4' min (perp) / 0” (paral). - Acceso frontal → Empujar → 4' min (perp) / 1' (paral) → Puertas con latch y closer. - Acceso bisagra → Empujar →  3'-6” min (perp) / 1'-10” min (paral). - Acceso bisagra → Empujar →  4' min (perp) / 1'-10” min (paral) → Latch y closer. - Acceso manija → Empujar →  3'-6” min (perp) / 2' min (paral). - Acceso manija → Empujar →  4' min (perp) / 2' min (paral) → Puertas con closer.
+PUSH vs PULL,PULL,Pull,Jalar → Distancias min para los distintos casos de jalar puertas abatibles: - Acceso frontal → Jalar → 5' min (perp) / 1'-6” min (paral). - Acceso bisagra → Jalar →  5' min (perp) / 3' min (paral). - Acceso manija → Jalar →  4' min (perp) / 2' min (paral).
+GRAB BAR vs TOWEL BAR vs SHOWER ROD,GB,Grab Bar,"Barra de agarre (En restrooms: detrás del inodoro → barra de 3', a 6” de la pared / lateral del inodoro → barra de 3'-6”, a 12” de la pared)."
+GRAB BAR vs TOWEL BAR vs SHOWER ROD,TB,Towel Bar,Barra para toallas / Toallero.
+GRAB BAR vs TOWEL BAR vs SHOWER ROD,SHO ROD,Shower Rod,Barra de la ducha (donde van colgadas las cortinas).
+UPPER CABINET vs BASE CABINET vs DRAWER BASE CABINET vs SINK BASE CABINET vs MEDICINE CABINET,UC,Upper Cabinet,Mueble de cocina aéreo.
+UPPER CABINET vs BASE CABINET vs DRAWER BASE CABINET vs SINK BASE CABINET vs MEDICINE CABINET,BC,Base Cabinet,Mueble de cocina bajo.
+UPPER CABINET vs BASE CABINET vs DRAWER BASE CABINET vs SINK BASE CABINET vs MEDICINE CABINET,DB,Drawer Base Cabinet,Base de gavetas del mueble de cocina.
+UPPER CABINET vs BASE CABINET vs DRAWER BASE CABINET vs SINK BASE CABINET vs MEDICINE CABINET,SB,Sink Base Cabinet,Mueble bajo el fregadero.
+UPPER CABINET vs BASE CABINET vs DRAWER BASE CABINET vs SINK BASE CABINET vs MEDICINE CABINET,MC,Medicine Cabinet,Mueble de los medicamentos.
+CORRIDOR vs BREEZEWAY vs LOGGIA,CORR,Corridor,Corredor / Pasillo.
+CORRIDOR vs BREEZEWAY vs LOGGIA,BRZWY,Breezeway,Paso abierto y techado (normalmente para conectar dos edificios o áreas).
+CORRIDOR vs BREEZEWAY vs LOGGIA,LOGG,Loggia,Corredor cubierto exterior y abierto a zonas verdes generalmente mediante arcos).
+ROTATE vs FLIP,ROT,Rotate,Rotar un elemento.
+ROTATE vs FLIP,FLIP,Flip,Darle la vuelta a un elemento (simetría izquierda/derecha o arriba/abajo).
+CHAMFER vs BEVEL vs FILLET,CHAM,Chamfer,"Chaflán (línea oblícua usualmente a 45º, para eliminar una esquina)."
+CHAMFER vs BEVEL vs FILLET,BVL,Bevel,Bisel (corte oblícuo en el extremo de un elemento).
+CHAMFER vs BEVEL vs FILLET,FILLET,Fillet,Fillet (esquina redondeada).
+BLOW-UP vs CALL-OUT,BLOW-UP,Blow-up,Ampliación (zona mostrada a una escala mayor para incluir mayor nivel de detalle).
+BLOW-UP vs CALL-OUT,CALL-OUT,Call-out,Recuadro que señaliza una zona que se mostrará ampliada y su ubicación.
+DROP vs FLUSH,DROP,Drop,"Caída (se usa para indicar la diferencia de nivel entre dos superficies). Es una dimensión variable. En la puerta de los balcones, típicamente es 3/4”."
+DROP vs FLUSH,FLUSH,Flush,Dos superficies rasantes (perfectamente alineadas entre sí).
+OPEN TO BELOW vs OPEN TO SKY,OPN TO BLW,Open to Below,Abierto hacia abajo (nota que se coloca en el piso superior de una doble altura).
+OPEN TO BELOW vs OPEN TO SKY,OPN TO SKY,Open to Sky,A cielo abierto (espacio descubierto).
+ATRIUM vs COURTYARD,ATRIUM,Atrium,"Atrio (espacio abierto techado en el interior del edificio, generalmente con lucernario)."
+ATRIUM vs COURTYARD,COURT,Courtyard,"Patio (espacio a cielo abierto que, a diferencia del atrio, es exterior)."
+NGVD vs NAVD,NGVD,National Geodetic Vertical Datum ('29),"Referencia fijada para datos de alturas del terreno (en 1929). Es la predecesora de NAVD, y por lo tanto es menos precisa."
+NGVD vs NAVD,NAVD,North American Vertical Datum ('88),Referencia fijada para datos de alturas del terreno (en 1988). Mayor precisión en los datos (algo importante para evitar casos de inundaciones).
+LANDSCAPE vs HARDSCAPE vs SOFTSCAPE,L,Landscape,Paisajismo.
+LANDSCAPE vs HARDSCAPE vs SOFTSCAPE,HRD,Hardscape,"Elementos paisajísticos artificiales (gazebos, bancos, cercas...etc)."
+LANDSCAPE vs HARDSCAPE vs SOFTSCAPE,SFT,Softscape,"Elementos paisajísticos naturales (jardines, vegetación, terreno...etc)."
+PROPERTY LINE vs BOUNDARY LINE,PL,Property Line,"Línea de propiedad (delimita una zona específica con un propietario legal, que debe responsabilizarse su mantemiento y el pago de las tasas respectivas)."
+PROPERTY LINE vs BOUNDARY LINE,BDRY,Boundary Line,"Límite (normalmente es equivalente a la línea de propiedad, pero técnicamente a diferencia de esta, el boundary line no considera la propiedad legal). Al tratarse de un límite territorial, puede ser establecido por los topógrafos."
+SETBACK vs SEPARATION vs FRONTAGE vs ENCROCHMENT,STBK,Setback,Distancia desde el edificio hasta la línea de propiedad.
+SETBACK vs SEPARATION vs FRONTAGE vs ENCROCHMENT,SEPAR,Building Separation,Separación entre dos edificios del proyecto (en el punto más próximo).
+SETBACK vs SEPARATION vs FRONTAGE vs ENCROCHMENT,FRT,Frontage,Dimensión del frente del lote.
+SETBACK vs SEPARATION vs FRONTAGE vs ENCROCHMENT,ENCR,Encroachment,Distancia de rebasado de un elemento del edificio respecto a la separación límite.
+EASEMENT vs RIGHT OF WAY,ESMT,Easement,Derecho de acceso / Servidumbre.
+EASEMENT vs RIGHT OF WAY,ROW o R/W,Right of Way,Derecho de paso / Servidumbre (es un tipo específico de easement).
+PARCEL vs LOT,PRCL,Parcel,Lote (cantidad de terreno asociada con sus impuestos/tasas).
+PARCEL vs LOT,LOT,Lot,"Lote (subdividisión de la propiedad, con una descripción legal y dirección asociada)."
+SURVEY vs CIVIL,SRVY,Survey,"Análisis detallado del lote o propiedad del proyecto (topografía, límites...etc)."
+SURVEY vs CIVIL,C,Civil,"Obra civil (carreteras, vías, caminos...etc)."
+ZONING vs MASSING,ZNG,Zoning,"Zonificación (Análisis del código que aplica al lote (alturas máx, separaciones...etc). Según la ubicación y cartacterísticas del lote, se le asigna un código (letra/número). La letra indica el uso (R = Residencial / C = Comercial / I = Industrial...etc). El número indica el nivel o intensidad de uso para dicho lote."
+ZONING vs MASSING,MASSING,Massing,"Análisis de la volumetría del proyecto y la relación entre sus distintas partes, y también la relación entre el mismo y su contexto alrededor."
+PERVIOUS vs IMPERVIOUS,PERV,Pervious,"Superficies permeables del lote (jardines, gravilla, adoquines porosos...etc). Como consecuencia, estas superficies aumentan el volúmen de agua drenada."
+PERVIOUS vs IMPERVIOUS,IMPERV,Impervious,"Superficies impermeables del lote (concreto, asfalto, piedra...etc). Como consecuencia, estas superficies aumentan las escorrentías."
+SECTOR vs PHASE,SECTR,Sector,"Sector (cada zona separada dentro de un proyecto grande). En el keyplan, dichas separaciones se suelen representar mediante match lines."
+SECTOR vs PHASE,PHSE,Phase,"Fase (a diferencia de un sector, es una zona del proyecto a construir en el futuro)."
+SP vs OSP vs MSP,SP,Site Plan,Plano de situación.
+SP vs OSP vs MSP,OSP,Overall Site Plan,Plano de situación general.
+SP vs OSP vs MSP,MSP,Master Site Plan,Plano de situación maestro (muestra un área mayor y suele incluir varios proyectos).
+RAILING vs HANDRAIL vs CANE RAIL vs GUARDRAIL,RLG,Railing,"Barandilla (típica de 3'-6” de altura o 4'-0” en balcones del 1F hacia un courtyard). Se refiere al conjunto completo de la barandilla, incluyendo sus distintas partes."
+RAILING vs HANDRAIL vs CANE RAIL vs GUARDRAIL,HDRL,Handrail,"Pasamanos (típico de 2'-10” de altura, y sobresale 12” respecto al último riser)."
+RAILING vs HANDRAIL vs CANE RAIL vs GUARDRAIL,CN RL,Cane Rail,"Barandilla (típica de 2'-3” de altura, bajo la escaleras, como protección)."
+RAILING vs HANDRAIL vs CANE RAIL vs GUARDRAIL,GRDRL,Guardrail,"Barandilla (típica de 3'-6” de altura, función de barrera para evitar caída al vacío)."
+PICKET FENCE vs CHAIN LINK FENCE vs BARBED FENCE vs SITE FENCE,PKT FNC,Picket Fence,Valla de postes verticales.
+PICKET FENCE vs CHAIN LINK FENCE vs BARBED FENCE vs SITE FENCE,CHN LNK FNC,Chain Link FENCE,Valla / Cerca de alambre.
+PICKET FENCE vs CHAIN LINK FENCE vs BARBED FENCE vs SITE FENCE,BRBD FNC,Barbed Fence,Valla con alambre de púas.
+PICKET FENCE vs CHAIN LINK FENCE vs BARBED FENCE vs SITE FENCE,SITE FNC,Site Fence,Valla / Cerca de protección del lote.
+ONSTREET PARKING vs OFFSTREET PARKING,ONST PARK,Onstreet Parking,"Espacio de parqueo exteriores, en la vía pública."
+ONSTREET PARKING vs OFFSTREET PARKING,OFFST PARK,Offstreet Parking,"Espacio de parqueo fuera de la vía pública (pueden ser exteriores en superficie si están en un lote, o interiores en edificios de garage o aparcamientos subterraneos)."
+STANDARD vs COMPACT vs PARALLEL vs HANDICAP vs TANDEM vs ELECTRIC VEHICLE,SP,Standard Parking,Espacio de parqueo regular (dimensión típica de 9' x 18').
+STANDARD vs COMPACT vs PARALLEL vs HANDICAP vs TANDEM vs ELECTRIC VEHICLE,CP,Compact Parking,"Espacio de parqueo compacto (dimensión mínima de 8' x 16'). En parqueos exteriores, su número no puede superar el 25% del total de parqueos."
+STANDARD vs COMPACT vs PARALLEL vs HANDICAP vs TANDEM vs ELECTRIC VEHICLE,PP,Parallel Parking,Espacio de parqueo en paralelo (dimensión típica de 8'-6” x 22').
+STANDARD vs COMPACT vs PARALLEL vs HANDICAP vs TANDEM vs ELECTRIC VEHICLE,HC (VAN),Handicap Parking,"Espacio de parqueo para discapacitados (dimensión típica de 12' x 18'). Se colocan cerca de los accesos, y disponen de un paso lateral de 5' de ancho. En caso de ser HC VAN, necesitan una altura libre mínima de 8'-2”. Para calcular el número requerido hay que revisar el número total de parqueos: 1-25sp → 1HC / 26-50sp → 2HC / 51-75sp → 3HC / 76-100sp → 4HC.../ 500+sp → 2%."
+STANDARD vs COMPACT vs PARALLEL vs HANDICAP vs TANDEM vs ELECTRIC VEHICLE,TP,Tandem Parking,"Espacio de parqueo pareado (tienen longitud doble, usualmente 32'). Ahorran espacio, pero el inconveniente es que un carro bloquea la salida al otro."
+STANDARD vs COMPACT vs PARALLEL vs HANDICAP vs TANDEM vs ELECTRIC VEHICLE,EV,Electric Vehicle Parking,"Espacio de parqueo para vehículos eléctricos (disponen de equipo de recarga). No todos los proyectos requieren este tipo de parqueos, depende de cada caso. Para calcular el número requerido hay que revisar el número total de parqueos: 10-25sp → 1EV / 26-50sp → 2EV / 51-75sp → 4EV / 76-100sp → 5EV.../ 200+sp → 6%."
+BACK OUT SPACE vs PARKING AISLE,B/O SP,Back Out Space,Espacio reservado para maniobrar en un garage o parqueo. Su tamaño depende del número de vías y de su ubicación.
+BACK OUT SPACE vs PARKING AISLE,AISLE,Parking Aisle / Drive Aisle,"Zona de paso / tránsito (en garages, usualmente 14' → Una vía / 24' → Dos vías)."
+BARRIER CABLES vs VEHICULAR BARRIER,BAR CABLES,Barrier Cables,"Barandilla de cables (típica en los garages como elemento de protección). Suelen tener una altura de 3'-6”, en ocasiones van montadas sobre un bordillo de 4”. La separación típica entre cada uno de los cables es de 4”."
+BARRIER CABLES vs VEHICULAR BARRIER,VEH BAR,Vehicular Barrier,Refuerzo de concreto de 2'-9” min en la base de paredes de circulación del garaje.
+ROLL-UP GATE vs BARRIER ARM GATE vs HORIZONTAL ROLLER GATE,ROLL UP GTE,Roll-up Gate,Portón tipo persiana (típico dentro de los edificios de garage).
+ROLL-UP GATE vs BARRIER ARM GATE vs HORIZONTAL ROLLER GATE,BAR GTE,Barrier Arm Gate,Portón tipo barrera (típico dentro de los edificios de garage).
+ROLL-UP GATE vs BARRIER ARM GATE vs HORIZONTAL ROLLER GATE,HR GTE,Horizontal Roller Gate,Portón corredizo (típico dentro de los edificios de garage).
+STAIR vs JUMP STAIR vs CONVENIENCE STAIR vs SPIRAL STAIR vs SCISSOR STAIR vs LADDER,STR,Stair,Escaleras (rating de 2h hasta 3 niveles / rating de 2h para más de 3 niveles).
+STAIR vs JUMP STAIR vs CONVENIENCE STAIR vs SPIRAL STAIR vs SCISSOR STAIR vs LADDER,JMP STR,Jump Stair,Escaleras (pequeño tramo para conectar los dos laterales de un garage). A veces son necesarias para poder cumplir la ruta de evacuación en Life Safety.
+STAIR vs JUMP STAIR vs CONVENIENCE STAIR vs SPIRAL STAIR vs SCISSOR STAIR vs LADDER,CONV STR,Convenience Stair,"Escaleras de conveniencia (conectan varios pisos dentro de un edificio, sin tener una separación de pared ni puerta fire-rated. Útil en oficinas, para una conexión fluída. Debido a sus limitaciones, se suele disponer un smoke barrier perimetral en el área)."
+STAIR vs JUMP STAIR vs CONVENIENCE STAIR vs SPIRAL STAIR vs SCISSOR STAIR vs LADDER,SPI STR,Spiral Stair,Escalera de caracol.
+STAIR vs JUMP STAIR vs CONVENIENCE STAIR vs SPIRAL STAIR vs SCISSOR STAIR vs LADDER,SCSR STR,Scissor Stair,Escalera de tijera (poseen doble subida y bajada).
+STAIR vs JUMP STAIR vs CONVENIENCE STAIR vs SPIRAL STAIR vs SCISSOR STAIR vs LADDER,LDR,Ladder,Escalera de mano.
+TREAD vs RISER vs RUNG,T,Tread,"Huella de escalera. Typ. de 11”, en townhomes min 10” y en exteriores ocasionalmente de 12”."
+TREAD vs RISER vs RUNG,R,Riser,"Contrahuella de escalera. Límite máximo general de 7”, y en townhomes de 7 3/4”."
+TREAD vs RISER vs RUNG,RUNG,Rung,Barra que sirve como peldaño en una escalera de mano (separadas de forma equidistante entre 10” y 14”).
+STAIR NOSING vs BULLNOSE,STR NSNG,Stair Nosing,Mamperlán / Pirlán (remate de 1” al final de cada escalón).
+STAIR NOSING vs BULLNOSE,BULLNS,Bullnose,Extensión lateral (normalmente redondeada) de los peldaños iniciales de la escalera.
+FLIGHT vs LANDING,FLGHT,Flight,Tramo de escalera (entre dos descansos). No puede subir más de 12' seguidos sin descansos.
+FLIGHT vs LANDING,LND,Landing,Descanso (en una rampa o escalera).
+FURRING vs FURROUT vs FINISH,FURR,Furring,"Forro (típicamente separado de la pared 1 3/8” y con grosor de 5/8” → Total = 2”). Se coloca en la cara interior de las paredes de bloque o concreto con algunas excepciones (staircases, shafts, trash room, elec rooms, garage...)."
+FURRING vs FURROUT vs FINISH,FURRT,Furrout,Forro recrecido (generalmente para esconder ductos o mejorar la insulación).
+FURRING vs FURROUT vs FINISH,FIN,Finish,Repello.
+EXPANSION JOINT vs CONSTRUCTION JOINT vs CONTROL JOINT,EJ,Expansion Joint,"Junta de expansión (para mitigar los cambios expansivos del material, de 1” o 2”)."
+EXPANSION JOINT vs CONSTRUCTION JOINT vs CONTROL JOINT,CJ,Construction Joint,Junta de construcción (derivada del proceso constructivo en obra).
+EXPANSION JOINT vs CONSTRUCTION JOINT vs CONTROL JOINT,CTRJ,Control Joint / Contraction Joint,Junta de control (para controlar la forma de agrietado del elemento constructivo).
+CAULKING vs SEALANT vs BACKER ROD,CLK,Caulking,Calafateado (sellado/cierre de una junta con masilla).
+CAULKING vs SEALANT vs BACKER ROD,SNT,Sealant,"Sellante (más versátil que el caulking, por su elasticidad y por ser resistente al agua)."
+CAULKING vs SEALANT vs BACKER ROD,BCKR ROD,Backer Rod,Varilla de respaldo (cordón de polietileno colocado en las juntas antes de sellarse).
+TROWELLED vs TOOLED,TROWELLD,Trowelled,Rematado de junta en la que se elimina el exceso de mortero → Acabado poroso.
+TROWELLED vs TOOLED,TOOLD,Tooled,Rematado de junta en la que queda cóncava → Mortero comprimido.
+BATT INSULATION vs BLANKET INSULATION vs FOIL BACK INSULATION vs SPRAYED INSULATION,BATT INSUL,Batt Insulation,Insulación laminada (pre-cortada en piezas de 4' / 8').
+BATT INSULATION vs BLANKET INSULATION vs FOIL BACK INSULATION vs SPRAYED INSULATION,BLNKT INSUL,Blanket Insulation,Insulación laminada (en rollo).
+BATT INSULATION vs BLANKET INSULATION vs FOIL BACK INSULATION vs SPRAYED INSULATION,FB INSUL,Foil Back Insulation,Insulación con aluminio laminado (es útil para evitar la trasferencia térmica).
+BATT INSULATION vs BLANKET INSULATION vs FOIL BACK INSULATION vs SPRAYED INSULATION,SPRYD INSUL,Sprayed Insulation,Insulación proyectada / rociada (usual en espacios no habitables o casos de VBS).
+FLASHING vs COUNTERFLASHING vs VALLEY FLASHING,FLASH,Flashing,Botaguas.
+FLASHING vs COUNTERFLASHING vs VALLEY FLASHING,ZFLASH,"Counterflashing / ""Z"" Flashing","Botaguas (se utiliza para cubrir el flashing, y así prevenir la entrada de humedad)."
+FLASHING vs COUNTERFLASHING vs VALLEY FLASHING,VFLASH,Valley Flashing,Botaguas (especificamente el colocado en las limahoyas del techo).
+DRIP INDUCER vs DRIP EDGE,DRIP,Drip Inducer / Water Cut,Cortalágrimas (en elementos en voladizo para evitar que el agua llegue a fachada).
+DRIP INDUCER vs DRIP EDGE,DRIP EDGE,Drip Edge,Cortalágrimas (específicamente el que se coloca sobre el nailer en los aleros).
+WALKING PAD vs WALKING PATH,PAD,Walking Pad,Planchas de hule en el techo formando un camino para hacerlo transitable. Su recorrido debe dar acceso a todas las unidades de aire en el techo.
+WALKING PAD vs WALKING PATH,PATH,Walking Path,Sendero.
+TOB vs TOS vs TOP vs TOW vs TOR,TOB,Top of Beam,Altura de la parte superior de la viga.
+TOB vs TOS vs TOP vs TOW vs TOR,TOS,Top of Slab,Altura de la parte superior de la losa.
+TOB vs TOS vs TOP vs TOW vs TOR,TOP,Top of Parapet,Altura de la parte superior del parapeto.
+TOB vs TOS vs TOP vs TOW vs TOR,TOW,Top of Wall / Top of Window,Altura de la parte superior de la pared o de la ventana (según el contexto).
+TOB vs TOS vs TOP vs TOW vs TOR,TOR,Top of Ridge / Top of Railing,Altura de la cumbrera o de la barandilla (según el contexto).
+ABOVE vs OVER vs ON vs BELOW vs UNDER vs BENEATH,ABV,Above,"Encima (a bastante distancia, se especifica con línea discontínua qué ocurre arriba)."
+ABOVE vs OVER vs ON vs BELOW vs UNDER vs BENEATH,OVER,Over,Encima (un elemento se encuentra cubriendo otro o a muy poca distancia).
+ABOVE vs OVER vs ON vs BELOW vs UNDER vs BENEATH,ON,On,"Encima (un elemento está directamente sobre el otro, con contacto entre ambos)."
+ABOVE vs OVER vs ON vs BELOW vs UNDER vs BENEATH,BLW,Below,"Debajo (a bastante distancia, se especifica con línea más fina qué ocurre abajo)."
+ABOVE vs OVER vs ON vs BELOW vs UNDER vs BENEATH,UNDER,Under,Debajo (un elemento se encuentra cubierto por otro o a muy poca distancia).
+ABOVE vs OVER vs ON vs BELOW vs UNDER vs BENEATH,BNTH,Beneath,"Debajo (un elemento está directamente bajo el otro, con contacto entre ambos)."
+OVERHEAD vs UNDERSIDE,OHD,Overhead,"Encima (se usa cuando un elemento cruza justo por encima, eg. puerta de garaje)."
+OVERHEAD vs UNDERSIDE,U/S,Underside,Superficie o cara inferior / Envés / Intradós.
+BEHIND vs BESIDE vs BETWEEN vs BEYOND,BHND,Behind,Detrás de...
+BEHIND vs BESIDE vs BETWEEN vs BEYOND,BSD,Beside,Junto a...
+BEHIND vs BESIDE vs BETWEEN vs BEYOND,BTWN,Between,Entre dos elementos.
+BEHIND vs BESIDE vs BETWEEN vs BEYOND,BYND,Beyond,"Hacia el fondo (típico en serie 3, para indicar lo que se ve tras el plano frontal)."
+VOID SPACE vs INTERSTITIAL SPACE,VOID,Void Space,Espacio vacío / sin uso (generalmente debajo de una rampa / escalera).
+VOID SPACE vs INTERSTITIAL SPACE,INTERST,Interstitial Space,Espacio intersticial (espacio sin uso habitable entre dos losas estructurales).
+SPAN vs BAY,SPAN,Span,Luz (distancia horizontal entre dos elementos estructurales de apoyo).
+SPAN vs BAY,BAY,Bay,Crujía (distancia horizontal entre dos cerchas consecutivas).
+ELEVATION vs FACADE,ELEV,Elevation,Elevación.
+ELEVATION vs FACADE,FCDE,Facade / Façade,Elevación frontal (es específicamente la fachada principal y más distintiva).
+MAIN COLOR vs ACCENT COLOR,COLOR,Main Color,Color principal.
+MAIN COLOR vs ACCENT COLOR,ACCENT,Accent Color,"Color acentuado (en serie 3, especifica las zonas con colores secundarios que sirven como contraste respecto al color principal de la fachada)."
+PORCH vs LANAI vs PATIO vs VERANDAH vs DECK vs SUNROOM,PRCH,Porch,Porche (generalmente frente a la fachada principal).
+PORCH vs LANAI vs PATIO vs VERANDAH vs DECK vs SUNROOM,LANAI,Lanai (haw.),Porche (usualmente más extenso y en la fachada posterior).
+PORCH vs LANAI vs PATIO vs VERANDAH vs DECK vs SUNROOM,PATIO,Patio,"Porche (usualmente descubierto, pavimentado y desconectado de la casa)."
+PORCH vs LANAI vs PATIO vs VERANDAH vs DECK vs SUNROOM,VERAND,Verandah,"Veranda (porche en un costado de la vivienda, a veces envolviendo una esquina)."
+PORCH vs LANAI vs PATIO vs VERANDAH vs DECK vs SUNROOM,DECK,Deck ,"Deck  (usualemente descubierto, elevated y en la fachada posterior, typ de madera)."
+PORCH vs LANAI vs PATIO vs VERANDAH vs DECK vs SUNROOM,SUNRM,Sunroom,Solarium (cuarto interior de la vivienda con gran iluminación natural y vista exterior).
+RECESS vs ALCOVE vs NICHE,RECESS,Recess,Remetido (generalmente se refiere a un quiebre en fachada metido hacia dentro).
+RECESS vs ALCOVE vs NICHE,ALC,Alcove,"Alcoba (espacio remetido en una sala, generalmente para leer o sentarse)."
+RECESS vs ALCOVE vs NICHE,NCH,Niche,"Nicho (espacio remetido en una pared, para colocar elementos decorativos)."
+FLOOR vs LEVEL vs TIER vs STORY,FLR,Floor,Nivel / Piso (generalmente aplica a edificios residenciales y/o habitables).
+FLOOR vs LEVEL vs TIER vs STORY,LVL,Level,"Nivel / Piso (generalmente aplica a edificios no habitables, por ejemplo un garaje. También se usa al referirse a un overall plan (porque puede incluir un garaje)."
+FLOOR vs LEVEL vs TIER vs STORY,TIER,Tier,"Nivel / Piso (aplica al calcular la ventilación del garaje, los niveles son tiers)."
+FLOOR vs LEVEL vs TIER vs STORY,STRY,Story,"Número de pisos del edificio (se coloca tras el número, eg: four-stor(e)y building). "
+LOW RISE BUILDING vs MID RISE BUILDING vs HIGH RISE BUILDING vs SKYSCRAPER,LRB,Low Rise Building,Edificio de poca altura (4 pisos o menos).
+LOW RISE BUILDING vs MID RISE BUILDING vs HIGH RISE BUILDING vs SKYSCRAPER,MRB,Mid Rise Building,Edificio de altura media (entre 5 y 8 pisos).
+LOW RISE BUILDING vs MID RISE BUILDING vs HIGH RISE BUILDING vs SKYSCRAPER,HRB,High Rise Building,Edificio de gran altura (generalmente a partir de 9 pisos). Un edificio es high rise cuando la altura desde el acceso de calle de los bomberos hasta la vivienda más elevada > 75ft (debido a la dim de la escalera de incendios).
+LOW RISE BUILDING vs MID RISE BUILDING vs HIGH RISE BUILDING vs SKYSCRAPER,SKYSCPR,Skyscrapper,"Rascacielos (generalmente a partir de 40 pisos, pero no necesariamente)."
+ALF vs MOB vs SNF vs CRO,ALF,Assisted Living Facility,Complejo de viviendas para personas que requieren asistencia.
+ALF vs MOB vs SNF vs CRO,MOB,Medical Office Building,Centro de oficinas médicas.
+ALF vs MOB vs SNF vs CRO,SNF,Skilled Nursing Facility,Centro de enfermería y rehabilitación.
+ALF vs MOB vs SNF vs CRO,CRO,Contract Reasearch Organization,"Centro que da soporte a la industria farmacéutica (análisis, pruebas clínicas...)."
+CLERICAL vs TRIAGE vs WAITING ROOM vs MEDICAL SUPPLY vs TREATMENT ROOM vs IRB,CLER,Clerical,"Oficina administrativa en centro médico (recibe llamadas, coordina citas médicas...)."
+CLERICAL vs TRIAGE vs WAITING ROOM vs MEDICAL SUPPLY vs TREATMENT ROOM vs IRB,TRIAGE,Triage,"Triaje (en centros médicos, clasificación de pacientes según su gravedad)."
+CLERICAL vs TRIAGE vs WAITING ROOM vs MEDICAL SUPPLY vs TREATMENT ROOM vs IRB,WAIT RM,Waiting Room,Sala de espera.
+CLERICAL vs TRIAGE vs WAITING ROOM vs MEDICAL SUPPLY vs TREATMENT ROOM vs IRB,MED SUP,Medical Supply,Cuarto de suministros médicos.
+CLERICAL vs TRIAGE vs WAITING ROOM vs MEDICAL SUPPLY vs TREATMENT ROOM vs IRB,TREAT,Treatment Room,Sala de tratamiento.
+CLERICAL vs TRIAGE vs WAITING ROOM vs MEDICAL SUPPLY vs TREATMENT ROOM vs IRB,IRB,Institutional Review Board,Junta de Revisión Institucional (supervisa las pruebas médicas en pacientes).
+ISOMETRIC vs DIMETRIC vs TRIMETRIC vs CABINET vs CAVALIER vs MILITAR,ISOM,Isometric,"Isométrico (representación gráfica en la que los 3 ejes, x / y / z, se separan 120º)."
+ISOMETRIC vs DIMETRIC vs TRIMETRIC vs CABINET vs CAVALIER vs MILITAR,DIMET,Dimetric,"Dimétrico (representación gráfica en la que los 3 ejes, x / y / z, se separan con dos ángulos iguales entre sí y uno de ellos diferente)."
+ISOMETRIC vs DIMETRIC vs TRIMETRIC vs CABINET vs CAVALIER vs MILITAR,TRIMET,Trimetric,"Trimétrico (representación gráfica en la que los 3 ejes, x / y / z, se separan con los tres ángulos diferentes entre sí)."
+ISOMETRIC vs DIMETRIC vs TRIMETRIC vs CABINET vs CAVALIER vs MILITAR,CAB,Cabinet,Representación gráfica oblícua de tipo gabinete (la elevación se muestra de frente en verdadera magnitud y el fondo se escala a la mitad en un eje inclinado).
+ISOMETRIC vs DIMETRIC vs TRIMETRIC vs CABINET vs CAVALIER vs MILITAR,CAV,Cavalier,Representación gráfica caballera (la elevación se muestra de frente en verdadera magnitud y el fondo se mantiene a escala en un eje inclinado).
+ISOMETRIC vs DIMETRIC vs TRIMETRIC vs CABINET vs CAVALIER vs MILITAR,MILIT,Militar,Representación gráfica militar (la planta se muestra de frente en verdadera magnitud y la altura se mantiene a escala en un eje vertical).
+PLANAR BREAK vs MATCH LINE,PLNR BRK,Planar Break,"Cambio de plano (típico en serie 3, para indicar una zona vista en escorzo / oblícua)."
+PLANAR BREAK vs MATCH LINE,MTCH LN,Match Line,"Línea referencia para mostrar la continuación de un elemento. (típico en serie 3, para mostrar una elevación o sección de gran longitud)."
+DASHED vs DOTTED vs DASHDOTTED,DASH,Dashed Line,"Tipo de línea discontínua (sirve para mostrar elementos ocultos del punto de vista). Cuando los trazos estan más separados, se indica que el elemento está más lejano."
+DASHED vs DOTTED vs DASHDOTTED,DOT,Dotted Line,Tipo de línea punteada (sirve para mostrar elementos ocultos muy cercanos).
+DASHED vs DOTTED vs DASHDOTTED,DASHDOT,Dashdotted Line,Tipo de línea con alternancia de líneas y puntos (se usan para indicar ejes).
+GRILLE vs MESH vs LATTICE vs LATH,GRILLE,Grille,Reja (generalmente metálica y en fachada con función decorativa o de seguridad).
+GRILLE vs MESH vs LATTICE vs LATH,MSH,Mesh,"Malla  (generalmente en balcones, con una retícula mucho más fina que el grille)."
+GRILLE vs MESH vs LATTICE vs LATH,LTTC,Lattice,Entramado (típico en cercas/vallas de metal o madera con una retícula cuadrada).
+GRILLE vs MESH vs LATTICE vs LATH,LATH,Lath,Mallazo (malla de metal usualmente utilizada en sistemas de impermeabilización).
+SCORE LINE vs REVEAL,SCORE LN,Score Line,"Línea de marcado (con función decorativa en elevaciones, typ de stucco y 1” max)."
+SCORE LINE vs REVEAL,RVL,Reveal,Superficie de un elemento en receso en fachada (como un opening o un score line).
+MOULDING vs TRIM vs FRIEZE,MLD,Molding,Moldura (término general para todos los tipos).
+MOULDING vs TRIM vs FRIEZE,TRM,Trim,"Moldura en forma de banda (usual aldededor de ventanas, puertas o para zócalos)."
+MOULDING vs TRIM vs FRIEZE,FRZ,Frieze,"Friso (banda horizontal decorativa, generamente con arte esculpido)."
+LAP SIDING vs BOARD SIDING,LAP SDNG,Lap Siding,Revestimiento (con bandas horizontales solapadas).
+LAP SIDING vs BOARD SIDING,BD SDNG,Board Siding,Revestimiento (con paneles sobre listones guía y sin solapamiento).
+RFE vs SFE vs FEC,RFE,Recessed Fire Extinguisher,Extintor de incendios empotrado.
+RFE vs SFE vs FEC,SFE,Surface Fire Extinguisher,Extintor de incendios rasante.
+RFE vs SFE vs FEC,FEC,Fire Extinguisher Cabinet,Armario con extintor de incendios.
+FCR vs FCS,FCR,Fire Control Room,Cuarto de control de incendios.
+FCR vs FCS,FCS,Fire Control Symbol,Símbolo para el control del fuego (identifica en fachada al edificio con una categoría para facilitar el trabajo de los bomberos en caso de incendio). Sus variaciones son: Símbolo con F → Edificio con Floor Trusses. Símbolo con R → Edificio con Roof Trusses. Símbolo con RF → Edificio con Floor & Roof Trusses.
+HVAC vs CU vs AHU vs RTU,HVAC,"Heating, Ventilation and Cooling","Sistema de calefacción, ventilación y enfriamiento."
+HVAC vs CU vs AHU vs RTU,AHU,Air Handling Unit,Unidad de tratamiento de aire.
+HVAC vs CU vs AHU vs RTU,CU,Condensing Unit,Unidad de condensación.
+HVAC vs CU vs AHU vs RTU,RTU,Rooftop Unit,Unidad de aire acondicionado en el techo del edificio.
+EXHAUST vs INTAKE,EX,Exhaust,Extractor de aire (ventilación).
+EXHAUST vs INTAKE,IN,Intake,Toma de aire (ventilación).
+SHAFT vs CHASE vs HOISTWAY vs CHUTE,SHFT,Shaft,Hueco vertical que comunica varios pisos (siempre con rating de 2h).
+SHAFT vs CHASE vs HOISTWAY vs CHUTE,CHS,Chase,Hueco que puede comunicar varios pisos y puede ser horiz (no siempre llevan rating).
+SHAFT vs CHASE vs HOISTWAY vs CHUTE,HSTWY,Hoistway,Hueco vertical específicamente del elevador (siempre con rating de 2h).
+SHAFT vs CHASE vs HOISTWAY vs CHUTE,TRSH CHT,Trash Chute,"Ducto vertical de basura (conecta todos los pisos con el trash room en el 1F). En su parte inferior, a veces se le hace un offset (max 15º). Siempre con rating 2h."
+CHIMNEY vs FIREPLACE,CHMNY,Chimney,Chimenea (hace referencia al conducto vertical que deja salir el humo).
+CHIMNEY vs FIREPLACE,FPL,Fireplace,Chimenea (hace referencia a la parte baja que da a la sala).
+KNOX BOX vs JUNCTION BOX,K-BOX,Knox Box,Caja cerrada donde se guardan las llaves de acceso a servicios del edificio.
+KNOX BOX vs JUNCTION BOX,J-BOX,Junction Box,Caja de conexiones.
+ALLOWED vs REQUIRED vs PROVIDED vs PROPOSED,ALLOWD,Allowed,Permitido.
+ALLOWED vs REQUIRED vs PROVIDED vs PROPOSED,REQD,Required,Requerido / Necesario.
+ALLOWED vs REQUIRED vs PROVIDED vs PROPOSED,PROVD,Provided,Provisto / Proporcionado.
+ALLOWED vs REQUIRED vs PROVIDED vs PROPOSED,PROPD,Proposed,Propuesto.
+RENOVATION vs RESTORATION,RENOV,Renovation,Renovación (cambios significativos con objetivo de mejorar el proyecto).
+RENOVATION vs RESTORATION,RESTOR,Restoration,Restauración (cambios con objetivo de preservar la forma original del proyecto).
+DECORATION vs ORNAMENTATION,DECO,Decoration,Elemento decorativo.
+DECORATION vs ORNAMENTATION,ORNAM,Ornamentation,Decoración (término más formal que decoration e incuantificable).
+FALSEWORK vs FORMWORK vs SCAFFOLDING,FLSWK,Falsework,Puntales (estructura provisional para sostener una permanente en construcción).
+FALSEWORK vs FORMWORK vs SCAFFOLDING,FRMWK,Formwork,Encofrado / Formaleta (molde provisional sobre el que se dar forma al concreto).
+FALSEWORK vs FORMWORK vs SCAFFOLDING,SCAFF,Scaffolding,Andamiaje (estructura temporal para poder trabajar con seguridad elementos altos).
+FHA vs ADA vs FAC,FHA,Fair Housing Act,Ley Federal de Equidad de Viviendas. Regula los estándares de accesibilidad para vivienda privada.
+FHA vs ADA vs FAC,ADA,Americans with Disabilities Act,Ley Federal para Estadounidenses con Discapacidades. Regula los estándares de accesibilidad para zonas públicas.
+FHA vs ADA vs FAC,FAC,Florida Accessibility Code,"Código de Accesibilidad de Florida. Regula los estándares de accesibilidad para zonas públicas (específico para Florida). A diferencia de ADA (que engloba los estandarizados federales de diseño), el FAC es un código de edificación (y por tanto tiene más peso en materia legal)."
+ANSI vs ISO,ANSI,American National Standards Institute,Institución Estadounidense que coordina los estándares tecnológicos. El código ANSI A117.1 Standard aplica para áreas privadas y DUs (al igual que FHA).
+ANSI vs ISO,ISO,International Standards Organization,Organización internacional que coordina los estandarizados.
+LLC vs INC,LLC,Limited Liability Company,"Sociedad de Responsabilidad Limitada (SRL) → Limitada al capital aportado. Sin doble tributación, las ganancias o pérdidas son asumidas por sus miembros."
+LLC vs INC,INC,Incorporated / Corporation,Sociedad Anónima (SA) →  Posee accionistas y puede entrar en bolsa de valores. Poseen doble tributación (C-Corp). Sus socios/accionistas no declaran impuestos.
+OWNER vs GENERAL CONTRACTOR vs SPECIALTY CONTRACTOR vs SUBCONTRACTOR vs DEVELOPER,OWNR,Owner,Dueño.
+OWNER vs GENERAL CONTRACTOR vs SPECIALTY CONTRACTOR vs SUBCONTRACTOR vs DEVELOPER,GC,General Contractor,Contratista general (se encarga de coordinar múltiples aspectos del proyecto).
+OWNER vs GENERAL CONTRACTOR vs SPECIALTY CONTRACTOR vs SUBCONTRACTOR vs DEVELOPER,SPC,Specialty Contractor,Contratista especializado (coordina un aspecto específico del proyecto).
+OWNER vs GENERAL CONTRACTOR vs SPECIALTY CONTRACTOR vs SUBCONTRACTOR vs DEVELOPER,SC,Subcontractor,"Subcontratista (posee relación contractual con el contratista, pero no con el dueño)."
+OWNER vs GENERAL CONTRACTOR vs SPECIALTY CONTRACTOR vs SUBCONTRACTOR vs DEVELOPER,DEV,Developer,Desarrollador (su objetivo es la venta del proyecto tras ser finalizado).
+DESIGN BID BUILD vs DESIGN BUILD vs CONSTRUCTION MANAGER AT RISK vs JOB ORDER CONTRACTING,DBB,Design Bid Build,"Esquema de entrega de proyecto más habitual. El dueño contrata inicialmente al arquitecto para diseñar el proyecto. Posteriormente, durante la fase de licitación, selecciona al contratista. La responsabilidad se divide en tres partes."
+DESIGN BID BUILD vs DESIGN BUILD vs CONSTRUCTION MANAGER AT RISK vs JOB ORDER CONTRACTING,DB,Design Build,Esquema de entrega de proyecto en el que el dueño contrata a una sóla compañía para manejar tanto el diseño como la construcción del proyecto.
+DESIGN BID BUILD vs DESIGN BUILD vs CONSTRUCTION MANAGER AT RISK vs JOB ORDER CONTRACTING,CMAR,Construction Manager at Risk,"Esquema de entrega de proyecto en el que el dueño posee contratos independientes con el arquitecto y el contratista, y ambos colaboran durante el diseño del proyecto. Asimismo, el contratista tiene un costo máximo de ejecución (GMP) cuyo exceso, si se produjese, debe asumirlo de su bolsillo."
+DESIGN BID BUILD vs DESIGN BUILD vs CONSTRUCTION MANAGER AT RISK vs JOB ORDER CONTRACTING,JOC,Job Order Contracting,Esquema de entrega de proyecto indefinido. Se caracteriza por poder incluir múltiples proyectos en un sólo contrato a largo plazo.
+SHAREHOLDER vs STAKEHOLDER,SHRHOLDER,Shareholder,Accionista de una compañía.
+SHAREHOLDER vs STAKEHOLDER,STKHOLDER,Stakeholder,Parte interesada de una compañía (sin ser necesariamente accionista de la misma).
+RFI vs RFP vs RFQ,RFI,Request for Information,Solicitud de información.
+RFI vs RFP vs RFQ,RFP,Request for Proposal,Solicidud de propuesta (para que el vendedor indique costos por distintos servicios).
+RFI vs RFP vs RFQ,RFQ,Request for Quote,Solicidud de presupuesto (para que el vendedor indique el costo de algo específico).
+REVISION vs ADDENDUM vs AMENDMENT vs CHANGE ORDER,REV,Revision,Revisión (modificaciones del proyecto asociadas a una fecha/motivo específico).
+REVISION vs ADDENDUM vs AMENDMENT vs CHANGE ORDER,ADD,Addendum,Apéndice (información añadida para clarificar un proyecto sin modificarlo).
+REVISION vs ADDENDUM vs AMENDMENT vs CHANGE ORDER,AMEND,Amendment,Enmienda (información añadida que modifica de forma significativa el proyecto).
+REVISION vs ADDENDUM vs AMENDMENT vs CHANGE ORDER,CO,Change Order,Orden de cambio (registro de una modificación en el alcance del contrato original). Básicamente es un tipo de enmienda del contrato para la construcción del proyecto.
+SHOP DRAWINGS vs CONSTRUCTION DRAWINGS vs AS BUILT DRAWINGS,SHOP DWGS,Shop Drawings,"Planos que detallan componentes específicos del proyecto usualmente prefabricados como elevadores, cerchas, ventanas o elementos de carpintería. Deben ser revisados y aprobados por el equipo a cargo de la construcción."
+SHOP DRAWINGS vs CONSTRUCTION DRAWINGS vs AS BUILT DRAWINGS,CONST DWGS,Construction Drawings,Planos constructivos (sirven como guía para todos los gremios que intervienen en el proyecto y la coordinación entre los mismos).
+SHOP DRAWINGS vs CONSTRUCTION DRAWINGS vs AS BUILT DRAWINGS,AB DWGS,As Built Drawings,Planos que reflejan los cambios de último momento en obra.
+BUDGET vs CONTINGENCY,BDGT,Budget,Presupuesto.
+BUDGET vs CONTINGENCY,CONTING,Contingency,Porcentaje del presupuesto del proyecto reservado para gastos inesperados.
+SCOPE OF WORK vs PUNCH LIST vs TAKE-OFF,SOW,Scope of Work,Alcance del trabajo (delimitación del trabajo a entregar en cada proyecto).
+SCOPE OF WORK vs PUNCH LIST vs TAKE-OFF,PL,Punch List,Lista de tareas del alcance que deben finalizarse para declarar proyecto completado.
+SCOPE OF WORK vs PUNCH LIST vs TAKE-OFF,TAKE-OFF,Take-off,Lista de materiales / costos estimados para finalizar un proyecto.
+CC vs BCC,CC,Carbon Copy,"Vía email, copia del mensaje a un destinatario adicional."
+CC vs BCC,BCC,Blind Carbon Copy,"Vía email, copia del mensaje a un destinatario adicional sin notificarla al principal."
+REPLY vs REPLY ALL vs FORWARD,RE,Reply,Responder por email exclusivamente al remitente original.
+REPLY vs REPLY ALL vs FORWARD,RE ALL,Reply All,Responder por email al remitente original y a los destinatarios adicionales.
+REPLY vs REPLY ALL vs FORWARD,FW o FWD,Forward,"Vía email, reenvía el mensaje a un nuevo contacto."
+PTO vs HOLIDAY vs VACATION vs SICK LEAVE,PTO,Paid Time Off,Tiempo libre remunerado (incluye días de vacaciones y los de baja por enfermedad).
+PTO vs HOLIDAY vs VACATION vs SICK LEAVE,PH,Paid Holiday,Feriado de pago obligatorio.
+PTO vs HOLIDAY vs VACATION vs SICK LEAVE,VAC,Vacation,Vacaciones.
+PTO vs HOLIDAY vs VACATION vs SICK LEAVE,S/L,Sick Leave,Baja por enfermedad.

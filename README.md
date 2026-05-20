@@ -28,9 +28,9 @@ The repository is structured to facilitate rapid onboarding and ensure data inte
 
 ```text
 lexicon_arch/
-├── data/               # Master CSV datasets (Single Source of Truth)
+├── data/                # Master CSV datasets (Single Source of Truth)
 │   ├── lexicon_arch.csv # Architecture, engineering, and regulatory terms
 │   └── lexicon_vs.csv   # Comparative matrix for technical nuances
-├── docs/               # Normative references and coding standards
-├── scripts/            # Validation utilities for terminology maintenance
-└── README.md           # Documentation and governance guidelines
+├── documents/           # Normative references and onboarding standards
+├── scripts/             # Validation utilities for terminology maintenance
+└── README.md            # Documentation and governance guidelines

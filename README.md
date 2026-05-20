@@ -22,6 +22,20 @@ This repository acts as a governance tool to ensure consistent terminology usage
 
 ---
 
+## How to Contribute
+We welcome contributions to keep our taxonomy current. Please follow these steps:
+1. **Report a Change:** Open an [Issue](https://github.com/jc-datarchitect/lexicon_arch/issues) describing the term to add or modify.
+2. **Review:** Our team will review the proposal against current code standards.
+3. **Merge:** Once approved, we will update the master CSV files.
+
+## Governance Policy
+This repository follows strict data integrity standards:
+* **SSOT:** The files in `/data` are the master source. Never modify them manually without prior approval.
+* **Bilingual Consistency:** All terms must maintain the English/Spanish format defined in our style guide.
+* **Validation:** All changes are audited to ensure compliance with our normative references in `/documents`.
+
+---
+
 ## Project Structure
 
 The repository is organized to facilitate rapid onboarding and ensure data integrity across project phases:

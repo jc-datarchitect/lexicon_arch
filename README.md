@@ -8,9 +8,9 @@
   <br>
 
   [![Data Governance](https://img.shields.io/badge/Data%20Governance-Standardized-28a745?style=flat&logo=readthedocs&logoColor=white)](https://en.wikipedia.org/wiki/Data_governance)
-  [![Bilingual Lexicon](https://img.shields.io/badge/Bilingual-ENG%2FESP-0056b3?style=flat&logo=google-translate&logoColor=white)](https://github.com/tu-usuario/lexicon_arch)
-  [![Onboarding Ready](https://img.shields.io/badge/Onboarding-Tool-FF9800?style=flat&logo=gitbook&logoColor=white)](https://github.com/tu-usuario/lexicon_arch)
-  [![GitHub stars](https://img.shields.io/github/stars/jc-datarchitect/TRIP-U?style=social)](https://github.com/jc-datarchitect/TRIP-U/stargazers)
+  [![Bilingual Lexicon](https://img.shields.io/badge/Bilingual-ENG%2FESP-0056b3?style=flat&logo=google-translate&logoColor=white)](https://github.com/jc-datarchitect/lexicon_arch)
+  [![Onboarding Ready](https://img.shields.io/badge/Onboarding-Tool-FF9800?style=flat&logo=gitbook&logoColor=white)](https://github.com/jc-datarchitect/lexicon_arch)
+  [![GitHub stars](https://img.shields.io/github/stars/jc-datarchitect/lexicon_arch?style=social)](https://github.com/jc-datarchitect/lexicon_arch/stargazers)
 </div>
 
 ---
@@ -24,13 +24,15 @@ This repository acts as a governance tool to ensure consistent terminology usage
 
 ## Project Structure
 
-The repository is structured to facilitate rapid onboarding and ensure data integrity across project phases:
+The repository is organized to facilitate rapid onboarding and ensure data integrity across project phases:
 
 ```text
 lexicon_arch/
-├── data/                # Master CSV datasets (Single Source of Truth)
-│   ├── lexicon_arch.csv # Architecture, engineering, and regulatory terms
-│   └── lexicon_vs.csv   # Comparative matrix for technical nuances
-├── documents/           # Normative references and onboarding standards
-├── scripts/             # Validation utilities for terminology maintenance
-└── README.md            # Documentation and governance guidelines
+├── data/                  # Master CSV datasets (Single Source of Truth)
+│   ├── [lexicon_arch.csv](data/lexicon_arch.csv) # Architecture, engineering, and regulatory terms
+│   └── [lexicon_vs.csv](data/lexicon_vs.csv)     # Comparative matrix for technical nuances
+├── documents/             # Normative references and onboarding standards
+│   ├── [onboarding_manual.md](documents/lexicon_onboarding_manual.md)  # Technical guide for new hires
+│   └── [references.md](documents/lexicon_normativas_codigos.md)        # Normative and coding references
+├── scripts/               # Validation utilities for terminology maintenance
+└── README.md              # Documentation and governance guidelines

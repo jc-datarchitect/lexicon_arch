@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/fbafdbbe-329f-4890-8eb2-acb7bdba53ca" width="35%" alt="Lexicon Banner">
+  <img src="https://github.com/user-attachments/assets/fbafdbbe-329f-4890-8eb2-acb7bdba53ca" width="75%" alt="Lexicon Banner">
 
   <h1>Lexicon Architecture: Technical Taxonomy & Governance</h1>
 

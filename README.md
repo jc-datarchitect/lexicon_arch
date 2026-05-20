@@ -28,11 +28,11 @@ The repository is organized to facilitate rapid onboarding and ensure data integ
 
 ```text
 lexicon_arch/
-├── data/                              # Master CSV datasets (Single Source of Truth)
-│   ├── lexicon_arch.csv               # Architecture, engineering, and regulatory terms
-│   └── lexicon_vs.csv                 # Comparative matrix for technical nuances
-├── documents/                         # Normative references and onboarding standards
-│   ├── lexicon_onboarding_manual.md   # Technical guide for new hires
-│   └── lexicon_normativas_codigos.md  # Normative and coding references
-└── README.md                          # Documentation and governance guidelines
+├── data/                               # Master CSV datasets (Single Source of Truth)
+│   ├── lexicon_arch.csv                # Architecture, engineering, and regulatory terms
+│   └── lexicon_vs.csv                  # Comparative matrix for technical nuances
+├── documents/                          # Normative references and onboarding standards
+│   ├── lexicon_onboarding_manual.md    # Technical guide for new hires
+│   └── lexicon_normativas_codigos.md   # Normative and coding references
+└── README.md                           # Documentation and governance guidelines
 ```

@@ -1,44 +1,36 @@
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/f9791342-e7a5-4058-912c-e2103ade08e2" width="35%" alt="AXIS Studio Banner">
+  <img src="https://github.com/user-attachments/assets/fbafdbbe-329f-4890-8eb2-acb7bdba53ca" width="35%" alt="Lexicon Banner">
 
-  <h1>Lexicon Architecture: Technical Taxonomy</h1>
+  <h1>Lexicon Architecture: Technical Taxonomy & Governance</h1>
 
-  <p><i>"Standardizing the architectural and operational language of the built environment"</i></p>
+  <p><i>"Standardizing architectural communication through bilingual technical governance"</i></p>
   
   <br>
 
-  [![Technical Taxonomy](https://img.shields.io/badge/Architecture--Technical--Taxonomy-00A8E8?style=flat&logo=read-the-docs&logoColor=white)](https://github.com/jc-datarchitect/lexicon_arch)
-  [![Data Consistency](https://img.shields.io/badge/Data%20Integrity-orange?style=flat)](https://github.com/jc-datarchitect/lexicon_arch)
-  [![CSV Format](https://img.shields.io/badge/Data-CSV-3776AB?style=flat&logo=csv&logoColor=white)](https://www.csvjson.com/)
-  [![GitHub stars](https://img.shields.io/github/stars/jc-datarchitect/lexicon_arch?style=social)](https://github.com/jc-datarchitect/lexicon_arch/stargazers)
+  [![Data Governance](https://img.shields.io/badge/Data%20Governance-Standardized-28a745?style=flat&logo=readthedocs&logoColor=white)](https://en.wikipedia.org/wiki/Data_governance)
+  [![Bilingual Lexicon](https://img.shields.io/badge/Bilingual-ENG%2FESP-0056b3?style=flat&logo=google-translate&logoColor=white)](https://github.com/tu-usuario/lexicon_arch)
+  [![Onboarding Ready](https://img.shields.io/badge/Onboarding-Tool-FF9800?style=flat&logo=gitbook&logoColor=white)](https://github.com/tu-usuario/lexicon_arch)
+  [![GitHub stars](https://img.shields.io/github/stars/tu-usuario/lexicon_arch?style=social)](https://github.com/tu-usuario/lexicon_arch/stargazers)
 </div>
 
 ---
 
 # lexicon_arch
-A centralized, end-to-end technical taxonomy for **AXIS Studio**. This repository serves as the **Single Source of Truth (SSOT)** for project terminology, engineering coefficients, zoning metrics, and contractual language, ensuring consistency across all BIM documentation and operational datasets.
+A centralized, **bilingual (English-Spanish) technical taxonomy** designed to serve as a **Single Source of Truth (SSOT)** for architectural and engineering firms. 
+
+This repository acts as a governance tool to ensure consistent terminology usage across international teams, streamline the onboarding process for new hires, and maintain high standards in BIM documentation, technical specifications, and project management.
 
 ---
 
 ## Project Structure
 
-The repository is organized as follows to ensure reproducibility and clean separation of concerns:
+The repository is structured to facilitate rapid onboarding and ensure data integrity across project phases:
 
 ```text
 lexicon_arch/
-├── data/                 # Master CSV datasets
-│   ├── lexicon_arch.csv  # Main architectural and engineering terms
-│   └── lexicon_vs.csv    # Comparative matrix for technical nuances
-├── docs/                 # Normative references and standards
-├── scripts/              # Data validation and maintenance utilities
-└── README.md             # Project documentation and guidelines
-```
-
-
-
-
-
-
-
-# lexicon_arch
-A bilingual architectural glossary (+1000 terms) designed as a data governance and onboarding tool to bridge Costa Rica &amp; Miami architecture offices. Standardizes construction, SD, and DD terminology, including acronyms, technical contexts, local regulations, and a specialized cross-linguistic false friends matrix.
+├── data/               # Master CSV datasets (Single Source of Truth)
+│   ├── lexicon_arch.csv # Architecture, engineering, and regulatory terms
+│   └── lexicon_vs.csv   # Comparative matrix for technical nuances
+├── docs/               # Normative references and coding standards
+├── scripts/            # Validation utilities for terminology maintenance
+└── README.md           # Documentation and governance guidelines

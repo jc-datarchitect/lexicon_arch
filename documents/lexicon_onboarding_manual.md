@@ -22,8 +22,7 @@ Antes de preguntar a un colega o inventar un término nuevo, sigue estos pasos:
 
 ## 4. Recursos Rápidos
 * **[Link al repositorio](https://github.com/jc-datarchitect/lexicon_arch)** - Donde vive nuestra taxonomía.
-* **[Link a carpeta de Normativa](https://github.com/jc-datarchitect/lexicon_arch/tree/main/docs)** - Referencias de códigos (FAC, ADA, etc.) en `docs/`.
-* **[Canal de Slack/Teams]** - Para dudas rápidas sobre terminología.
+* **[Carpeta de Normativa](https://github.com/jc-datarchitect/lexicon_arch/blob/main/documents/lexicon_normativas_codigos.md)** - Referencias de códigos (FAC, ADA, etc.) en `documents/`.
 
 ---
 *Recuerda: Un equipo que habla el mismo lenguaje, construye sin errores.*

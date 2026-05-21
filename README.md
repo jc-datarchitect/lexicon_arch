@@ -10,7 +10,7 @@
   [![Data Governance](https://img.shields.io/badge/Data%20Governance-Standardized-28a745?style=flat&logo=readthedocs&logoColor=white)](https://en.wikipedia.org/wiki/Data_governance)
   [![Bilingual Lexicon](https://img.shields.io/badge/Bilingual-ENG%2FESP-0056b3?style=flat&logo=google-translate&logoColor=white)](https://github.com/jc-datarchitect/lexicon_arch)
   [![Onboarding Ready](https://img.shields.io/badge/Onboarding-Tool-FF9800?style=flat&logo=gitbook&logoColor=white)](https://github.com/jc-datarchitect/lexicon_arch)
-  [![GitHub stars](https://img.shields.io/github/stars/jc-datarchitect/lexicon_arch?style=social)](https://github.com/jc-datarchitect/lexicon_arch/stargazers)
+  [![GitHub stars](https://img.shields.io/github/stars/jc-datarchitect/TRIP-U?style=social)](https://github.com/jc-datarchitect/TRIP-U/stargazers)
 </div>
 
 ---

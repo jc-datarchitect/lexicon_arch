@@ -22,17 +22,17 @@ This repository acts as a governance tool to ensure consistent terminology usage
 
 ---
 
-## How to Contribute
-We welcome contributions to keep our taxonomy current. Please follow these steps:
-1. **Report a Change:** Open an [Issue](https://github.com/jc-datarchitect/lexicon_arch/issues) describing the term to add or modify.
-2. **Review:** Our team will review the proposal against current code standards.
-3. **Merge:** Once approved, we will update the master CSV files.
+## Contribution Guidelines
+Taxonomy updates are managed through a structured review process to ensure consistency:
+1. **Reporting:** Changes can be proposed by opening an [Issue](https://github.com/jc-datarchitect/lexicon_arch/issues) detailing the specific modification.
+2. **Review:** All proposals are evaluated against current technical and regulatory standards.
+3. **Approval:** Upon validation, updates are incorporated into the master CSV datasets.
 
 ## Governance Policy
-This repository follows strict data integrity standards:
-* **SSOT:** The files in `/data` are the master source. Never modify them manually without prior approval.
-* **Bilingual Consistency:** All terms must maintain the English/Spanish format defined in our style guide.
-* **Validation:** All changes are audited to ensure compliance with our normative references in `/documents`.
+Strict data integrity standards are enforced:
+* **SSOT:** Files within `/data` serve as the master source. Manual modifications are restricted.
+* **Bilingual Consistency:** All terminology must adhere to the English/Spanish structure defined in the style guide.
+* **Validation:** Changes are audited to ensure compliance with the normative references listed in `/documents`.
 
 ---
 

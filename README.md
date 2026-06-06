@@ -42,6 +42,7 @@ The repository is organized to facilitate rapid onboarding and ensure data integ
 
 ```text
 lexicon_arch/
+├── LICENSE                             # License information
 ├── data/                               # Master CSV datasets (Single Source of Truth)
 │   ├── lexicon_arch.csv                # Architecture, engineering, and regulatory terms
 │   └── lexicon_vs.csv                  # Comparative matrix for technical nuances
